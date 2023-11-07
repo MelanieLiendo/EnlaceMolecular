@@ -13,6 +13,7 @@ import inmunova from './images/inmunova.png'
 import richmond from './images/richmond.png'
 import roemmers from './images/roemmers.png'
 import sinergium from './images/sinergium.png'
+import imagenNosotros from './images/Simma Materiales.jpg'
 
 function App() {
   return (
@@ -70,10 +71,17 @@ function App() {
 
 
       <section className="nosotros">
-        <h2>Nosotros</h2>
-        <p>Enlace Molecular es una empresa de desarrollo de soluciones para laboratorios y aplicaciones con impacto GxP que nace en el año 2014 con el objetivo de dar soluciones informáticas a la industria farmacéutica. Nuestros desarrollos siguen las normas de calidad de acuerdo a la guía ISPE-GAMP5.</p>
-        <p>Contamos con un equipo de profesionales con una amplia experiencia en desarrollo de software para laboratorios y en los aspectos productivos y procesos de calidad de la industria farmacéutica. Nos mantenemos actualizados para cumplir con las normativas regulatorias vigentes.</p>
-        <p>Creemos que la calidad en la atención a nuestros clientes es fundamental, por eso ofrecemos una atención personalizada y acompañamos a los laboratorios que confían en nosotros en la implementación de herramientas que agilizan y hacen más robustos sus procesos.</p>
+       <div className="cuadroNosotros">
+          <div className="textoNosotros">
+            <h2>Nosotros</h2>
+            <p>Enlace Molecular es una empresa de desarrollo de soluciones para laboratorios y aplicaciones con impacto GxP que nace en el año 2014 con el objetivo de dar soluciones informáticas a la industria farmacéutica. Nuestros desarrollos siguen las normas de calidad de acuerdo a la guía ISPE-GAMP5.</p>
+            <p>Contamos con un equipo de profesionales con una amplia experiencia en desarrollo de software para laboratorios y en los aspectos productivos y procesos de calidad de la industria farmacéutica. Nos mantenemos actualizados para cumplir con las normativas regulatorias vigentes.</p>
+            <p>Creemos que la calidad en la atención a nuestros clientes es fundamental, por eso ofrecemos una atención personalizada y acompañamos a los laboratorios que confían en nosotros en la implementación de herramientas que agilizan y hacen más robustos sus procesos.</p>
+          </div>
+          <div className="imagenNosotros">
+            <img src={imagenNosotros} alt="imagenNosotros"></img>
+          </div>
+        </div>
       </section>
 
       <section className="contacto">
