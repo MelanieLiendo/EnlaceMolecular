@@ -167,3 +167,27 @@ margin-right: 100px;
   left: 1100px;
   top: 350px;
 }
+
+
+/* CLIENTES */
+
+#clientes {
+  width: auto;
+  max-width: none;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-left: 6%;
+  margin-right: 0%;
+  display: flex;
+  transform: translate3d() scale3d() rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); 
+  transform-style: preserve-3d; 
+  will-change: transform;
+}
+
+.containerClientes{
+  display: flex;
+  flex-direction: row;
+}
+
+
+
