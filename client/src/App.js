@@ -14,6 +14,9 @@ import richmond from './images/richmond.png'
 import roemmers from './images/roemmers.png'
 import sinergium from './images/sinergium.png'
 import imagenNosotros from './images/Simma Materiales.jpg'
+import desarrolloSoftware from './images/desarrolloSoftware.png'
+import agil from './images/agil.png'
+import solucion from './images/solucion.png'
 
 function App() {
   return (
@@ -35,7 +38,7 @@ function App() {
         </div>
 
       </navbar>
-      <h2 id="initialText">Software para entornos GxP</h2>
+      <h3 id="initialText">Software para entornos GxP</h3>
       <button id="buttonSplashscreen1" className="float">EMAP</button>
       <button id="buttonSplashscreen2" className="float">EMAP</button>
       <button id="buttonSplashscreen3" className="float">EMAP</button>
@@ -47,8 +50,38 @@ function App() {
       </section>
 
       <section className="servicios">
-        <h2>Servicios</h2>
-        <p>Desarrollamos software a medida para laboratorios según requerimientos específicos y ofrecemos servicios de consultoría para la mejora de procesos. Contamos con un mecanismo ágil y eficiente para el relevamientos de URS ya que conocemos y entendemos los lineamientos generales e impacto de los procesos industriales altamente regulados. Nos motivan la resolución de cuestiones sencillas así como los grandes desafíos.</p>
+        <article className='serviciosCuadro'>
+        <h2 className="textoServicios">Servicios</h2>
+        <div className="serviciosGrid">
+          <div className="containerServicios">
+          <img id='desarrolloSoftware'src={desarrolloSoftware} />
+          <p>Desarrollamos software a medida para laboratorios según requerimientos específicos y ofrecemos servicios de consultoría para la mejora de procesos.</p> 
+          </div>
+          <div className="containerServicios">
+          <img id='agil'src={agil} />
+          <p>Contamos con un mecanismo ágil y eficiente para el relevamientos de URS ya que conocemos y entendemos los lineamientos generales e impacto de los procesos industriales altamente regulados.</p> 
+          </div>
+          <div className="containerServicios">
+          <img id='solucion'src={solucion} />
+          <p>Nos motivan la resolución de cuestiones sencillas así como los grandes desafíos.</p>
+          </div>
+        </div>
+        </article>
+      </section>
+
+
+      <section className="nosotros">
+       <div className="cuadroNosotros">
+          <div className="textoNosotros">
+            <h2>Nosotros</h2>
+            <p>Enlace Molecular es una empresa de desarrollo de soluciones para laboratorios y aplicaciones con impacto GxP que nace en el año 2014 con el objetivo de dar soluciones informáticas a la industria farmacéutica. Nuestros desarrollos siguen las normas de calidad de acuerdo a la guía ISPE-GAMP5.</p>
+            <p>Contamos con un equipo de profesionales con una amplia experiencia en desarrollo de software para laboratorios y en los aspectos productivos y procesos de calidad de la industria farmacéutica. Nos mantenemos actualizados para cumplir con las normativas regulatorias vigentes.</p>
+            <p>Creemos que la calidad en la atención a nuestros clientes es fundamental, por eso ofrecemos una atención personalizada y acompañamos a los laboratorios que confían en nosotros en la implementación de herramientas que agilizan y hacen más robustos sus procesos.</p>
+          </div>
+          <div className="imagenNosotros">
+            <img src={imagenNosotros} alt="imagenNosotros"></img>
+          </div>
+        </div>
       </section>
 
       <section className="clientes">
@@ -69,20 +102,6 @@ function App() {
         </article>
       </section>
 
-
-      <section className="nosotros">
-       <div className="cuadroNosotros">
-          <div className="textoNosotros">
-            <h2>Nosotros</h2>
-            <p>Enlace Molecular es una empresa de desarrollo de soluciones para laboratorios y aplicaciones con impacto GxP que nace en el año 2014 con el objetivo de dar soluciones informáticas a la industria farmacéutica. Nuestros desarrollos siguen las normas de calidad de acuerdo a la guía ISPE-GAMP5.</p>
-            <p>Contamos con un equipo de profesionales con una amplia experiencia en desarrollo de software para laboratorios y en los aspectos productivos y procesos de calidad de la industria farmacéutica. Nos mantenemos actualizados para cumplir con las normativas regulatorias vigentes.</p>
-            <p>Creemos que la calidad en la atención a nuestros clientes es fundamental, por eso ofrecemos una atención personalizada y acompañamos a los laboratorios que confían en nosotros en la implementación de herramientas que agilizan y hacen más robustos sus procesos.</p>
-          </div>
-          <div className="imagenNosotros">
-            <img src={imagenNosotros} alt="imagenNosotros"></img>
-          </div>
-        </div>
-      </section>
 
       <section className="contacto">
         <h2>Contacto</h2>
