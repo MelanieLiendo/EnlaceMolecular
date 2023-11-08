@@ -180,6 +180,273 @@ margin-right: 100px;
   top: 350px;
 }
 
+/*PRODUCTOS*/
+
+/*emap*/
+
+.emap{
+  height: 120vh;
+  background-color: rgb(246, 246, 246);
+
+}
+
+.seccion1Emap{
+display: flex;
+align-items: baseline;
+height: 150px;
+}
+
+.tituloEmap h3{
+  opacity: 0.1;
+  font-family: Archivo, sans-serif;
+  color: #073e3e;
+  margin-left: 80px;
+  font-size: 4em;
+  letter-spacing: 10px;
+  font-weight: 800;
+
+}
+
+.tituloEmap h2{
+  font-family: Archivo, sans-serif;
+  color: #073e3e;
+  font-size: 4em;
+  letter-spacing: 10px;
+  margin-left: 30px;
+}
+
+.tituloEmap p{
+  font-family: Archivo, sans-serif;
+  color: #073e3e;
+  margin-left: 80px;
+  font-family: Archivo, sans-serif;
+  font-size: 1.4em;
+  align-items: baseline;
+}
+
+.caracteristicasEmap{
+  color: #073e3e;
+  margin-left: 80px;
+  margin-top: 20px;
+  font-family: Archivo, sans-serif;
+  font-size: 1em;
+}
+
+.caracteristicasEmap p{
+  margin-top: 20px;
+}
+
+.gridEmap{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.fotoEmap img{
+  width: 55%;
+  border-radius: 2em;
+}
+
+.fotoEmap{
+  position: relative;
+}
+
+#emap1{
+  position: absolute;
+  top: 50%;
+}
+
+#emap2{
+  position: absolute;
+  left: 40%;
+}
+
+
+/*emme*/
+
+.emme :hover #texto-animado span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(1em);
+  animation: aparecer 1s forwards;
+}
+
+@keyframes aparecer {
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.emme :hover #texto-animado span:nth-child(1) { animation-delay: 0.5s; }
+.emme :hover #texto-animado span:nth-child(2) { animation-delay: 1s; }
+.emme :hover #texto-animado span:nth-child(3) { animation-delay: 1.5s; }
+.emme :hover #texto-animado span:nth-child(4) { animation-delay: 2s; }
+
+.emme{
+  height: 120vh;
+
+}
+
+.emme :hover .caracteristicasEmme p{
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+
+
+.seccion1Emme{
+display: flex;
+align-items: baseline;
+height: 150px;
+justify-content: right;
+margin-right: 100px;
+
+}
+
+
+
+.tituloEmme h3{
+  opacity: 0.1;
+  font-family: Archivo, sans-serif;
+  color: #073e3e;
+  margin-left: 80px;
+  font-size: 4em;
+  letter-spacing: 10px;
+  font-weight: 800;
+
+}
+
+.tituloEmme h2{
+  font-family: Archivo, sans-serif;
+  color: #073e3e;
+  font-size: 4em;
+  letter-spacing: 10px;
+  margin-left: 30px;
+}
+
+.tituloEmme p{
+  font-family: Archivo, sans-serif;
+  color: #073e3e;
+  font-family: Archivo, sans-serif;
+  font-size: 1.4em;
+  align-items: baseline;
+  justify-content: right;
+}
+
+.caracteristicasEmme{
+  color: #073e3e;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-family: Archivo, sans-serif;
+  font-size: 1em;
+}
+
+.caracteristicasEmme p{
+  margin-top: 20px;
+}
+
+.gridEmme{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.fotoEmme img{
+  width: 80%;
+  border-radius: 2em;
+}
+
+.fotoEmme{
+  position: relative;
+}
+
+#emme{
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+
+/*emqa*/
+
+
+.emqa{
+  height: 120vh;
+  background-color: rgb(246, 246, 246);
+
+}
+
+.seccion1Emqa{
+display: flex;
+align-items: baseline;
+height: 150px;
+}
+
+.tituloEmqa h3{
+  opacity: 0.1;
+  font-family: Archivo, sans-serif;
+  color: #073e3e;
+  margin-left: 80px;
+  font-size: 4em;
+  letter-spacing: 10px;
+  font-weight: 800;
+
+}
+
+.tituloEmqa h2{
+  font-family: Archivo, sans-serif;
+  color: #073e3e;
+  font-size: 4em;
+  letter-spacing: 10px;
+  margin-left: 30px;
+}
+
+.tituloEmqa p{
+  font-family: Archivo, sans-serif;
+  color: #073e3e;
+  margin-left: 80px;
+  font-family: Archivo, sans-serif;
+  font-size: 1.4em;
+  align-items: baseline;
+}
+
+.caracteristicasEmqa{
+  color: #073e3e;
+  margin-left: 80px;
+  margin-top: 20px;
+  font-family: Archivo, sans-serif;
+  font-size: 1em;
+}
+
+.caracteristicasEmqa p{
+  margin-top: 20px;
+}
+
+.gridEmqa{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.fotoEmqa img{
+  width: 55%;
+  border-radius: 2em;
+}
+
+.fotoEmqa{
+  position: relative;
+}
+
+#emqa1{
+  position: absolute;
+  top: 50%;
+}
+
+#emqa2{
+  position: absolute;
+  left: 40%;
+}
+
+
+
+
 /* SERVICIOS */
 
 .servicios{
@@ -348,7 +615,7 @@ margin-right: 100px;
 
 .nosotros:hover .textoNosotros p {
   opacity: 0;
-  animation: fadeIn 4s ease-in-out forwards;
+  animation: fadeIn 1s ease-in-out forwards;
 }
 
 @keyframes fadeIn {
@@ -362,11 +629,7 @@ margin-right: 100px;
   }
 }
 
-/* PRODUCTOS */
 
-.productos{
-  height: 100vh;
-}
 
 /* CONTACTO */
 

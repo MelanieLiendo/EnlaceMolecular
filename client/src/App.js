@@ -17,6 +17,9 @@ import imagenNosotros from './images/Simma Materiales.jpg'
 import desarrolloSoftware from './images/desarrolloSoftware.png'
 import agil from './images/agil.png'
 import solucion from './images/solucion.png'
+import emap1 from './images/Emap 1.jpg'
+import emap2 from './images/Emap 2.jpg'
+import emme from './images/iStock-1130734389.jpg'
 
 function App() {
   return (
@@ -47,6 +50,87 @@ function App() {
 
       <section className="productos">
         <h2>Productos</h2>
+        <article className="emap">
+          <div className="tituloEmap">
+            <div className="seccion1Emap">
+              <h3>01.</h3>
+              <h2>emAP</h2>
+            </div>
+              <p>Módulo de gestión de abastecimiento y producción <br></br>de productos farmacéuticos y médicos</p>
+            </div>
+          <div className="gridEmap">
+            <div className="caracteristicasEmap">
+              <p>- Administración de maestro de materiales y productos</p>
+              <p>- Gestión de stock de materiales en almacenes</p>
+              <p>- Emisión de rótulos de cuarentena</p>
+              <p>- Definición de formulas y tamaños de lote</p>
+              <p>- Emisión de ordenes de producción (OP) y de empaque (OE).</p>
+              <p>- Emisión de ordenes de fraccionamiento de materias primas<br></br> y materiales de empaque.</p>
+              <p>- Gestión de OP/OE: Registro de cantidades utilizadas,<br></br> controles de proceso, cálculos de rendimiento.</p>
+            </div>
+            <div className="fotoEmap">
+              <img id="emap1" src={emap1} alt=""></img>
+              <img id="emap2" src={emap2} alt=""></img>
+            </div>
+          </div>
+        </article>
+        <article className="emme">
+          <div className="tituloEmme">
+            <div className="seccion1Emme">
+              <h3>02.</h3>
+              <h2 id="texto-animado">
+                <span>e</span>
+                <span>m</span>
+                <span>m</span>
+                <span>e</span>
+              </h2>
+            </div>
+              <p>Aplicación de Manejo de Equipos e Instrumentos</p>
+          </div>
+          <div className="gridEmme">
+            <div className="fotoEmme">
+              <img id="emme" src={emme} alt=""></img>
+            </div>
+            <div className="caracteristicasEmme">
+              <p>-Configuración de Maestro de Equipos, Instrumentos y proveedores.</p>
+              <p>-Configuración de Protocolos de Mantenimiento Preventivo y Calificacion de Equipos.</p>
+              <p>-Configuración de Protocolos de Calibracion de Instrumentos con diversos tipos de tolerancia.</p>
+              <p>-Seguimiento de actividades según frecuencia determinadas</p>
+              <p>-Advertencias visuales de actividades vencidas/ por vencer. Notificaciones automáticas por correo electrónico.</p>
+              <p>-Programacion de Tareas internas y listados para proveedores externos.</p>
+              <p>-Reportes de evolución. Certificados de Calibracion</p>
+              <p>-Disponible para uso en Tablets Integrable a lectores de códigos QR/barras para identificación de equipos e instrumentos.</p>
+              <p>-Logbook Digital de Equipo/Instrumento con registro de todas las tareas y uso.</p>
+            </div>   
+          </div>
+        </article>
+        <article className="emqa">
+          <div className="tituloEmqa">
+            <div className="seccion1Emqa">
+              <h3>03.</h3>
+              <h2 id="texto-animado">
+                <span>e</span>
+                <span>m</span>
+                <span>q</span>
+                <span>a</span>
+              </h2>
+            </div>
+              <p>Aplicación para Gestion de Documentos, administración de<br></br> Capacitacion y procesos de Garantia de Calidad</p>
+          </div>
+          <div className="gridEmqa">
+            <div className="caracteristicasEmqa">
+              <p>Administración de cualquier tipo de Documento del Sistema de Calidad.</p>
+              <p>Alta de Documentos con Anexos Asociados o Independientes</p>
+              <p>Gestión independiente de Documentos no GxP y Documentos GxP.</p>
+              <p>Control de emisión de Copias Controladas, No Controladas y Anexos mediante permisos específicos.</p>
+              <p>Alta de Documentos con circuitos de Revisión, Aprobación y puesta en vigencia. Trazabilidad de versiones intermedias.</p>
+              <p>Visualización de Documentos vigentes acorde a permisos, Sector del usuario y Alcance de los documentos.</p>
+            </div>
+            <div className="fotoEmqa">
+              <img id="emme" src={emme} alt=""></img>
+            </div>   
+          </div>
+        </article>
       </section>
 
       <section className="servicios">
