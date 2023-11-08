@@ -24,7 +24,7 @@ import emme from './images/iStock-1130734389.jpg'
 function App() {
   return (
     <div className="App">
-      <div className="splashscreen">
+      <div id= "splashscreen" className="splashscreen">
       <navbar id="navbar">
         <div id="leftNavbar">
           <img id="logo" src= {logo} alt="logo"></img>
@@ -32,11 +32,11 @@ function App() {
 
         <div id="rightNavbar">
           <ul>
-            <li>Inicio</li>
-            <li>Servicios</li>
-            <li>Productos</li>
-            <li>Nosotros</li>
-            <li>Contacto</li>
+            <a href="#splashscreen"><li>Inicio</li></a>
+            <a href="#servicios"><li>Servicios</li></a>
+            <a href="#productos"><li>Productos</li></a>
+            <a href="#nosotros"><li>Nosotros</li></a>
+            <a href="#contacto"><li>Contacto</li></a>
           </ul>
         </div>
 
@@ -48,7 +48,7 @@ function App() {
       <button id="buttonSplashscreen4" className="float">EMAP</button>
       </div>
 
-      <section className="productos">
+      <section id= "productos" className="productos">
         <h2>Productos</h2>
         <article className="emap">
           <div className="tituloEmap">
@@ -133,7 +133,7 @@ function App() {
         </article>
       </section>
 
-      <section className="servicios">
+      <section id= "servicios" className="servicios">
         <article className='serviciosCuadro'>
         <h2 className="textoServicios">Servicios</h2>
         <div className="serviciosGrid">
@@ -154,7 +154,7 @@ function App() {
       </section>
 
 
-      <section className="nosotros">
+      <section id="nosotros" className="nosotros">
        <div className="cuadroNosotros">
           <div className="textoNosotros">
             <h2>Nosotros</h2>
@@ -187,14 +187,24 @@ function App() {
       </section>
 
 
-      <section className="contacto">
+      <section id="contacto">
         <h2>Contacto</h2>
+        <div className="contacto">		
+			<form action="" className="form">
+				<input type="email" id="email" name="email" placeholder="E-mail" required/>
+				<input type="text" id="name" name="name" placeholder="Nombre" required/> 
+				<input type="text" id="company" name="company" placeholder="Empresa" required/>
+				<textarea id="mensage" name="message" placeholder="Mensaje" required></textarea>
+			</form>
+			<input className="send-button send-button-disabled" id="boton" type="submit" value="Completar Formulario" disabled/>
+			
+	  	</div>
       </section>
 
      <section className='footer'>
       <article className='footerSocial'>
-        <img id='googleLogo'src={linkedin} />
-		  	<img id='linkedinLogo' src={google} />
+        <a href="https://www.linkedin.com/company/enlacemolecular"><img id='linkedinLogo'src={linkedin} /></a>
+		  	{/* <img id='googleLogo' src={google} /> */}
       </article>
       <article className='footerText'>
         <div>
