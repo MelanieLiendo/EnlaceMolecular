@@ -122,58 +122,53 @@ function App() {
             </div>
             
               <div className="caracteristicasEmap">
-                <p>- Administración de maestro de materiales y productos</p>
-                <p>- Gestión de stock de materiales en almacenes</p>
-                <p>- Emisión de rótulos de cuarentena</p>
-                <p>- Definición de formulas y tamaños de lote</p>
-                <p>- Emisión de ordenes de producción (OP) y de empaque (OE).</p>
-                <p>- Emisión de ordenes de fraccionamiento de materias primas<br></br> y materiales de empaque.</p>
-                <p>- Gestión de OP/OE: Registro de cantidades utilizadas,<br></br> controles de proceso, cálculos de rendimiento.</p>
-              </div>
+                <ul>
+                <li>Administración de maestro de materiales y productos</li>
+                <li>Gestión de stock de materiales en almacenes</li>
+                <li>Emisión de rótulos de cuarentena</li>
+                <li>Definición de formulas y tamaños de lote</li>
+                <li>Emisión de ordenes de producción (OP) y de empaque (OE).</li>
+                <li>Emisión de ordenes de fraccionamiento de materias primas<br></br> y materiales de empaque.</li>
+                <li>Gestión de OP/OE: Registro de cantidades utilizadas,<br></br> controles de proceso, cálculos de rendimiento.</li>
+                </ul>
+                </div>
               
           </div>
           <div className="fotoEmap">
             <img id="emap2" src={emap2} alt=""></img>
           </div>
-          <div className="botonEmap">
-            <button id="conocemasEmap">Conoce más</button>
-          </div>
           
         </article>
 
         <article className="emme">
-          <div className="gridEmme">
-            <div className="leftEmme">
+          <div className="recuadroEmme">
+            <div className="tituloEmme">
+                  <div className="seccion1Emme">
+                    <h3>02.</h3>
+                    <h2 id="texto-animado">
+                      <span>e</span>
+                      <span>m</span>
+                      <span>m</span>
+                      <span>e</span>
+                    </h2>
+                  </div>
+                    <p>Aplicación de Manejo de Equipos e Instrumentos</p>
+            </div>
+  
+               <div className="caracteristicasEmme">
+                <ul>
+                <li>Configuración de Maestro de Equipos, Instrumentos<br></br> y proveedores.</li>
+                <li>Configuración de Protocolos de Mantenimiento Preventivo <br></br> y Calificacion de Equipos.</li>
+                <li>Seguimiento de actividades según frecuencia determinadas</li>
+                <li>Programacion de Tareas internas y listados para <br></br>proveedores externos.</li>
+                <li>Reportes de evolución. Certificados de Calibracion</li>
+                <li>Logbook Digital de Equipo/Instrumento con registro de <br></br> todas las tareas y uso.</li>
+                </ul>
+                </div>  
+          </div>    
               <div className="fotoEmme">
                 <img id="emme2" src={emme2} alt=""></img>
               </div>
-            </div>
-            <div className="rightEmme">
-              <div className="tituloEmme">
-                <div className="seccion1Emme">
-                  <h3>02.</h3>
-                  <h2 id="texto-animado">
-                    <span>e</span>
-                    <span>m</span>
-                    <span>m</span>
-                    <span>e</span>
-                  </h2>
-                </div>
-                  <p>Aplicación de Manejo de Equipos e Instrumentos</p>
-              </div>
-               <div className="caracteristicasEmme">
-                <p>-Configuración de Maestro de Equipos, Instrumentos y proveedores.</p>
-                <p>-Configuración de Protocolos de Mantenimiento Preventivo y Calificacion de Equipos.</p>
-                <p>-Configuración de Protocolos de Calibracion de Instrumentos con diversos tipos de tolerancia.</p>
-                <p>-Seguimiento de actividades según frecuencia determinadas</p>
-                <p>-Advertencias visuales de actividades vencidas/ por vencer. Notificaciones automáticas por correo electrónico.</p>
-                <p>-Programacion de Tareas internas y listados para proveedores externos.</p>
-                <p>-Reportes de evolución. Certificados de Calibracion</p>
-                <p>-Disponible para uso en Tablets Integrable a lectores de códigos QR/barras para identificación de equipos e instrumentos.</p>
-                <p>-Logbook Digital de Equipo/Instrumento con registro de todas las tareas y uso.</p>
-              </div>  
-            </div>
-          </div>
         </article>
 
         <article className="emqa">
@@ -193,13 +188,15 @@ function App() {
 
           
             <div className="caracteristicasEmqa">
-              <p>Administración de cualquier tipo de Documento del Sistema de Calidad.</p>
-              <p>Alta de Documentos con Anexos Asociados o Independientes</p>
-              <p>Gestión independiente de Documentos no GxP y Documentos GxP.</p>
-              <p>Control de emisión de Copias Controladas, No Controladas y Anexos mediante permisos específicos.</p>
-              <p>Alta de Documentos con circuitos de Revisión, Aprobación y puesta en vigencia. Trazabilidad de versiones intermedias.</p>
-              <p>Visualización de Documentos vigentes acorde a permisos, Sector del usuario y Alcance de los documentos.</p>
-            </div>
+              <ul>
+              <li>Administración de cualquier tipo de Documento del Sistema de Calidad.</li>
+              <li>Alta de Documentos con Anexos Asociados o Independientes</li>
+              <li>Gestión independiente de Documentos no GxP y Documentos GxP.</li>
+              <li>Control de emisión de Copias Controladas, No Controladas<br></br> y Anexos mediante permisos específicos.</li>
+              <li>Alta de Documentos con circuitos de Revisión, Aprobación<br></br> y puesta en vigencia. Trazabilidad de versiones intermedias.</li>
+              <li>Visualización de Documentos vigentes acorde a permisos,<br></br> Sector del usuario y Alcance de los documentos.</li>
+              </ul>
+              </div>
 
           </div>
           <div className="fotoEmqa">

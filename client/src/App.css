@@ -54,7 +54,7 @@ h2{
 
 
 .App{
-  background-color: rgb(236, 236, 236);
+  background-color: rgb(246, 246, 246)
 }
 
 /*NAVBAR*/
@@ -309,8 +309,9 @@ justify-content: center;
   font-size: 1em;
 }
 
-.caracteristicasEmap p{
+.caracteristicasEmap li{
   margin-top: 20px;
+  list-style-type: circle;
 }
 
 .fotoEmap img{
@@ -325,20 +326,7 @@ justify-content: center;
   top: 100px;
 }
 
-.botonEmap{
-  position: absolute;
-  left: 900px;
-  top: 600px;
-}
 
-#conocemasEmap{
-  color: rgb(236, 236, 236);
-  width: 140px;
-  height: 50px;
-  background-color: #0cb3d6;;
-  border-radius: 20em;
-  border-color: #0cb3d6;;
-}
 
 /*emme*/
 
@@ -363,31 +351,30 @@ justify-content: center;
 }
 
 .emme{
-  height: 120vh;
+  height: 140vh;
+}
+
+.recuadroEmme{
   background-color: white;
+  height: 600px;
+  width: 600px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 200px;
+  left: 100px;
+  z-index: 2;
+ 
 }
 
-.gridEmme{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
 
-/* PRENDER PARA EFECTO TEXTO P EN EMME
-
-
-.emme :hover .caracteristicasEmme p{
-  opacity: 0;
-  animation: fadeIn 1s ease-in-out forwards;
-}
-
-
-*/
 .seccion1Emme{
 display: flex;
 align-items: baseline;
 height: 150px;
-justify-content: right; 
-margin-right: 100px;
+justify-content: center;
 
 }
 
@@ -395,8 +382,7 @@ margin-right: 100px;
 .tituloEmme h3{
   opacity: 0.2;
   font-family: Archivo, sans-serif;
-  color: #0cb3d6;;
-  margin-left: 80px;
+  color: #0cb3d6;
   font-size: 4em;
   letter-spacing: 10px;
   font-weight: 800;
@@ -416,40 +402,37 @@ margin-right: 100px;
   color: #073e3e;
   font-family: Archivo, sans-serif;
   font-size: 1.4em;
-  display: flex;
   align-items: baseline;
-  justify-content: right;
 }
 
 .caracteristicasEmme{
   color: #073e3e;
-  margin-left: 20px;
   margin-top: 20px;
   font-family: Archivo, sans-serif;
   font-size: 1em;
 }
 
-.caracteristicasEmme p{
+.caracteristicasEmme li{
   margin-top: 20px;
+  list-style-type: circle;
 }
 
 .fotoEmme img{
-  width: 500px;
+  width: 700px;
   border-radius: 2em;
-
+  z-index: 1;
 }
 
 .fotoEmme{
   position: absolute;
+  left: 500px;
+  top: 1500px;
+
 }
 
 
 
-#emme2{
-  position: absolute;
-  top: 200px;
-  left: 80px;
-}
+
 
 /*emqa*/
 
@@ -513,8 +496,9 @@ justify-content: center;
   font-size: 1em;
 }
 
-.caracteristicasEmqa p{
+.caracteristicasEmqa li{
   margin-top: 20px;
+  list-style-type: circle;
 }
 
 
@@ -619,6 +603,7 @@ justify-content: center;
 }
 .clientes{
   margin-top: 40px;
+  background-color: white;
 }
 
 .containerClientes{
@@ -657,6 +642,7 @@ justify-content: center;
   justify-content: center;
   margin-bottom: 5px;
   margin-top: 10px;
+  background-color: white;
 }
 
 
@@ -666,8 +652,8 @@ justify-content: center;
   grid-template-columns: 1fr 1fr;
   width: 80%; 
   height: 500px;
-  background-color: white;
   border-radius: 20px; 
+  background-color: rgb(246, 246, 246)
 }
 
 .imagenNosotros img {
@@ -730,6 +716,7 @@ justify-content: center;
 
 .contacto{
   text-align: center;
+  
 }
 
 #contacto{
@@ -806,6 +793,10 @@ background: #0cb3d6 !important;
 
 
 /* FOOTER */
+
+.footer{
+  background-color: white;
+}
 
 #linkedinLogo {
   position: relative;
