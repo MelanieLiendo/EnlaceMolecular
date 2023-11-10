@@ -267,7 +267,7 @@ function App() {
       </section>
 
 
-      <section id="contacto">
+      {/* <section id="contacto">
         <h2>Contacto</h2>
         <div className="contacto">		
 			<form action="" className="form">
@@ -279,7 +279,24 @@ function App() {
 			<input className="send-button send-button-disabled" id="boton" type="submit" value="Completar Formulario" disabled/>
 			
 	  	</div>
-      </section>
+      </section> */}
+
+{/* classname pagina-contact */}
+<section id="contacto">
+		<article className="contacto">
+      <h2>Contacto</h2>
+		<div class="contenido">		
+			<form className="material">
+				<input type="email" id="email" name="email" placeholder="E-mail" required/>
+				<input type="text" id="name" name="name" placeholder="Nombre" required/> 
+				<input type="text" id="company" name="company" placeholder="Empresa" required/>
+				<textarea id="mensage" name="message" placeholder="Mensaje" required></textarea>
+			</form>
+			<input className="send-button send-button-disabled" id="boton" type="submit" value="Enviar" disabled/>
+	  	</div>
+      </article>
+</section>
+
 
      <section className='footer'>
       <article className='footerSocial'>
