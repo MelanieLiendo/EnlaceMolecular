@@ -126,17 +126,8 @@ margin-right: 70;
 
 
 .splashImage {
-  /* SOLO PREDNER SI QUIERO LA IMAGEN DE FONDO
-  background-image: url(./images/Simma\ Productos.jpg) ;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-      */
-      
-  
   display: flex;
   flex-direction: column;
-
   position: absolute;
   top: 350px;
   left: 100px;
@@ -148,7 +139,7 @@ margin-right: 70;
   position: absolute;
   top: 400px;
   left: 100px; */
-  color: #073e3e;
+  color: #0cb3d6;
   font-family: Archivo, sans-serif;
   font-size: 2em;
   font-weight: 100;
@@ -229,70 +220,27 @@ margin-right: 70;
   background-color: transparent;
   width: 150px;
   height: 40px;
-  border: solid #073e3e;
+  border: solid #0cb3d6;;
   border-radius: 1px;
   
 }
 
 #initialButton a {
   text-decoration: none;
-  color:#073e3e;
+  color:#0cb3d6;;
 }
 
 a :visited {
   color: #073e3e;
 }
-/* si borro los botones flotando eliminar esta parte
 
-#buttonSplashscreen1{
-  width: 60px;
-  height: 60px;
-  background-color: transparent;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-  position: absolute;
-  left: 650px;
-  top: 200px;
-}
-
-#buttonSplashscreen2{
-  width: 60px;
-  height: 60px;
-  background-color: transparent;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-  position: absolute;
-  left: 800px;
-  top: 350px;
-}
-
-#buttonSplashscreen3{
-  width: 60px;
-  height: 60px;
-  background-color: transparent;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-  position: absolute;
-  left: 950px;
-  top: 200px;
-}
-
-#buttonSplashscreen4{
-  width: 60px;
-  height: 60px;
-  background-color: transparent;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-  position: absolute;
-  left: 1100px;
-  top: 350px;
-
-}
-
-*/
 
 /*PRODUCTOS*/
 
 .border{
   width: 100%;
   height: 8px;
-  background-color: #073e3e;
+  background-color: #0cb3d6;;
 }
 
 /*emap*/
@@ -386,8 +334,9 @@ justify-content: center;
   color: rgb(236, 236, 236);
   width: 140px;
   height: 50px;
-  background-color: #073e3e;
+  background-color: #0cb3d6;;
   border-radius: 20em;
+  border-color: #0cb3d6;;
 }
 
 /*emme*/
@@ -414,6 +363,7 @@ justify-content: center;
 
 .emme{
   height: 120vh;
+  background-color: white;
 }
 
 .gridEmme{
@@ -483,7 +433,7 @@ margin-right: 100px;
 }
 
 .fotoEmme img{
-  width: 500px;
+  width: 400px;
   border-radius: 2em;
 
 }
@@ -494,14 +444,14 @@ margin-right: 100px;
 
 #emme{
   position: absolute;
-  top: 20px;
-  left: 50px;
+  top: 80px;
+  left: 80px;
 }
 
 #emme2{
   position: absolute;
   top: 400px;
-  left: 50px;
+  left: 80px;
 }
 
 /*emqa*/
