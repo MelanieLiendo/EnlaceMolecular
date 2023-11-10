@@ -104,7 +104,6 @@ function App() {
             <span>x</span>
             <span>p</span>
             </h3>
-          <button id="initialButton"><a href="#contacto">Más Información</a></button>
         </div>
       </div>
 
@@ -146,7 +145,6 @@ function App() {
           <div className="gridEmme">
             <div className="leftEmme">
               <div className="fotoEmme">
-                <img id="emme" src={emme} alt=""></img>
                 <img id="emme2" src={emme2} alt=""></img>
               </div>
             </div>

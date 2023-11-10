@@ -129,8 +129,8 @@ margin-right: 70;
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 350px;
-  left: 100px;
+  top: 250px;
+  left: 450px;
 }
 
 
@@ -139,11 +139,12 @@ margin-right: 70;
   position: absolute;
   top: 400px;
   left: 100px; */
-  color: #0cb3d6;
+  color: rgb(82, 82, 82);
   font-family: Archivo, sans-serif;
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: 100;
   text-transform: uppercase;
+  line-height: 60px;
 }
 
 
@@ -276,9 +277,9 @@ justify-content: center;
 }
 
 .tituloEmap h3{
-  opacity: 0.1;
+  opacity: 0.2;
   font-family: Archivo, sans-serif;
-  color: #073e3e;
+  color: #0cb3d6;;
   font-size: 4em;
   letter-spacing: 10px;
   font-weight: 800;
@@ -392,9 +393,9 @@ margin-right: 100px;
 
 
 .tituloEmme h3{
-  opacity: 0.1;
+  opacity: 0.2;
   font-family: Archivo, sans-serif;
-  color: #073e3e;
+  color: #0cb3d6;;
   margin-left: 80px;
   font-size: 4em;
   letter-spacing: 10px;
@@ -433,7 +434,7 @@ margin-right: 100px;
 }
 
 .fotoEmme img{
-  width: 400px;
+  width: 500px;
   border-radius: 2em;
 
 }
@@ -442,15 +443,11 @@ margin-right: 100px;
   position: absolute;
 }
 
-#emme{
-  position: absolute;
-  top: 80px;
-  left: 80px;
-}
+
 
 #emme2{
   position: absolute;
-  top: 400px;
+  top: 200px;
   left: 80px;
 }
 
@@ -484,9 +481,9 @@ justify-content: center;
 }
 
 .tituloEmqa h3{
-  opacity: 0.1;
+  opacity: 0.2;
   font-family: Archivo, sans-serif;
-  color: #073e3e;
+  color: #0cb3d6;;
   font-size: 4em;
   letter-spacing: 10px;
   font-weight: 800;
