@@ -67,6 +67,8 @@ h2{
   height: 50px;
   background-color: transparent;
   z-index: 3;
+  background: white;
+  opacity: 0.9;
 
 }
 
@@ -88,13 +90,13 @@ margin-right: 70;
 #rightNavbar ul  li{
     margin-right: 60px;
   list-style: none;
-  color: #073e3e;
+  color: #0cb3d6;
   font-family: Archivo, sans-serif;
-  font-size: .8em;
+  font-size: .9em;
   }
 
-#rightNavbar ul  :hover{
-  font-size: 1em;
+#rightNavbar ul  li:hover{
+  text-shadow: #073e3e 1px 0 10px;
 }
 
 #rightNavbar{
@@ -227,11 +229,14 @@ margin-right: 70;
   background-color: transparent;
   width: 150px;
   height: 40px;
+  border: solid #073e3e;
+  border-radius: 1px;
   
 }
 
 #initialButton a {
   text-decoration: none;
+  color:#073e3e;
 }
 
 a :visited {
@@ -604,6 +609,7 @@ justify-content: center;
   justify-items: center;
 }
 
+
 .textoServicios{
   color: #073e3e;
   text-transform: uppercase;
@@ -783,6 +789,7 @@ justify-content: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 35px;
 }
 
 .form input{
@@ -794,7 +801,25 @@ justify-content: center;
   border-left: none;
   border-right: none;
   font-size: 12pt;
+  background-color: transparent;
 }
+
+/* Probando como hacer que cambie cuando lo selecciono */
+/* .form input:focus{
+  border-bottom: solid 1px ;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.form textarea:focus{
+  border-bottom: solid 1px blue ;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+} */
+
+
 .form textarea{
   margin: 10px 0px;
   width: 500px;
@@ -804,6 +829,7 @@ justify-content: center;
   border-left: none;
   border-right: none;
   font-size: 12pt;
+  background-color: transparent;
 }
 
 
