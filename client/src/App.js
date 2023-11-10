@@ -33,16 +33,77 @@ function App() {
 
           <div id="rightNavbar">
             <ul>
-              <a href="#splashscreen"><li>INICIO</li></a>
-              <a href="#servicios"><li>SERVICIOS</li></a>
-              <a href="#productos"><li>PRODUCTOS</li></a>
-              <a href="#nosotros"><li>NOSOTROS</li></a>
-              <a href="#contacto"><li>CONTACTO</li></a>
+              <a href="#splashscreen"><li>Inicio</li></a>
+              <a href="#servicios"><li>Servicios</li></a>
+              <a href="#productos"><li>Productos</li></a>
+              <a href="#nosotros"><li>Nosotros</li></a>
+              <a href="#contacto"><li>Contacto</li></a>
             </ul>
           </div>
         </navbar>
         <div className="splashImage">
-          <h3 id="initialText">Soluciones para laboratorios <br></br>y aplicaciones con impacto GxP</h3>
+          <h3 id="texto-animado" className="initialText">
+            <span>S</span>
+            <span>o</span>
+            <span>l</span>
+            <span>u</span>
+            <span>c</span>
+            <span>i</span>
+            <span>o</span>
+            <span>n</span>
+            <span>e</span>
+            <span>s</span>
+            <span> </span>
+            <span>p</span>
+            <span>a</span>
+            <span>r</span>
+            <span>a</span>
+            <span> </span>
+            <span>l</span>
+            <span>a</span>
+            <span>b</span>
+            <span>o</span>
+            <span>r</span>
+            <span>a</span>
+            <span>t</span>
+            <span>o</span>
+            <span>r</span>
+            <span>i</span>
+            <span>o</span>
+            <span>s</span>
+            <br></br>
+            <span> </span>
+            <span>y</span>
+            <span> </span>
+            <span>a</span>
+            <span>p</span>
+            <span>l</span>
+            <span>i</span>
+            <span>c</span>
+            <span>a</span>
+            <span>c</span>
+            <span>i</span>
+            <span>o</span>
+            <span>n</span>
+            <span>e</span>
+            <span>s</span>
+            <span> </span>
+            <span>c</span>
+            <span>o</span>
+            <span>n</span>
+            <span> </span>
+            <span>i</span>
+            <span>m</span>
+            <span>p</span>
+            <span>a</span>
+            <span>c</span>
+            <span>t</span>
+            <span>o</span>
+            <span> </span>
+            <span>g</span>
+            <span>x</span>
+            <span>p</span>
+            </h3>
           <button id="initialButton"><a href="#contacto">Más Información</a></button>
         </div>
       </div>
@@ -74,6 +135,9 @@ function App() {
           </div>
           <div className="fotoEmap">
             <img id="emap2" src={emap2} alt=""></img>
+          </div>
+          <div className="botonEmap">
+            <button id="conocemasEmap">Conoce más</button>
           </div>
           
         </article>
