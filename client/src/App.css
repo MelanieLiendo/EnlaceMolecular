@@ -53,6 +53,9 @@ h2{
 }
 
 
+.App{
+  background-color: rgb(236, 236, 236);
+}
 
 /*NAVBAR*/
 
@@ -60,7 +63,9 @@ h2{
   width: 100%;
   display: flex;
   justify-content: space-between;
-  position:fixed
+  position:fixed;
+  height: 50px;
+  background-color: white;
 
 }
 
@@ -68,42 +73,96 @@ h2{
   text-decoration: none;
 }
 
+#leftNavbar{
+  display: flex;
+  align-items: center;
+}
+
 
 #rightNavbar ul  {
 display: flex;
-margin-right: 100px;
+margin-right: 70;
 }
 
 #rightNavbar ul  li{
-    margin-right: 80px;
+    margin-right: 60px;
   list-style: none;
-  color: #0cb3d6;
+  color: #073e3e;
+  font-family: Archivo, sans-serif;
+  font-size: .8em;
   }
 
+#rightNavbar{
+  display: flex;
+  align-items: center;
+}
+
 #logo{
-  height: 100px;
+  margin-left: 70px;
+  height: 50px;
 }
 
 /*SPLASHSCREEN*/
 
-
-
 .splashscreen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+
+  background-image: url(./images/Diseño\ sin\ título.png) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+.splashImage {
+  /* SOLO PREDNER SI QUIERO LA IMAGEN DE FONDO
   background-image: url(./images/Simma\ Productos.jpg) ;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;    
+      */
+      
+  
   display: flex;
-  opacity: 0.4;
+  flex-direction: column;
+
+  position: absolute;
+  top: 350px;
+  left: 100px;
 }
 
 
 #initialText{
+ /* YA EN SPLASH IMAGE PARA EL BOTON TAMBN
   position: absolute;
-  top: 200px;
-  left: 20px;
+  top: 400px;
+  left: 100px; */
+  color: #073e3e;
+  font-family: Archivo, sans-serif;
+  font-size: 2em;
+  font-weight: 100;
+  text-transform: uppercase;
 }
+
+#initialButton{
+  background-color: transparent;
+  width: 150px;
+  height: 40px;
+  
+}
+
+#initialButton a {
+  text-decoration: none;
+}
+
+a :visited {
+  color: #073e3e;
+}
+/* si borro los botones flotando eliminar esta parte
 
 #buttonSplashscreen1{
   width: 60px;
@@ -143,29 +202,55 @@ margin-right: 100px;
   position: absolute;
   left: 1100px;
   top: 350px;
+
 }
 
+*/
+
 /*PRODUCTOS*/
+
+.border{
+  width: 100%;
+  height: 8px;
+  background-color: #073e3e;
+}
 
 /*emap*/
 
 .emap{
-  height: 120vh;
-  background-color: rgb(246, 246, 246);
+  height: 140vh;
+  position: relative;
+  
 
 }
+
+.recuadroEmap{
+  background-color: white;
+  height: 600px;
+  width: 600px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  z-index: 2;
+ 
+}
+
 
 .seccion1Emap{
 display: flex;
 align-items: baseline;
 height: 150px;
+justify-content: center;
 }
 
 .tituloEmap h3{
   opacity: 0.1;
   font-family: Archivo, sans-serif;
   color: #073e3e;
-  margin-left: 80px;
   font-size: 4em;
   letter-spacing: 10px;
   font-weight: 800;
@@ -183,7 +268,6 @@ height: 150px;
 .tituloEmap p{
   font-family: Archivo, sans-serif;
   color: #073e3e;
-  margin-left: 80px;
   font-family: Archivo, sans-serif;
   font-size: 1.4em;
   align-items: baseline;
@@ -191,7 +275,6 @@ height: 150px;
 
 .caracteristicasEmap{
   color: #073e3e;
-  margin-left: 80px;
   margin-top: 20px;
   font-family: Archivo, sans-serif;
   font-size: 1em;
@@ -201,28 +284,16 @@ height: 150px;
   margin-top: 20px;
 }
 
-.gridEmap{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
 .fotoEmap img{
-  width: 55%;
+  width: 700px;
   border-radius: 2em;
+  z-index: 1;
 }
 
 .fotoEmap{
-  position: relative;
-}
-
-#emap1{
   position: absolute;
-  top: 50%;
-}
-
-#emap2{
-  position: absolute;
-  left: 40%;
+  left: 500px;
+  top: 100px;
 }
 
 
@@ -249,7 +320,11 @@ height: 150px;
 
 .emme{
   height: 120vh;
-  margin: 0px 10px;
+}
+
+.gridEmme{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .emme :hover .caracteristicasEmme p{
@@ -263,7 +338,7 @@ height: 150px;
 display: flex;
 align-items: baseline;
 height: 150px;
-/* justify-content: right; */
+justify-content: right; 
 margin-right: 100px;
 
 }
@@ -293,6 +368,7 @@ margin-right: 100px;
   color: #073e3e;
   font-family: Archivo, sans-serif;
   font-size: 1.4em;
+  display: flex;
   align-items: baseline;
   justify-content: right;
 }
@@ -309,18 +385,13 @@ margin-right: 100px;
   margin-top: 20px;
 }
 
-.gridEmme{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
 .fotoEmme img{
   width: 80%;
   border-radius: 2em;
 }
 
 .fotoEmme{
-  position: relative;
+  position: absolute;
 }
 
 #emme{
@@ -329,26 +400,45 @@ margin-right: 100px;
   left: 10%;
 }
 
+#emme2{
+  position: absolute;
+  top: 40px;
+  left: 10px;
+}
+
 /*emqa*/
 
 
 .emqa{
-  height: 120vh;
-  background-color: rgb(246, 246, 246);
+  height: 150vh;
+  position: relative
+}
 
+.recuadroEmqa{
+  background-color: white;
+  height: 600px;
+  width: 700px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  z-index: 2;
 }
 
 .seccion1Emqa{
 display: flex;
 align-items: baseline;
 height: 150px;
+justify-content: center;
 }
 
 .tituloEmqa h3{
   opacity: 0.1;
   font-family: Archivo, sans-serif;
   color: #073e3e;
-  margin-left: 80px;
   font-size: 4em;
   letter-spacing: 10px;
   font-weight: 800;
@@ -366,7 +456,6 @@ height: 150px;
 .tituloEmqa p{
   font-family: Archivo, sans-serif;
   color: #073e3e;
-  margin-left: 80px;
   font-family: Archivo, sans-serif;
   font-size: 1.4em;
   align-items: baseline;
@@ -374,7 +463,6 @@ height: 150px;
 
 .caracteristicasEmqa{
   color: #073e3e;
-  margin-left: 80px;
   margin-top: 20px;
   font-family: Archivo, sans-serif;
   font-size: 1em;
@@ -384,29 +472,20 @@ height: 150px;
   margin-top: 20px;
 }
 
-.gridEmqa{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
 
 .fotoEmqa img{
-  width: 55%;
+  width: 700px;
   border-radius: 2em;
+  z-index: 1;
 }
 
 .fotoEmqa{
-  position: relative;
+  position: absolute;
+  left: 500px;
+  top: 100px;
 }
 
-#emqa1{
-  position: absolute;
-  top: 50%;
-}
 
-#emqa2{
-  position: absolute;
-  left: 40%;
-}
 
 
 
@@ -527,7 +606,6 @@ height: 150px;
 
 .nosotros {
   height: 100vh;
-  background-color: rgb(233, 233, 225);
   display: flex;
   align-items: center;
   justify-content: center;

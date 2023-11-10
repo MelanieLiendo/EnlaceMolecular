@@ -20,104 +20,116 @@ import solucion from './images/solucion.png'
 import emap1 from './images/Emap 1.jpg'
 import emap2 from './images/Emap 2.jpg'
 import emme from './images/iStock-1130734389.jpg'
+import emme2 from './images/Enlace Molecular - data integrity 1.jpg'
 
 function App() {
   return (
     <div className="App">
       <div id= "splashscreen" className="splashscreen">
-      <navbar id="navbar">
-        <div id="leftNavbar">
-          <img id="logo" src= {logo} alt="logo"></img>
-        </div>
+        <navbar id="navbar">
+          <div id="leftNavbar">
+            <img id="logo" src= {logo} alt="logo"></img>
+          </div>
 
-        <div id="rightNavbar">
-          <ul>
-            <a href="#splashscreen"><li>Inicio</li></a>
-            <a href="#servicios"><li>Servicios</li></a>
-            <a href="#productos"><li>Productos</li></a>
-            <a href="#nosotros"><li>Nosotros</li></a>
-            <a href="#contacto"><li>Contacto</li></a>
-          </ul>
+          <div id="rightNavbar">
+            <ul>
+              <a href="#splashscreen"><li>INICIO</li></a>
+              <a href="#servicios"><li>SERVICIOS</li></a>
+              <a href="#productos"><li>PRODUCTOS</li></a>
+              <a href="#nosotros"><li>NOSOTROS</li></a>
+              <a href="#contacto"><li>CONTACTO</li></a>
+            </ul>
+          </div>
+        </navbar>
+        <div className="splashImage">
+          <h3 id="initialText">Soluciones para laboratorios <br></br>y aplicaciones con impacto GxP</h3>
+          <button id="initialButton"><a href="#contacto">Más Información</a></button>
         </div>
-
-      </navbar>
-      <h3 id="initialText">Software para entornos GxP</h3>
-      <button id="buttonSplashscreen1" className="float">EMAP</button>
-      <button id="buttonSplashscreen2" className="float">EMAP</button>
-      <button id="buttonSplashscreen3" className="float">EMAP</button>
-      <button id="buttonSplashscreen4" className="float">EMAP</button>
       </div>
 
+      <div className="border"></div>
+
       <section id= "productos" className="productos">
-        <h2>Productos</h2>
+        
         <article className="emap">
-          <div className="tituloEmap">
-            <div className="seccion1Emap">
-              <h3>01.</h3>
-              <h2>emAP</h2>
+          <div className="recuadroEmap">
+            <div className="tituloEmap">
+              <div className="seccion1Emap">
+                <h3>01.</h3>
+                <h2>emAP</h2>
+              </div>
+                <p>Módulo de gestión de abastecimiento y producción <br></br>de productos farmacéuticos y médicos</p>
             </div>
-              <p>Módulo de gestión de abastecimiento y producción <br></br>de productos farmacéuticos y médicos</p>
-            </div>
-          <div className="gridEmap">
-            <div className="caracteristicasEmap">
-              <p>- Administración de maestro de materiales y productos</p>
-              <p>- Gestión de stock de materiales en almacenes</p>
-              <p>- Emisión de rótulos de cuarentena</p>
-              <p>- Definición de formulas y tamaños de lote</p>
-              <p>- Emisión de ordenes de producción (OP) y de empaque (OE).</p>
-              <p>- Emisión de ordenes de fraccionamiento de materias primas<br></br> y materiales de empaque.</p>
-              <p>- Gestión de OP/OE: Registro de cantidades utilizadas,<br></br> controles de proceso, cálculos de rendimiento.</p>
-            </div>
-            <div className="fotoEmap">
-              <img id="emap1" src={emap1} alt=""></img>
-              <img id="emap2" src={emap2} alt=""></img>
-            </div>
+            
+              <div className="caracteristicasEmap">
+                <p>- Administración de maestro de materiales y productos</p>
+                <p>- Gestión de stock de materiales en almacenes</p>
+                <p>- Emisión de rótulos de cuarentena</p>
+                <p>- Definición de formulas y tamaños de lote</p>
+                <p>- Emisión de ordenes de producción (OP) y de empaque (OE).</p>
+                <p>- Emisión de ordenes de fraccionamiento de materias primas<br></br> y materiales de empaque.</p>
+                <p>- Gestión de OP/OE: Registro de cantidades utilizadas,<br></br> controles de proceso, cálculos de rendimiento.</p>
+              </div>
+              
           </div>
+          <div className="fotoEmap">
+            <img id="emap2" src={emap2} alt=""></img>
+          </div>
+          
         </article>
+
         <article className="emme">
-          <div className="tituloEmme">
-            <div className="seccion1Emme">
-              <h3>02.</h3>
-              <h2 id="texto-animado">
-                <span>e</span>
-                <span>m</span>
-                <span>m</span>
-                <span>e</span>
-              </h2>
-            </div>
-              <p>Aplicación de Manejo de Equipos e Instrumentos</p>
-          </div>
           <div className="gridEmme">
-            <div className="fotoEmme">
-              <img id="emme" src={emme} alt=""></img>
+            <div className="leftEmme">
+              <div className="fotoEmme">
+                <img id="emme" src={emme} alt=""></img>
+                <img id="emme2" src={emme2} alt=""></img>
+              </div>
             </div>
-            <div className="caracteristicasEmme">
-              <p>-Configuración de Maestro de Equipos, Instrumentos y proveedores.</p>
-              <p>-Configuración de Protocolos de Mantenimiento Preventivo y Calificacion de Equipos.</p>
-              <p>-Configuración de Protocolos de Calibracion de Instrumentos con diversos tipos de tolerancia.</p>
-              <p>-Seguimiento de actividades según frecuencia determinadas</p>
-              <p>-Advertencias visuales de actividades vencidas/ por vencer. Notificaciones automáticas por correo electrónico.</p>
-              <p>-Programacion de Tareas internas y listados para proveedores externos.</p>
-              <p>-Reportes de evolución. Certificados de Calibracion</p>
-              <p>-Disponible para uso en Tablets Integrable a lectores de códigos QR/barras para identificación de equipos e instrumentos.</p>
-              <p>-Logbook Digital de Equipo/Instrumento con registro de todas las tareas y uso.</p>
-            </div>   
+            <div className="rightEmme">
+              <div className="tituloEmme">
+                <div className="seccion1Emme">
+                  <h3>02.</h3>
+                  <h2 id="texto-animado">
+                    <span>e</span>
+                    <span>m</span>
+                    <span>m</span>
+                    <span>e</span>
+                  </h2>
+                </div>
+                  <p>Aplicación de Manejo de Equipos e Instrumentos</p>
+              </div>
+               <div className="caracteristicasEmme">
+                <p>-Configuración de Maestro de Equipos, Instrumentos y proveedores.</p>
+                <p>-Configuración de Protocolos de Mantenimiento Preventivo y Calificacion de Equipos.</p>
+                <p>-Configuración de Protocolos de Calibracion de Instrumentos con diversos tipos de tolerancia.</p>
+                <p>-Seguimiento de actividades según frecuencia determinadas</p>
+                <p>-Advertencias visuales de actividades vencidas/ por vencer. Notificaciones automáticas por correo electrónico.</p>
+                <p>-Programacion de Tareas internas y listados para proveedores externos.</p>
+                <p>-Reportes de evolución. Certificados de Calibracion</p>
+                <p>-Disponible para uso en Tablets Integrable a lectores de códigos QR/barras para identificación de equipos e instrumentos.</p>
+                <p>-Logbook Digital de Equipo/Instrumento con registro de todas las tareas y uso.</p>
+              </div>  
+            </div>
           </div>
         </article>
+
         <article className="emqa">
-          <div className="tituloEmqa">
-            <div className="seccion1Emqa">
-              <h3>03.</h3>
-              <h2 id="texto-animado">
-                <span>e</span>
-                <span>m</span>
-                <span>q</span>
-                <span>a</span>
-              </h2>
-            </div>
+          <div className="recuadroEmqa">
+            <div className="tituloEmqa">
+              <div className="seccion1Emqa">
+               <h3>03.</h3>
+               <h2 id="texto-animado">
+                  <span>e</span>
+                  <span>m</span>
+                  <span>q</span>
+                  <span>a</span>
+                </h2>
+              </div>
               <p>Aplicación para Gestion de Documentos, administración de<br></br> Capacitacion y procesos de Garantia de Calidad</p>
-          </div>
-          <div className="gridEmqa">
+           </div>
+
+          
             <div className="caracteristicasEmqa">
               <p>Administración de cualquier tipo de Documento del Sistema de Calidad.</p>
               <p>Alta de Documentos con Anexos Asociados o Independientes</p>
@@ -126,11 +138,15 @@ function App() {
               <p>Alta de Documentos con circuitos de Revisión, Aprobación y puesta en vigencia. Trazabilidad de versiones intermedias.</p>
               <p>Visualización de Documentos vigentes acorde a permisos, Sector del usuario y Alcance de los documentos.</p>
             </div>
-            <div className="fotoEmqa">
-              <img id="emme" src={emme} alt=""></img>
-            </div>   
+
           </div>
+          <div className="fotoEmqa">
+            <img id="emme" src={emme} alt=""></img>
+            
+          </div>   
+       
         </article>
+
       </section>
 
       <section id= "servicios" className="servicios">
