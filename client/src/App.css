@@ -72,6 +72,7 @@ h2{
     justify-content: space-between;
     align-items: center;
     display: flex;
+    position: fixed;
 }
 
 #navbar a{
@@ -727,8 +728,10 @@ justify-content: center;
   text-align: center;
 }
 
-.contenido{margin: 80px 25%;
-  position: relative;}
+.contenido{
+  margin: 30px 25% 80px 25%;
+  position: relative;
+}
 
 .contact-form {	position: relative;
     border-bottom: solid 1px darkgrey;
@@ -741,11 +744,16 @@ justify-content: center;
 }
 
 .material-input {
-margin-bottom: 40px !important; 
+margin-bottom: 25px !important; 
 }
 
-.material .material-bar:after, .material .material-bar:before {
-background: #0cb3d6 !important;
+.material input:focus, .material textarea:focus{
+  background-color: white;
+  outline: none;
+  border-bottom:  2px solid #0cb3d6 ;
+  text-align:start;
+  color: gray;
+  font-family: sans-serif;
 }
 
 .material input, .material textarea {
@@ -756,7 +764,57 @@ background: #0cb3d6 !important;
   outline: 0;
   background: 0;
   float: left;
+  position: relative;
+  padding-top: 18px;
+  background: #fff;
+  font-family: sans-serif;
 }
+
+
+input {
+  width: 200px; 
+  padding: 10px;
+}
+
+textarea{
+  width: 200px; 
+  padding: 10px;
+}
+
+
+::placeholder {
+  position: absolute;
+  top: 50%; 
+  transform: translateY(-50%); 
+  color: #999; 
+  transition: 0.3s; 
+}
+
+input:focus::placeholder {
+  font-size: 12px; 
+  top: 0; 
+  transform: translateY(0); 
+  color: #999; 
+}
+
+textarea:focus::placeholder {
+  font-size: 12px; 
+  top: 0; 
+  transform: translateY(0); 
+  color: #999; 
+} 
+
+
+.material input {
+  height: 32px;
+  margin-bottom: 25px;
+}
+
+.material textarea {
+  height: 100px;
+  margin-bottom: 10px;
+}
+
 
 /* .form{
   display: flex;
