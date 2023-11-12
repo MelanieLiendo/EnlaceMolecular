@@ -43,7 +43,7 @@ animation-timing-function: ease-in-out;
 h2{
     color: #073e3e;
     text-transform: uppercase;
-    margin-top: 10px;
+    margin-top: 0px;
     margin-bottom: 10px;
     font-family: Archivo, sans-serif;
     font-size: 2.5em;
@@ -65,11 +65,10 @@ h2{
     background: white;
     opacity: 0.9;
     padding: 1em 4em;
-    max-width: 90rem;
-    grid-column-gap: 20px;
+    width: 100%;
+    grid-column-gap: 50px;
     grid-row-gap: 20px;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     display: flex;
     position: fixed;
@@ -250,8 +249,6 @@ a :visited {
 .emap{
   height: 140vh;
   position: relative;
-  
-
 }
 
 .recuadroEmap{
@@ -529,7 +526,7 @@ justify-content: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px ;
+  margin: 0px 10px ;
 }
 
 .serviciosGrid{
@@ -603,7 +600,6 @@ justify-content: center;
   white-space: nowrap;
 }
 .clientes{
-  margin-top: 40px;
   background-color: white;
 }
 
@@ -641,8 +637,6 @@ justify-content: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 5px;
-  margin-top: 10px;
   background-color: white;
 }
 
@@ -815,39 +809,21 @@ textarea:focus::placeholder {
   margin-bottom: 10px;
 }
 
-
-/* .form{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 35px;
+.material button{
+  background-color:#49bdd4 ;
+  border: none;
+  color: white;
+  width: 120px;
+  height: 35px;
+  font-size: medium;
+  margin: 10px;
 }
 
-.form input{
-  margin: 10px 0px;
-  width: 500px;
-  height: 30px;
-  border-bottom: solid 1px darkgrey;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  font-size: 12pt;
-  background-color: transparent;
+.material button:hover{
+  background-color:white;
+  border: solid thin #49bdd4 ;
+  color: #49bdd4 ;
 }
-
-
-.form textarea{
-  margin: 10px 0px;
-  width: 500px;
-  height: 90px;
-  border-bottom: solid 1px darkgrey;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  font-size: 12pt;
-  background-color: transparent;
-} */
-
 
 
 /* FOOTER */

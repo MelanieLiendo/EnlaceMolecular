@@ -21,8 +21,45 @@ import emap1 from './images/Emap 1.jpg'
 import emap2 from './images/Emap 2.jpg'
 import emme from './images/iStock-1130734389.jpg'
 import emme2 from './images/Enlace Molecular - data integrity 1.jpg'
+import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
+
+
 
 function App() {
+  
+    const [nombre, setNombre] = useState('');
+    const [empresa, setEmpresa] = useState('');
+    const [email, setEmail] = useState('');
+    const [mensaje, setMensaje] = useState('');
+  
+    const enviarFormulario = (e) => {
+      e.preventDefault();
+  
+      const templateParams = {
+        from_name: nombre,
+        from_empresa: empresa,
+        from_email: email,
+        message: mensaje,
+      };
+  
+      // Reemplazar 'TU_USER_ID', 'TU_SERVICE_ID' y 'TU_TEMPLATE_ID' con tus propios valores
+      emailjs.send('service_jziq654', 'template_suiiudd', templateParams, 'fQ4KcnQ1vK6zakkJt')
+        .then((response) => {
+          console.log('Correo enviado:', response);
+          // Puedes realizar acciones adicionales después de enviar el correo, como mostrar un mensaje de éxito, etc.
+        })
+        .catch((error) => {
+          console.error('Error al enviar el correo:', error);
+        });
+  
+      
+      setNombre('');
+      setEmpresa('');
+      setEmail('');
+      setMensaje('');
+    };
+
   return (
     <div className="App">
       <div id= "splashscreen" className="splashscreen">
@@ -42,7 +79,8 @@ function App() {
           </div>
         </navbar>
         <div className="splashImage">
-          <h3 id="texto-animado" className="initialText">
+        <p>Soluciones para laboratorios y aplicaciones con impacto GxP</p>
+          {/* <h3 id="texto-animado" className="initialText">
             <span>S</span>
             <span>o</span>
             <span>l</span>
@@ -103,7 +141,7 @@ function App() {
             <span>g</span>
             <span>x</span>
             <span>p</span>
-            </h3>
+            </h3> */}
         </div>
       </div>
 
@@ -262,32 +300,17 @@ function App() {
       </section>
 
 
-      {/* <section id="contacto">
-        <h2>Contacto</h2>
-        <div className="contacto">		
-			<form action="" className="form">
-				<input type="email" id="email" name="email" placeholder="E-mail" required/>
-				<input type="text" id="name" name="name" placeholder="Nombre" required/> 
-				<input type="text" id="company" name="company" placeholder="Empresa" required/>
-				<textarea id="mensage" name="message" placeholder="Mensaje" required></textarea>
-			</form>
-			<input className="send-button send-button-disabled" id="boton" type="submit" value="Completar Formulario" disabled/>
-			
-	  	</div>
-      </section> */}
-
-{/* classname pagina-contact */}
 <section id="contacto">
 		<article className="contacto">
       <h2>Contacto</h2>
-		<div class="contenido">		
-			<form className="material">
-				<input type="email" id="email" name="email" placeholder="E-mail" required/>
-				<input type="text" id="name" name="name" placeholder="Nombre" required/> 
-				<input type="text" id="company" name="company" placeholder="Empresa" required/>
-				<textarea id="mensage" name="message" placeholder="Mensaje" required></textarea>
-			</form>
-			<input className="send-button send-button-disabled" id="boton" type="submit" value="Enviar" disabled/>
+		<div className="contenido">		
+			<form className="material" onSubmit={enviarFormulario}>
+				<input type="email" id="email" name="email" placeholder="E-mail" value={email} onChange={(e) => setEmail(e.target.value)} required/>
+				<input type="text" id="name" name="name" placeholder="Nombre" value={nombre} onChange={(e) => setNombre(e.target.value)} required/> 
+				<input type="text" id="company" name="company" placeholder="Empresa" value={empresa} onChange={(e) => setEmpresa(e.target.value)} required/>
+				<textarea id="message" name="message" placeholder="Mensaje" value={mensaje} onChange={(e) => setMensaje(e.target.value)} required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
 	  	</div>
       </article>
 </section>
@@ -296,7 +319,6 @@ function App() {
      <section className='footer'>
       <article className='footerSocial'>
         <a href="https://www.linkedin.com/company/enlacemolecular"><img id='linkedinLogo'src={linkedin} /></a>
-		  	{/* <img id='googleLogo' src={google} /> */}
       </article>
       <article className='footerText'>
         <div>
