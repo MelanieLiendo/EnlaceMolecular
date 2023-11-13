@@ -1,7 +1,7 @@
 import logo from './images/logo enlace.gif';
 import google from './images/googlemas.png';
 import linkedin from './images/linkedin.png';
-import splashscreen from './images/Simma Productos.jpg'
+import simmaProductos from './images/Simma Productos.jpg'
 import './App.css';
 import asofarma from './images/asofarma.png'
 import casasco from './images/casasco.png'
@@ -23,6 +23,7 @@ import emme from './images/iStock-1130734389.jpg'
 import emme2 from './images/Enlace Molecular - data integrity 1.jpg'
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
+import simmaEstabilidad from './images/Simma Estabilidad.jpg'
 
 
 
@@ -32,6 +33,7 @@ function App() {
     const [empresa, setEmpresa] = useState('');
     const [email, setEmail] = useState('');
     const [mensaje, setMensaje] = useState('');
+    const [mensajeSatisf, setMensajeSatisf ] = useState('');
   
     const enviarFormulario = (e) => {
       e.preventDefault();
@@ -47,6 +49,10 @@ function App() {
       emailjs.send('service_jziq654', 'template_suiiudd', templateParams, 'fQ4KcnQ1vK6zakkJt')
         .then((response) => {
           console.log('Correo enviado:', response);
+          setMensajeSatisf("El mensaje fue enviado con éxito");
+          setTimeout(() => {
+            setMensajeSatisf('');
+          }, 6000);
           // Puedes realizar acciones adicionales después de enviar el correo, como mostrar un mensaje de éxito, etc.
         })
         .catch((error) => {
@@ -244,6 +250,56 @@ function App() {
        
         </article>
 
+        <article className="simma">
+          <div className="recuadroSimma">
+            <div className="tituloSimma">
+              <div className="seccion1Simma">
+               <h3>04.</h3>
+               <h2 id="texto-animado">
+                  <span>s</span>
+                  <span>i</span>
+                  <span>m</span>
+                  <span>m</span>
+                  <span>a</span>
+                </h2>
+              </div>
+              <p>Gestión Integral de Laboratorio (LIMS): Materiales, <br></br> Productos, Estabilidad, Ambiental, Aguas, Validación de Limpieza.</p>
+           </div>
+
+          
+            <div className="caracteristicasSimma">
+              <h3>Ambiente y Aguas</h3>
+              <ul>
+              <li>Ambiente: permite la configuración completa de los procedimientos internos de monitoreo de aire, superficies, personal, equipos y gases.</li>
+              <li>Alta de Documentos con Anexos Asociados o Independientes</li>
+              <li>Gestión independiente de Documentos no GxP y Documentos GxP.</li>
+              </ul>
+
+            
+              <h3>Estabilidad</h3>
+              <ul>
+              <li>Administración de cualquier tipo de Documento del Sistema de Calidad.</li>
+              <li>Alta de Documentos con Anexos Asociados o Independientes</li>
+              <li>Gestión independiente de Documentos no GxP y Documentos GxP.</li>
+              </ul>
+
+              <h3>Productos y Materiales</h3>
+              <ul>
+              <li>Productos: permite la configuración completa de las especificación de análisis en proceso (IPC) y de productos intermedios y finales.</li>
+              <li>Materiales: permite la configuración completa de las especificaciones de análisis y re-análisis de insumos, materias primas y material de empaque.</li>
+              </ul>
+              </div>
+
+          </div>
+          <div className="fotoSimma">
+            <img id= "simmaAguas" src={simmaProductos} alt=""></img>
+            <img id= "simmaEstabilidad" src={simmaEstabilidad} alt=""></img>
+            <img id= "simmaMateriales" src={imagenNosotros} alt=""></img>
+            
+          </div>   
+       
+        </article>
+
       </section>
 
       <section id= "servicios" className="servicios">
@@ -310,6 +366,7 @@ function App() {
 				<input type="text" id="company" name="company" placeholder="Empresa" value={empresa} onChange={(e) => setEmpresa(e.target.value)} required/>
 				<textarea id="message" name="message" placeholder="Mensaje" value={mensaje} onChange={(e) => setMensaje(e.target.value)} required></textarea>
         <button type="submit">Enviar</button>
+        <h3>{mensajeSatisf}</h3>
       </form>
 	  	</div>
       </article>

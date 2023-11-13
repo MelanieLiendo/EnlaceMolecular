@@ -512,9 +512,104 @@ justify-content: center;
   top: 100px;
 }
 
+/*SIMMA*/
 
 
 
+.simma{
+  height: 150vh;
+  position: relative
+}
+
+.recuadroSimma{
+  background-color: white;
+  height: 600px;
+  width: 700px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  z-index: 2;
+}
+
+.seccion1Simma{
+display: flex;
+align-items: baseline;
+height: 150px;
+justify-content: center;
+}
+
+.tituloSimma h3{
+  opacity: 0.2;
+  font-family: Archivo, sans-serif;
+  color: #0cb3d6;;
+  font-size: 4em;
+  letter-spacing: 10px;
+  font-weight: 800;
+
+}
+
+.tituloSimma h2{
+  font-family: Archivo, sans-serif;
+  color: #073e3e;
+  font-size: 4em;
+  letter-spacing: 10px;
+  margin-left: 30px;
+}
+
+.tituloSimma p{
+  font-family: Archivo, sans-serif;
+  color: #073e3e;
+  font-family: Archivo, sans-serif;
+  font-size: 1.4em;
+  align-items: baseline;
+}
+
+.caracteristicasSimma{
+  color: #073e3e;
+  margin-top: 20px;
+  font-family: Archivo, sans-serif;
+  font-size: 1em;
+}
+
+.caracteristicassimma li{
+  margin-top: 20px;
+  list-style-type: circle;
+}
+
+
+.fotoSimma img{
+  width: 700px;
+  border-radius: 2em;
+  z-index: 1;
+}
+
+.fotoSimma img{
+ width: 300px;
+ display: flex;
+ flex-direction: column;
+
+}
+
+
+#simmaAguas{
+  position: absolute;
+  left: 900px;
+  top: 200px;
+}
+#simmaEstabilidad {
+  position: absolute;
+  left: 825px;
+  top:  425px;
+}
+#simmaMateriales{
+  position: absolute;
+  left: 900px;
+  top: 650px;
+}
 
 
 /* SERVICIOS */
