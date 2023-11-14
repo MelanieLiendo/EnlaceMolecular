@@ -41,7 +41,7 @@ animation-timing-function: ease-in-out;
 }
 
 h2{
-    color: #073e3e;
+    color: gray;
     text-transform: uppercase;
     margin-top: 0px;
     margin-bottom: 10px;
@@ -54,23 +54,20 @@ h2{
 
 
 .App{
-  background-color: rgb(246, 246, 246)
+  background-color: white;
 }
 
 /*NAVBAR*/
 
 #navbar{
-    background-color: transparent;
     z-index: 3;
-    background: white;
+    background-image: url(./images/Splashscreen.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
     opacity: 0.9;
-    padding: 1em 4em;
+    padding: 1em 0em;
     width: 100%;
-    grid-column-gap: 50px;
-    grid-row-gap: 20px;
-    flex-direction: row;
-    align-items: center;
-    display: flex;
     position: fixed;
 }
 
@@ -78,59 +75,51 @@ h2{
   text-decoration: none;
 }
 
-#leftNavbar{
-  display: flex;
-  align-items: center;
-}
-
-
-#rightNavbar ul  {
+#navbar ul  {
 display: flex;
-margin-right: 70;
+justify-content: center;
 }
 
-#rightNavbar ul  li{
-    margin-right: 60px;
+#navbar ul  li{
+  margin-right: 30px;
   list-style: none;
-  color: #0cb3d6;
+  color: gray;
   font-family: Archivo, sans-serif;
   font-size: 1em;
+  font-weight: 5;
   }
 
-#rightNavbar ul  li:hover{
+  #navbar ul  li:hover{
   transform:translate(0, -3px);
 }
 
-#rightNavbar{
-  display: flex;
-  align-items: center;
-}
-
-#logo{
-  margin-left: 70px;
-  height: 50px;
-}
 
 /*SPLASHSCREEN*/
 
 .splashscreen {
   height: 100vh;
-  display: flex;
   flex-direction: column;
   background-image: url(./images/Splashscreen.jpg) ;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-
+#logo{
+  width: 500px;
+  height: 150px;
+}
 
 .splashImage {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 250px;
-  left: 450px;
+  align-items: center;
+  justify-content: center;
+
 }
 
 
@@ -217,7 +206,7 @@ margin-right: 70;
 .splashscreen :hover #texto-animado span:nth-child(59) { animation-delay: 5.9s; }
 .splashscreen :hover #texto-animado span:nth-child(60) { animation-delay: 6s; } */
 
-#initialButton{
+/* #initialButton{
   background-color: transparent;
   width: 150px;
   height: 40px;
@@ -233,16 +222,22 @@ margin-right: 70;
 
 a :visited {
   color: #073e3e;
+} */
+
+
+/* SPLASHSCREEN 2 */
+
+#splashscreen2{
+  height: 50vh;
+  text-align: center;
 }
 
+#splashscreen2 p{
+color:rgb(86, 109, 221);
+font-weight: 650;
+}
 
 /*PRODUCTOS*/
-
-.border{
-  width: 100%;
-  height: 8px;
-  background-color: #0cb3d6;;
-}
 
 /*emap*/
 
@@ -635,29 +630,23 @@ justify-content: center;
 
 
 .textoServicios{
-  color: #073e3e;
+  color: gray;
   text-transform: uppercase;
   margin-top: 10px;
   margin-bottom: 10px;
   font-family: Archivo, sans-serif;
   font-size: 2.5em;
-  font-weight: 500;
+  font-weight: 200;
   line-height: 1.2;
-  text-align: center;
 }
 
 .servicios p {
-  color: #073e3e;
-  margin: 20px;
+  color:rgb(86, 109, 221);
   font-family: Archivo, sans-serif;
   font-size: 1em;
   padding: 0px 20px;
+  text-align: left;
 }
-
-/* .containerServicios:hover {
-  opacity: 0;
-  animation: fadeIn 1s ease-in-out forwards;
-} */
 
 .servicios img{
   width: 100px;
@@ -666,15 +655,33 @@ justify-content: center;
 
 
 .containerServicios{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(246, 246, 246);
-  border-radius: 10px;
+  border-radius: 40px;
   margin:10px 20px;
-  height: 100%;
+  height: 300px;
   width: 70%;
+  display: flex;
+  justify-content: right;
+}
+
+#containerServicios1{
+  background-image: url(./images/degrade1.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+#containerServicios2{
+  background-image: url(./images/degrade2.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+#containerServicios3{
+  background-image: url(./images/degrade3.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
 }
 
 /* CLIENTES */
@@ -702,10 +709,28 @@ justify-content: center;
   display: flex;
   flex-direction: row;
   align-items: center;
-
   animation: scroll 40s linear infinite;
-  
 }
+
+#roemmers, #mabxience, #glenmark{
+  width: 150px;
+}
+
+#richet, #poen{
+  width: 100px;
+}
+
+/* <div className='containerClientes'>
+          <div className='client'><img id='asofarma'src={asofarma} /></div>
+          <div className='client'><img id='casasco'src={casasco} /></div>
+          <div className='client'><img id='mabxience'src={cliente1} /></div>
+          <div className='client'><img id='richet'src={cliente2} /></div>
+          <div className='client'><img id='poen'src={cliente3} /></div>
+          <div className='client'><img id='glenmark'src={glenmark} /></div>
+          <div className='client'><img id='inmunova'src={inmunova} /></div>
+          <div className='client'><img id='richmond'src={richmond} /></div>
+          <div className='client'><img id='roemmers'src={roemmers} /></div>
+          <div className='client'><img id='sinergium'src={sinergium} /></div> */
 
 @keyframes scroll {
   0% {
@@ -728,11 +753,15 @@ justify-content: center;
 /*NOSOTROS*/
 
 .nosotros {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: white;
+  background-image: url(./images/Splashscreen.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    margin: 30px 0px;
 }
 
 
@@ -743,7 +772,9 @@ justify-content: center;
   width: 80%; 
   height: 500px;
   border-radius: 20px; 
-  background-color: rgb(246, 246, 246)
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .imagenNosotros img {
@@ -758,7 +789,7 @@ justify-content: center;
 
 .textoNosotros h2 {
 
-  color: #073e3e;
+  color: gray;
   text-transform: uppercase;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -918,6 +949,11 @@ textarea:focus::placeholder {
   background-color:white;
   border: solid thin #49bdd4 ;
   color: #49bdd4 ;
+}
+
+.mensajeEnviado{
+  color: rgb(55, 55, 240);
+  font-weight: 100;
 }
 
 

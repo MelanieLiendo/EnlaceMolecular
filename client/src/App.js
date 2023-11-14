@@ -1,4 +1,4 @@
-import logo from './images/logo enlace.gif';
+import logo from './images/logo enlace.png';
 import google from './images/googlemas.png';
 import linkedin from './images/linkedin.png';
 import simmaProductos from './images/Simma Productos.jpg'
@@ -8,7 +8,7 @@ import casasco from './images/casasco.png'
 import cliente1 from './images/cliente 1.png'
 import cliente2 from './images/cliente 2.jpg'
 import cliente3 from './images/cliente 3.png'
-import glenmark from './images/glenmark.png'
+import glenmark from './images/glenmark.jpg'
 import inmunova from './images/inmunova.png'
 import richmond from './images/richmond.png'
 import roemmers from './images/roemmers.png'
@@ -49,7 +49,7 @@ function App() {
       emailjs.send('service_jziq654', 'template_suiiudd', templateParams, 'fQ4KcnQ1vK6zakkJt')
         .then((response) => {
           console.log('Correo enviado:', response);
-          setMensajeSatisf("El mensaje fue enviado con éxito");
+          setMensajeSatisf("Mensaje enviado");
           setTimeout(() => {
             setMensajeSatisf('');
           }, 6000);
@@ -68,90 +68,30 @@ function App() {
 
   return (
     <div className="App">
-      <div id= "splashscreen" className="splashscreen">
-        <navbar id="navbar">
-          <div id="leftNavbar">
-            <img id="logo" src= {logo} alt="logo"></img>
-          </div>
-
-          <div id="rightNavbar">
+      <navbar id="navbar">
             <ul>
-              <a href="#splashscreen"><li>Inicio</li></a>
-              <a href="#servicios"><li>Servicios</li></a>
-              <a href="#productos"><li>Productos</li></a>
-              <a href="#nosotros"><li>Nosotros</li></a>
-              <a href="#contacto"><li>Contacto</li></a>
+              <a href="#splashscreen"><li>INICIO</li></a>
+              <a href="#servicios"><li>SERVICIOS</li></a>
+              <a href="#productos"><li>PRODUCTOS</li></a>
+              <a href="#nosotros"><li>NOSOTROS</li></a>
+              <a href="#contacto"><li>CONTACTO</li></a>
             </ul>
-          </div>
         </navbar>
+      <div id= "splashscreen" className="splashscreen">
+  
         <div className="splashImage">
-        <p>Soluciones para laboratorios y aplicaciones con impacto GxP</p>
-          {/* <h3 id="texto-animado" className="initialText">
-            <span>S</span>
-            <span>o</span>
-            <span>l</span>
-            <span>u</span>
-            <span>c</span>
-            <span>i</span>
-            <span>o</span>
-            <span>n</span>
-            <span>e</span>
-            <span>s</span>
-            <span> </span>
-            <span>p</span>
-            <span>a</span>
-            <span>r</span>
-            <span>a</span>
-            <span> </span>
-            <span>l</span>
-            <span>a</span>
-            <span>b</span>
-            <span>o</span>
-            <span>r</span>
-            <span>a</span>
-            <span>t</span>
-            <span>o</span>
-            <span>r</span>
-            <span>i</span>
-            <span>o</span>
-            <span>s</span>
-            <br></br>
-            <span> </span>
-            <span>y</span>
-            <span> </span>
-            <span>a</span>
-            <span>p</span>
-            <span>l</span>
-            <span>i</span>
-            <span>c</span>
-            <span>a</span>
-            <span>c</span>
-            <span>i</span>
-            <span>o</span>
-            <span>n</span>
-            <span>e</span>
-            <span>s</span>
-            <span> </span>
-            <span>c</span>
-            <span>o</span>
-            <span>n</span>
-            <span> </span>
-            <span>i</span>
-            <span>m</span>
-            <span>p</span>
-            <span>a</span>
-            <span>c</span>
-            <span>t</span>
-            <span>o</span>
-            <span> </span>
-            <span>g</span>
-            <span>x</span>
-            <span>p</span>
-            </h3> */}
+        <img id="logo" src= {logo} alt="logo"></img>
         </div>
+       
       </div>
 
-      <div className="border"></div>
+    <section id='splashscreen2'>
+      <p>SOLUCIONES PARA LABORATORIO Y</p> 
+      <p>APLICACIONES CON IMPACTO GXP</p>
+
+
+    </section>
+
 
       <section id= "productos" className="productos">
         
@@ -306,16 +246,16 @@ function App() {
         <article className='serviciosCuadro'>
         <h2 className="textoServicios">Servicios</h2>
         <div className="serviciosGrid">
-          <div className="containerServicios">
-          <img id='desarrolloSoftware'src={desarrolloSoftware} />
+          <div className="containerServicios" id="containerServicios1">
+          {/* <img id='desarrolloSoftware'src={desarrolloSoftware} /> */}
           <p>Desarrollamos software a medida para laboratorios según requerimientos específicos y ofrecemos servicios de consultoría para la mejora de procesos.</p> 
           </div>
-          <div className="containerServicios">
-          <img id='agil'src={agil} />
+          <div className="containerServicios" id="containerServicios2">
+          {/* <img id='agil'src={agil} /> */}
           <p>Contamos con un mecanismo ágil y eficiente para el relevamientos de URS ya que conocemos y entendemos los lineamientos generales e impacto de los procesos industriales altamente regulados.</p> 
           </div>
-          <div className="containerServicios">
-          <img id='solucion'src={solucion} />
+          <div className="containerServicios" id="containerServicios3">
+          {/* <img id='solucion'src={solucion} /> */}
           <p>Nos motivan la resolución de cuestiones sencillas así como los grandes desafíos.</p>
           </div>
         </div>
@@ -325,15 +265,17 @@ function App() {
 
       <section id="nosotros" className="nosotros">
        <div className="cuadroNosotros">
+        <div className="tituloNosotros">
+        <h2>Nosotros</h2>
+        </div>
           <div className="textoNosotros">
-            <h2>Nosotros</h2>
             <p>Enlace Molecular es una empresa de desarrollo de soluciones para laboratorios y aplicaciones con impacto GxP que nace en el año 2014 con el objetivo de dar soluciones informáticas a la industria farmacéutica. Nuestros desarrollos siguen las normas de calidad de acuerdo a la guía ISPE-GAMP5.</p>
             <p>Contamos con un equipo de profesionales con una amplia experiencia en desarrollo de software para laboratorios y en los aspectos productivos y procesos de calidad de la industria farmacéutica. Nos mantenemos actualizados para cumplir con las normativas regulatorias vigentes.</p>
             <p>Creemos que la calidad en la atención a nuestros clientes es fundamental, por eso ofrecemos una atención personalizada y acompañamos a los laboratorios que confían en nosotros en la implementación de herramientas que agilizan y hacen más robustos sus procesos.</p>
           </div>
-          <div className="imagenNosotros">
+          {/* <div className="imagenNosotros">
             <img src={imagenNosotros} alt="imagenNosotros"></img>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -361,12 +303,12 @@ function App() {
       <h2>Contacto</h2>
 		<div className="contenido">		
 			<form className="material" onSubmit={enviarFormulario}>
+      <h3 className='mensajeEnviado'>{mensajeSatisf}</h3>
 				<input type="email" id="email" name="email" placeholder="E-mail" value={email} onChange={(e) => setEmail(e.target.value)} required/>
 				<input type="text" id="name" name="name" placeholder="Nombre" value={nombre} onChange={(e) => setNombre(e.target.value)} required/> 
 				<input type="text" id="company" name="company" placeholder="Empresa" value={empresa} onChange={(e) => setEmpresa(e.target.value)} required/>
 				<textarea id="message" name="message" placeholder="Mensaje" value={mensaje} onChange={(e) => setMensaje(e.target.value)} required></textarea>
         <button type="submit">Enviar</button>
-        <h3>{mensajeSatisf}</h3>
       </form>
 	  	</div>
       </article>
