@@ -71,8 +71,8 @@ function App() {
       <navbar id="navbar">
             <ul>
               <a href="#splashscreen"><li>INICIO</li></a>
-              <a href="#servicios"><li>SERVICIOS</li></a>
               <a href="#productos"><li>PRODUCTOS</li></a>
+              <a href="#servicios"><li>SERVICIOS</li></a>
               <a href="#nosotros"><li>NOSOTROS</li></a>
               <a href="#contacto"><li>CONTACTO</li></a>
             </ul>
@@ -97,12 +97,12 @@ function App() {
         
         <article className="emap">
           <div className="recuadroEmap">
+            <h3>01.</h3>
             <div className="tituloEmap">
               <div className="seccion1Emap">
-                <h3>01.</h3>
                 <h2>emAP</h2>
               </div>
-                <p>Módulo de gestión de abastecimiento y producción <br></br>de productos farmacéuticos y médicos</p>
+                <p>Módulo de gestión de abastecimiento y <br></br>producción de productos farmacéuticos <br></br>y médicos</p>
             </div>
             
               <div className="caracteristicasEmap">
@@ -112,10 +112,8 @@ function App() {
                 <li>Emisión de rótulos de cuarentena</li>
                 <li>Definición de formulas y tamaños de lote</li>
                 <li>Emisión de ordenes de producción (OP) y de empaque (OE).</li>
-                <li>Emisión de ordenes de fraccionamiento de materias primas<br></br> y materiales de empaque.</li>
-                <li>Gestión de OP/OE: Registro de cantidades utilizadas,<br></br> controles de proceso, cálculos de rendimiento.</li>
                 </ul>
-                </div>
+              </div>
               
           </div>
           <div className="fotoEmap">
@@ -124,31 +122,32 @@ function App() {
           
         </article>
 
+       
+
         <article className="emme">
           <div className="recuadroEmme">
+            <h3>02.</h3>
             <div className="tituloEmme">
-                  <div className="seccion1Emme">
-                    <h3>02.</h3>
-                    <h2 id="texto-animado">
-                      <span>e</span>
-                      <span>m</span>
-                      <span>m</span>
-                      <span>e</span>
-                    </h2>
-                  </div>
-                    <p>Aplicación de Manejo de Equipos e Instrumentos</p>
+              <div className="seccion1Emme">
+                <h2 id="texto-animado">
+                  <span>e</span>
+                  <span>m</span>
+                  <span>m</span>
+                  <span>e</span>
+                </h2>
+              </div>
+                <p>Aplicación de Manejo de Equipos e <br></br>Instrumentos</p>
             </div>
   
-               <div className="caracteristicasEmme">
-                <ul>
+            <div className="caracteristicasEmme">
+              <ul>
                 <li>Configuración de Maestro de Equipos, Instrumentos<br></br> y proveedores.</li>
                 <li>Configuración de Protocolos de Mantenimiento Preventivo <br></br> y Calificacion de Equipos.</li>
                 <li>Seguimiento de actividades según frecuencia determinadas</li>
                 <li>Programacion de Tareas internas y listados para <br></br>proveedores externos.</li>
                 <li>Reportes de evolución. Certificados de Calibracion</li>
-                <li>Logbook Digital de Equipo/Instrumento con registro de <br></br> todas las tareas y uso.</li>
-                </ul>
-                </div>  
+              </ul>
+            </div>  
           </div>    
               <div className="fotoEmme">
                 <img id="emme2" src={emme2} alt=""></img>
@@ -167,18 +166,16 @@ function App() {
                   <span>a</span>
                 </h2>
               </div>
-              <p>Aplicación para Gestion de Documentos, administración de<br></br> Capacitacion y procesos de Garantia de Calidad</p>
+              <p>Aplicación para Gestion de Documentos, <br></br>administración de Capacitacion y procesos <br></br>de Garantia de Calidad</p>
            </div>
 
           
             <div className="caracteristicasEmqa">
               <ul>
-              <li>Administración de cualquier tipo de Documento del Sistema de Calidad.</li>
+              <li>Administración de cualquier tipo de Documento del <br></br>Sistema de Calidad.</li>
               <li>Alta de Documentos con Anexos Asociados o Independientes</li>
-              <li>Gestión independiente de Documentos no GxP y Documentos GxP.</li>
+              <li>Gestión independiente de Documentos no GxP <br></br>y Documentos GxP.</li>
               <li>Control de emisión de Copias Controladas, No Controladas<br></br> y Anexos mediante permisos específicos.</li>
-              <li>Alta de Documentos con circuitos de Revisión, Aprobación<br></br> y puesta en vigencia. Trazabilidad de versiones intermedias.</li>
-              <li>Visualización de Documentos vigentes acorde a permisos,<br></br> Sector del usuario y Alcance de los documentos.</li>
               </ul>
               </div>
 
@@ -203,39 +200,21 @@ function App() {
                   <span>a</span>
                 </h2>
               </div>
-              <p>Gestión Integral de Laboratorio (LIMS): Materiales, <br></br> Productos, Estabilidad, Ambiental, Aguas, Validación de Limpieza.</p>
+              <p>Gestión Integral de Laboratorio (LIMS): <br></br> Materiales, Productos, Estabilidad, Ambiental, <br></br> Aguas, Validación de Limpieza.</p>
            </div>
 
           
             <div className="caracteristicasSimma">
-              <h3>Ambiente y Aguas</h3>
               <ul>
-              <li>Ambiente: permite la configuración completa de los procedimientos internos de monitoreo de aire, superficies, personal, equipos y gases.</li>
-              <li>Alta de Documentos con Anexos Asociados o Independientes</li>
-              <li>Gestión independiente de Documentos no GxP y Documentos GxP.</li>
+                <li>Ambiente: permite la configuración completa de los <br></br>procedimientos internos de monitoreo de aire, superficies,<br></br> personal, equipos y gases.</li>
+                <li>Productos: permite la configuración completa de las <br></br>especificación de análisis en proceso (IPC) y de productos <br></br>intermedios y finales.</li>
+                <li>Materiales: permite la configuración completa de las <br></br>especificaciones de análisis y re-análisis de insumos, materias primas<br></br> y material de empaque.</li>
               </ul>
-
-            
-              <h3>Estabilidad</h3>
-              <ul>
-              <li>Administración de cualquier tipo de Documento del Sistema de Calidad.</li>
-              <li>Alta de Documentos con Anexos Asociados o Independientes</li>
-              <li>Gestión independiente de Documentos no GxP y Documentos GxP.</li>
-              </ul>
-
-              <h3>Productos y Materiales</h3>
-              <ul>
-              <li>Productos: permite la configuración completa de las especificación de análisis en proceso (IPC) y de productos intermedios y finales.</li>
-              <li>Materiales: permite la configuración completa de las especificaciones de análisis y re-análisis de insumos, materias primas y material de empaque.</li>
-              </ul>
-              </div>
+            </div>
 
           </div>
           <div className="fotoSimma">
-            <img id= "simmaAguas" src={simmaProductos} alt=""></img>
             <img id= "simmaEstabilidad" src={simmaEstabilidad} alt=""></img>
-            <img id= "simmaMateriales" src={imagenNosotros} alt=""></img>
-            
           </div>   
        
         </article>

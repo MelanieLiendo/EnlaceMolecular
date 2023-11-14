@@ -242,22 +242,24 @@ font-weight: 650;
 /*emap*/
 
 .emap{
-  height: 140vh;
+  height: 100vh;
   position: relative;
+  background-color: white;
 }
 
 .recuadroEmap{
-  background-color: white;
-  height: 600px;
+  background-image: url(./images/degrade1.jpg);
+  background-position: center;
+  height: 530px;
   width: 600px;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   position: absolute;
-  top: 200px;
-  left: 100px;
-  z-index: 2;
+  top: 5vh;
+  left: 20vh;
+  z-index: 1;
  
 }
 
@@ -267,15 +269,22 @@ display: flex;
 align-items: baseline;
 height: 150px;
 justify-content: center;
+align-items: end;
 }
 
-.tituloEmap h3{
-  opacity: 0.2;
+.recuadroEmap h3{
   font-family: Archivo, sans-serif;
-  color: #0cb3d6;;
+  color: #073e3e;
   font-size: 4em;
   letter-spacing: 10px;
   font-weight: 800;
+  background-color: white;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  margin: 0px;
+  border-bottom-right-radius: 20px;
+
 
 }
 
@@ -290,9 +299,9 @@ justify-content: center;
 .tituloEmap p{
   font-family: Archivo, sans-serif;
   color: #073e3e;
-  font-family: Archivo, sans-serif;
   font-size: 1.4em;
   align-items: baseline;
+  margin-left: 30px;
 }
 
 .caracteristicasEmap{
@@ -308,15 +317,18 @@ justify-content: center;
 }
 
 .fotoEmap img{
-  width: 700px;
+  width: 500px;
   border-radius: 2em;
-  z-index: 1;
+  border: 25px solid;
+  border-color: white;
 }
 
 .fotoEmap{
   position: absolute;
-  left: 500px;
+  left: 650px;
   top: 100px;
+  z-index: 2;
+
 }
 
 
@@ -344,42 +356,48 @@ justify-content: center;
 }
 
 .emme{
-  height: 140vh;
+  height: 100vh;
+  position: relative;
 }
 
 .recuadroEmme{
-  background-color: white;
-  height: 600px;
+  background-image: url(./images/degrade1.jpg);
+  background-position: center;
+  height: 530px;
   width: 600px;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  position: relative;
-  top: 200px;
-  left: 100px;
-  z-index: 2;
+  position: absolute;
+  top: 5vh;
+  left: 90vh;
+  z-index: 1;
  
 }
 
 
 .seccion1Emme{
 display: flex;
-align-items: baseline;
 height: 150px;
+align-items: end;
 justify-content: center;
 
 }
 
 
-.tituloEmme h3{
-  opacity: 0.2;
+.recuadroEmme h3{
   font-family: Archivo, sans-serif;
-  color: #0cb3d6;
+  color: #073e3e;
   font-size: 4em;
   letter-spacing: 10px;
   font-weight: 800;
-
+  background-color: white;
+  border-bottom-left-radius: 20px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  margin: 0px;
+  padding-left: 20px;
 }
 
 .tituloEmme h2{
@@ -387,43 +405,50 @@ justify-content: center;
   color: #073e3e;
   font-size: 4em;
   letter-spacing: 10px;
-  margin-left: 30px;
 }
 
 .tituloEmme p{
   font-family: Archivo, sans-serif;
   color: #073e3e;
-  font-family: Archivo, sans-serif;
   font-size: 1.4em;
   align-items: baseline;
+  margin-right: 30px;
+  justify-content: end;
+  display: flex;
+  text-align-last: right ;
+  
 }
 
 .caracteristicasEmme{
   color: #073e3e;
-  margin-top: 20px;
   font-family: Archivo, sans-serif;
   font-size: 1em;
+  display: flex;
+  justify-content: end;
+  list-style-position: inside;
 }
 
 .caracteristicasEmme li{
   margin-top: 20px;
   list-style-type: circle;
+  text-align-last: right;
+  margin-right: 20px;
 }
 
 .fotoEmme img{
-  width: 700px;
+  width: 500px;
   border-radius: 2em;
-  z-index: 1;
+  border: 25px solid;
+  border-color: white;
 }
 
 .fotoEmme{
   position: absolute;
-  left: 500px;
-  top: 1500px;
+  left: 10vh;
+  top: 20vh;
+  z-index: 2;
 
 }
-
-
 
 
 
@@ -431,22 +456,23 @@ justify-content: center;
 
 
 .emqa{
-  height: 150vh;
+  height: 100vh;
   position: relative
 }
 
 .recuadroEmqa{
-  background-color: white;
-  height: 600px;
-  width: 700px;
+  background-image: url(./images/degrade1.jpg);
+  background-position: center;
+  height: 530px;
+  width: 600px;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   position: absolute;
-  top: 200px;
-  left: 100px;
-  z-index: 2;
+  top: 5vh;
+  left: 20vh;
+  z-index: 1;
 }
 
 .seccion1Emqa{
@@ -454,16 +480,21 @@ display: flex;
 align-items: baseline;
 height: 150px;
 justify-content: center;
+align-items: end;
 }
 
 .tituloEmqa h3{
-  opacity: 0.2;
   font-family: Archivo, sans-serif;
-  color: #0cb3d6;;
+  color: #073e3e;
   font-size: 4em;
   letter-spacing: 10px;
   font-weight: 800;
-
+  background-color: white;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  margin: 0px;
+  border-bottom-right-radius: 20px;
 }
 
 .tituloEmqa h2{
@@ -477,9 +508,9 @@ justify-content: center;
 .tituloEmqa p{
   font-family: Archivo, sans-serif;
   color: #073e3e;
-  font-family: Archivo, sans-serif;
   font-size: 1.4em;
   align-items: baseline;
+  margin-left: 30px;
 }
 
 .caracteristicasEmqa{
@@ -496,15 +527,17 @@ justify-content: center;
 
 
 .fotoEmqa img{
-  width: 700px;
+  width: 500px;
   border-radius: 2em;
-  z-index: 1;
+  border: 25px solid;
+  border-color: white;
 }
 
 .fotoEmqa{
   position: absolute;
-  left: 500px;
+  left: 650px;
   top: 100px;
+  z-index: 2;
 }
 
 /*SIMMA*/
@@ -512,38 +545,45 @@ justify-content: center;
 
 
 .simma{
-  height: 150vh;
+  height: 100vh;
   position: relative
 }
 
 .recuadroSimma{
-  background-color: white;
-  height: 600px;
-  width: 700px;
+  background-image: url(./images/degrade1.jpg);
+  background-position: center;
+  height: 530px;
+  width: 600px;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   position: absolute;
-  top: 200px;
-  left: 100px;
-  z-index: 2;
+  top: 5vh;
+  left: 90vh;
+  z-index: 1;
 }
 
 .seccion1Simma{
-display: flex;
-align-items: baseline;
-height: 150px;
-justify-content: center;
+  display: flex;
+  height: 150px;
+  align-items: end;
+  justify-content: center;
+  
 }
 
 .tituloSimma h3{
-  opacity: 0.2;
   font-family: Archivo, sans-serif;
-  color: #0cb3d6;;
+  color: #073e3e;
   font-size: 4em;
   letter-spacing: 10px;
   font-weight: 800;
+  background-color: white;
+  border-bottom-left-radius: 20px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  margin: 0px;
+  padding-left: 20px;
 
 }
 
@@ -552,58 +592,47 @@ justify-content: center;
   color: #073e3e;
   font-size: 4em;
   letter-spacing: 10px;
-  margin-left: 30px;
 }
 
 .tituloSimma p{
   font-family: Archivo, sans-serif;
   color: #073e3e;
-  font-family: Archivo, sans-serif;
   font-size: 1.4em;
   align-items: baseline;
+  margin-right: 30px;
+  justify-content: end;
+  display: flex;
+  text-align-last: right ;
 }
 
 .caracteristicasSimma{
   color: #073e3e;
-  margin-top: 20px;
   font-family: Archivo, sans-serif;
   font-size: 1em;
+  display: flex;
+  justify-content: end;
+  list-style-position: inside;
 }
 
-.caracteristicassimma li{
+.caracteristicasSimma li{
   margin-top: 20px;
   list-style-type: circle;
+  text-align-last: right;
+  margin-right: 20px;
 }
 
-
 .fotoSimma img{
-  width: 700px;
+  width: 500px;
   border-radius: 2em;
-  z-index: 1;
+  border: 25px solid;
+  border-color: white;
 }
 
-.fotoSimma img{
- width: 300px;
- display: flex;
- flex-direction: column;
-
-}
-
-
-#simmaAguas{
+.fotoSimma {
   position: absolute;
-  left: 900px;
-  top: 200px;
-}
-#simmaEstabilidad {
-  position: absolute;
-  left: 825px;
-  top:  425px;
-}
-#simmaMateriales{
-  position: absolute;
-  left: 900px;
-  top: 650px;
+  left: 10vh;
+  top: 20vh;
+  z-index: 2;
 }
 
 
@@ -664,21 +693,21 @@ justify-content: center;
 }
 
 #containerServicios1{
-  background-image: url(./images/degrade1.jpg) ;
+  background-image: url(./images/fondoServicios1.jpg) ;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
 }
 
 #containerServicios2{
-  background-image: url(./images/degrade2.jpg) ;
+  background-image: url(./images/fondoServicios2.jpg) ;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
 }
 
 #containerServicios3{
-  background-image: url(./images/degrade3.jpg) ;
+  background-image: url(./images/fondoServicios3.jpg) ;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -833,6 +862,8 @@ justify-content: center;
 
 #contacto{
   height: 100vh;
+  background-image: url(./images/fondoContacto.jpg);
+  background-size: auto;
 }
 
 .contacto{
