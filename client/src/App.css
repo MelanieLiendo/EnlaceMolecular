@@ -82,12 +82,13 @@ h2{
 #navbar ul  {
 display: flex;
 justify-content: center;
+padding-top: 10px;
 }
 
 #navbar ul  li{
   margin-right: 30px;
   list-style: none;
-  color: gray;
+  color: #7F5A8B;
   font-size: 1em;
   font-weight: 5;
   }
