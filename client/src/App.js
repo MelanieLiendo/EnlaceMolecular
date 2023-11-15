@@ -35,11 +35,27 @@ function App() {
     const [mensaje, setMensaje] = useState('');
     const [mensajeSatisf, setMensajeSatisf ] = useState('');
     const [seccionActual, setSeccionActual] = useState(1);
+    const [seccionEmap, setSeccionEmap] = useState(1)
+    const [seccionEmme, setSeccionEmme] = useState(1)
+    const [seccionEmqa, setSeccionEmqa] = useState(1)
   
 
     const cambiarSeccion = (seccion) => {
       setSeccionActual(seccion);
     };
+
+
+    const cambiarSeccionEmap = (seccion) => {
+      setSeccionEmap(seccion);
+    }
+
+    const cambiarSeccionEmme = (seccion) => {
+      setSeccionEmme(seccion);
+    }
+
+    const cambiarSeccionEmqa = (seccion) => {
+      setSeccionEmqa(seccion);
+    }
   
     const enviarFormulario = (e) => {
       e.preventDefault();
@@ -110,6 +126,8 @@ function App() {
             </div>
             
               <div className="caracteristicasEmap">
+
+                {seccionEmap === 1 && 
                 <ul>
                 <li>Administración de maestro de materiales y productos</li>
                 <li>Gestión de stock de materiales en almacenes</li>
@@ -117,7 +135,33 @@ function App() {
                 <li>Definición de formulas y tamaños de lote</li>
                 <li>Emisión de ordenes de producción (OP) y de empaque (OE).</li>
                 </ul>
+                }
+
+                {seccionEmap === 2 &&
+                <ul>
+                <li>Emisión de ordenes de fraccionamiento de materias primas <br></br>y materiales de empaque.</li>
+                <li>Gestión de OP/OE: Registro de cantidades utilizadas, controles <br></br>de proceso, cálculos de rendimiento.</li>
+                <li>Notificaciones configurables para mensajes por correo electrónico.</li>
+                <li>Asignación de dictamen de control de calidad y liberación <br></br>de garantía de calidad.</li>
+                </ul>
+                }
+
+                {seccionEmap === 3 &&
+                <ul>
+                
+                <li>Múltiples reportes: trazabilidad de materiales y productos, <br></br>conciliación de stock.</li>
+                <li>Integración con Modulo de Calidad Simma® para generación <br></br>automática de protocolos de análisis de liberación, re-análisis <br></br>y extensión de vencimiento.</li>
+                <li>Adaptable a Lector de Código de barras/QR.</li>
+                </ul>
+                }
+
               </div>
+
+              <div className='botonesRecuadro'>
+        <button onClick={() => cambiarSeccionEmap(1)}> {seccionEmap === 1 ? <p>&#9899;</p>:<p>&#9898;</p>}</button>
+        <button onClick={() => cambiarSeccionEmap(2)}>{seccionEmap ===2? <p>&#9899;</p>:<p>&#9898;</p>}</button>
+        <button onClick={() => cambiarSeccionEmap(3)}>{seccionEmap === 3? <p>&#9899;</p>:<p>&#9898;</p>}</button>
+        </div>
               
           </div>
           <div className="fotoEmap">
@@ -144,14 +188,39 @@ function App() {
             </div>
   
             <div className="caracteristicasEmme">
-              <ul>
-                <li>Configuración de Maestro de Equipos, Instrumentos<br></br> y proveedores.</li>
+            {seccionEmme === 1 && 
+                <ul>
+                <li>Configuración de Maestro de Equipos, Instrumentos y proveedores.</li>
                 <li>Configuración de Protocolos de Mantenimiento Preventivo <br></br> y Calificacion de Equipos.</li>
+                <li>Configuración de Protocolos de Calibracion de Instrumentos <br></br> con diversos tipos de tolerancia.</li>
                 <li>Seguimiento de actividades según frecuencia determinadas</li>
-                <li>Programacion de Tareas internas y listados para <br></br>proveedores externos.</li>
+                </ul>
+                }
+
+                {seccionEmme === 2 &&
+                <ul>
+                <li>Advertencias visuales de actividades vencidas/ por vencer. <br></br>Notificaciones automáticas por correo electrónico.</li>
+                <li>Programacion de Tareas internas y listados para proveedores externos.</li>
+                <li>Registro de Calibracion de Instrumentos con propiedades <br></br>asociadas (patrones, condiciones ambientales, etc) Registro de ajustes <br></br>necesarios</li>
+                </ul>
+                }
+
+                {seccionEmme === 3 &&
+                <ul>
+                
                 <li>Reportes de evolución. Certificados de Calibracion</li>
-              </ul>
+                <li>Disponible para uso en Tablets Integrable a lectores de códigos <br></br>QR/barras para identificación de equipos e instrumentos.</li>
+                <li>Logbook Digital de Equipo/Instrumento con registro de todas <br></br>las tareas y uso.</li>
+                </ul>
+                }
             </div>  
+
+            <div className='botonesRecuadro'>
+        <button onClick={() => cambiarSeccionEmme(1)}> {seccionEmme === 1 ? <p>&#9899;</p>:<p>&#9898;</p>}</button>
+        <button onClick={() => cambiarSeccionEmme(2)}>{seccionEmme ===2? <p>&#9899;</p>:<p>&#9898;</p>}</button>
+        <button onClick={() => cambiarSeccionEmme(3)}>{seccionEmme === 3? <p>&#9899;</p>:<p>&#9898;</p>}</button>
+        </div>
+
           </div>    
               <div className="fotoEmme">
                 <img id="emme2" src={emme2} alt=""></img>
@@ -175,13 +244,43 @@ function App() {
 
           
             <div className="caracteristicasEmqa">
-              <ul>
-              <li>Administración de cualquier tipo de Documento del <br></br>Sistema de Calidad.</li>
-              <li>Alta de Documentos con Anexos Asociados o Independientes</li>
-              <li>Gestión independiente de Documentos no GxP <br></br>y Documentos GxP.</li>
-              <li>Control de emisión de Copias Controladas, No Controladas<br></br> y Anexos mediante permisos específicos.</li>
-              </ul>
+            {seccionEmqa === 1 && 
+                <ul>
+                <li>Administración de cualquier tipo de Documento del Sistema de Calidad.</li>
+                <li>Alta de Documentos con Anexos Asociados o Independientes</li>
+                <li> Gestión independiente de Documentos no GxP y Documentos GxP.</li>
+                <li>Control de emisión de Copias Controladas, No Controladas y <br></br>Anexos mediante permisos específicos.</li>
+                <li>Alta de Documentos con circuitos de Revisión, Aprobación y <br></br> puesta en vigencia. Trazabilidad de versiones intermedias.</li>
+                </ul>
+                }
+
+                {seccionEmqa === 2 &&
+                <ul>
+                <li>Visualización de Documentos vigentes acorde a permisos, <br></br> Sector del usuario y Alcance de los documentos.</li>
+                <li>Permite mantener mecanismo de codificación de documentos <br></br>interno de cada Compañía e Implementar codificación automática.</li>
+                <li>Envio Automático de Notificaciones por correo electrónico. <br></br> (Documento para Revisar, Aprobar, Documentos Vigentes, <br></br>Vencidos, Obsoletos, etc)</li>
+                <li>Configuración de Perfiles de Puesto y Matriz de Capacitación</li>
+                </ul>
+                }
+
+                {seccionEmqa === 3 &&
+                <ul>
+                
+                <li>Extensión de Vigencia de Documentos</li>
+                <li>Integrable con Office 365/Teams y Google Docs</li>
+                <li>Múltiples Reportes de Gestión. Búsqueda de Palabras en Documentos.</li>
+                <li>Integrable con soluciones ERP y Control de Calidad para Liberación <br></br>de Producto para Venta.</li>
+                <li>Delegación de Tareas de Usuarios</li>
+                </ul>
+                }
               </div>
+
+              
+            <div className='botonesRecuadro'>
+        <button onClick={() => cambiarSeccionEmqa(1)}> {seccionEmqa === 1 ? <p>&#9899;</p>:<p>&#9898;</p>}</button>
+        <button onClick={() => cambiarSeccionEmqa(2)}>{seccionEmqa ===2? <p>&#9899;</p>:<p>&#9898;</p>}</button>
+        <button onClick={() => cambiarSeccionEmqa(3)}>{seccionEmqa === 3? <p>&#9899;</p>:<p>&#9898;</p>}</button>
+        </div>
 
           </div>
           <div className="fotoEmqa">

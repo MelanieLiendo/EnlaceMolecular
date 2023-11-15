@@ -249,6 +249,13 @@ font-family: 'Gothic A1', sans-serif;
 
 /*PRODUCTOS*/
 
+.botonesRecuadro{
+  display: flex;
+  justify-content: center;
+  border: none;
+  background: none;
+}
+
 /*emap*/
 
 .emap{
