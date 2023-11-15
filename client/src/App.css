@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&family=Instrument+Sans&family=Montserrat:wght@300&family=Open+Sans&family=Poiret+One&family=Raleway:wght@200&family=Roboto:ital,wght@0,300;0,400;1,300&family=Ubuntu:ital,wght@0,300;1,300;1,500&family=Urbanist:ital,wght@0,200;1,500&family=Zilla+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@700&family=Instrument+Sans&family=Montserrat:wght@300&family=Open+Sans&family=Poiret+One&family=Raleway:wght@200&family=Roboto:ital,wght@0,300;0,400;1,300&family=Ubuntu:ital,wght@0,300;1,300;1,500&family=Urbanist:ital,wght@0,200;1,500&family=Zilla+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@700&family=Instrument+Sans&family=Montserrat&family=Open+Sans&family=Poiret+One&family=Raleway:wght@200&family=Roboto:ital,wght@0,300;0,400;1,300&family=Ubuntu:ital,wght@0,300;1,300;1,500&family=Urbanist:ital,wght@0,200;1,500&family=Zilla+Slab:wght@300&display=swap');
+
 
 @keyframes fadeInLeft {
   from {
@@ -41,11 +45,11 @@ animation-timing-function: ease-in-out;
 }
 
 h2{
-    color: gray;
+    color: #7F5A8B;
     text-transform: uppercase;
     margin-top: 0px;
     margin-bottom: 10px;
-    font-family: Archivo, sans-serif;
+    font-family: 'Gothic A1', sans-serif;
     font-size: 2.5em;
     font-weight: 500;
     line-height: 1.2;
@@ -66,9 +70,9 @@ h2{
     background-size: cover;
     background-position: top;
     opacity: 0.9;
-    padding: 1em 0em;
     width: 100%;
     position: fixed;
+    font-family: 'Gothic A1', sans-serif;
 }
 
 #navbar a{
@@ -84,7 +88,6 @@ justify-content: center;
   margin-right: 30px;
   list-style: none;
   color: gray;
-  font-family: Archivo, sans-serif;
   font-size: 1em;
   font-weight: 5;
   }
@@ -110,8 +113,8 @@ justify-content: center;
 }
 
 #logo{
-  width: 500px;
-  height: 150px;
+  width: 400px;
+  height: 120px;
 }
 
 .splashImage {
@@ -230,11 +233,17 @@ a :visited {
 #splashscreen2{
   height: 50vh;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #splashscreen2 p{
-color:rgb(86, 109, 221);
-font-weight: 650;
+color:#1D71B8;
+font-weight: 700;
+font-size: large;
+font-family: 'Gothic A1', sans-serif;
 }
 
 /*PRODUCTOS*/
@@ -248,7 +257,7 @@ font-weight: 650;
 }
 
 .recuadroEmap{
-  background-image: url(./images/degrade1.jpg);
+  background-image: url(./images/degradeProducto.jpg);
   background-position: center;
   height: 530px;
   width: 600px;
@@ -274,7 +283,7 @@ align-items: end;
 
 .recuadroEmap h3{
   font-family: Archivo, sans-serif;
-  color: #073e3e;
+  color: #312783;
   font-size: 4em;
   letter-spacing: 10px;
   font-weight: 800;
@@ -289,26 +298,23 @@ align-items: end;
 }
 
 .tituloEmap h2{
-  font-family: Archivo, sans-serif;
-  color: #073e3e;
   font-size: 4em;
-  letter-spacing: 10px;
-  margin-left: 30px;
+  font-family: "Montserrat";
 }
 
 .tituloEmap p{
   font-family: Archivo, sans-serif;
-  color: #073e3e;
+  color: #312783;
   font-size: 1.4em;
   align-items: baseline;
   margin-left: 30px;
 }
 
 .caracteristicasEmap{
-  color: #073e3e;
+  color: #878787;
   margin-top: 20px;
-  font-family: Archivo, sans-serif;
-  font-size: 1em;
+  font-family: "Montserrat";
+  font-size: 0.8em;
 }
 
 .caracteristicasEmap li{
@@ -387,7 +393,7 @@ justify-content: center;
 
 .recuadroEmme h3{
   font-family: Archivo, sans-serif;
-  color: #073e3e;
+  color: #312783;
   font-size: 4em;
   letter-spacing: 10px;
   font-weight: 800;
@@ -401,15 +407,14 @@ justify-content: center;
 }
 
 .tituloEmme h2{
-  font-family: Archivo, sans-serif;
-  color: #7F5A8B;
+  font-family: "Montserrat";
   font-size: 4em;
-  letter-spacing: 10px;
+  
 }
 
 .tituloEmme p{
   font-family: Archivo, sans-serif;
-  color: #073e3e;
+  color: #312783;
   font-size: 1.4em;
   align-items: baseline;
   margin-right: 30px;
@@ -420,9 +425,9 @@ justify-content: center;
 }
 
 .caracteristicasEmme{
-  color: #073e3e;
-  font-family: Archivo, sans-serif;
-  font-size: 1em;
+  color: #878787;
+  font-family: "Montserrat";
+  font-size: 0.8em;
   display: flex;
   justify-content: end;
   list-style-position: inside;
@@ -485,7 +490,7 @@ align-items: end;
 
 .tituloEmqa h3{
   font-family: Archivo, sans-serif;
-  color: #073e3e;
+  color: #312783;
   font-size: 4em;
   letter-spacing: 10px;
   font-weight: 800;
@@ -498,26 +503,24 @@ align-items: end;
 }
 
 .tituloEmqa h2{
-  font-family: Archivo, sans-serif;
-  color: #073e3e;
+  font-family: "Montserrat";
   font-size: 4em;
-  letter-spacing: 10px;
-  margin-left: 30px;
+  
 }
 
 .tituloEmqa p{
   font-family: Archivo, sans-serif;
-  color: #073e3e;
+  color: #312783;
   font-size: 1.4em;
   align-items: baseline;
   margin-left: 30px;
 }
 
 .caracteristicasEmqa{
-  color: #073e3e;
+  color: #878787;
   margin-top: 20px;
-  font-family: Archivo, sans-serif;
-  font-size: 1em;
+  font-family: "Montserrat";
+  font-size: 0.8em;
 }
 
 .caracteristicasEmqa li{
@@ -573,7 +576,7 @@ align-items: end;
 
 .tituloSimma h3{
   font-family: Archivo, sans-serif;
-  color: #073e3e;
+  color: #312783;
   font-size: 4em;
   letter-spacing: 10px;
   font-weight: 800;
@@ -588,15 +591,14 @@ align-items: end;
 }
 
 .tituloSimma h2{
-  font-family: Archivo, sans-serif;
-  color: #073e3e;
+  font-family: "Montserrat";
   font-size: 4em;
-  letter-spacing: 10px;
+  
 }
 
 .tituloSimma p{
   font-family: Archivo, sans-serif;
-  color: #073e3e;
+  color: #312783;
   font-size: 1.4em;
   align-items: baseline;
   margin-right: 30px;
@@ -606,9 +608,9 @@ align-items: end;
 }
 
 .caracteristicasSimma{
-  color: #073e3e;
-  font-family: Archivo, sans-serif;
-  font-size: 1em;
+  color: #878787;
+  font-family: "Montserrat";
+  font-size: 0.8em;
   display: flex;
   justify-content: end;
   list-style-position: inside;
@@ -659,19 +661,16 @@ align-items: end;
 
 
 .textoServicios{
-  color: gray;
   text-transform: uppercase;
   margin-top: 10px;
   margin-bottom: 10px;
-  font-family: Archivo, sans-serif;
-  font-size: 2.5em;
-  font-weight: 200;
+
   line-height: 1.2;
 }
 
 .servicios p {
   color:rgb(86, 109, 221);
-  font-family: Archivo, sans-serif;
+  font-family: "Montserrat";
   font-size: 1em;
   padding: 0px 20px;
   text-align: left;
@@ -782,7 +781,7 @@ align-items: end;
 /*NOSOTROS*/
 
 .nosotros {
-  height: 80vh;
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -790,7 +789,7 @@ align-items: end;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    margin: 30px 0px;
+    margin: 50px 0px 70px 0px;
 }
 
 
@@ -801,9 +800,17 @@ align-items: end;
   width: 80%; 
   height: 500px;
   border-radius: 20px; 
-  display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.cuadroNosotros button{
+  border: none;
+  background: transparent;
+}
+
+.botonesNostros{
+  text-align: end;
 }
 
 .imagenNosotros img {
@@ -822,10 +829,9 @@ align-items: end;
   text-transform: uppercase;
   margin-top: 10px;
   margin-bottom: 10px;
-  font-family: Archivo, sans-serif;
-  font-size: 2.5em;
+  /* font-size: 2.5em;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1.2; */
 }
 
 .textoNosotros p {
@@ -834,16 +840,17 @@ align-items: end;
   /*margin-top: 10px;
   margin-bottom: 10px;*/
   margin: 20px;
-  font-family: Archivo, sans-serif;
-  font-size: small;
+  font-family: "Montserrat";
+  font-size: medium;
   line-height: 1.7em;
+  text-align: right
 }
 
 
-.nosotros:hover .textoNosotros p {
+/* .nosotros:hover .textoNosotros p {
   opacity: 0;
   animation: fadeIn 1s ease-in-out forwards;
-}
+} */
 
 @keyframes fadeIn {
   0% {
@@ -861,14 +868,24 @@ align-items: end;
 /* CONTACTO */
 
 #contacto{
-  height: 100vh;
+  height: 80vh;
+}
+
+.puntitos{
+  height: 40vh;
   background-image: url(./images/fondoContacto.jpg);
-  background-size: auto;
+  background-position: top;
 }
 
 .contacto{
   text-align: center;
   
+}
+
+.material{
+  background-image: url(./images/contactodegrade.jpg);
+  border-radius: 30px;
+  padding: 30px;
 }
 
 #contacto{
@@ -894,17 +911,17 @@ align-items: end;
     font-size: 12pt;
 }
 
-.material-input {
+/* .material-input {
 margin-bottom: 25px !important; 
-}
+} */
 
 .material input:focus, .material textarea:focus{
-  background-color: white;
   outline: none;
   border-bottom:  2px solid #0cb3d6 ;
   text-align:start;
-  color: gray;
+  color: #878787;
   font-family: sans-serif;
+  padding-top: 17px;
 }
 
 .material input, .material textarea {
@@ -916,16 +933,14 @@ margin-bottom: 25px !important;
   background: 0;
   float: left;
   position: relative;
-  padding-top: 18px;
-  background: #fff;
-  font-family: sans-serif;
+  font-family: "Montserrat";
 }
 
 
-input {
+/* input {
   width: 200px; 
   padding: 10px;
-}
+} */
 
 textarea{
   width: 200px; 
@@ -937,7 +952,7 @@ textarea{
   position: absolute;
   top: 50%; 
   transform: translateY(-50%); 
-  color: #999; 
+  color: #878787;; 
   transition: 0.3s; 
 }
 
@@ -945,14 +960,14 @@ input:focus::placeholder {
   font-size: 12px; 
   top: 0; 
   transform: translateY(0); 
-  color: #999; 
+  color: #878787;; 
 }
 
 textarea:focus::placeholder {
   font-size: 12px; 
   top: 0; 
   transform: translateY(0); 
-  color: #999; 
+  color: #878787;
 } 
 
 
@@ -967,23 +982,23 @@ textarea:focus::placeholder {
 }
 
 .material button{
-  background-color:#49bdd4 ;
+  background-image: url(./images/contactodegrade.jpg);
   border: none;
-  color: white;
+  border-radius: 20px;
+  color: #878787;
   width: 120px;
   height: 35px;
   font-size: medium;
-  margin: 10px;
+  margin: 25px 10px 0px 10px;
+  font-family: "Montserrat";
 }
 
 .material button:hover{
-  background-color:white;
-  border: solid thin #49bdd4 ;
-  color: #49bdd4 ;
+  color: white ;
 }
 
 .mensajeEnviado{
-  color: rgb(55, 55, 240);
+  color: #312783;
   font-weight: 100;
 }
 
@@ -1026,6 +1041,7 @@ textarea:focus::placeholder {
 
 .footerSocial{
   text-align: center;
+  margin-top: 600px;
 }
 
 

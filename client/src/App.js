@@ -34,6 +34,12 @@ function App() {
     const [email, setEmail] = useState('');
     const [mensaje, setMensaje] = useState('');
     const [mensajeSatisf, setMensajeSatisf ] = useState('');
+    const [seccionActual, setSeccionActual] = useState(1);
+  
+
+    const cambiarSeccion = (seccion) => {
+      setSeccionActual(seccion);
+    };
   
     const enviarFormulario = (e) => {
       e.preventDefault();
@@ -82,15 +88,13 @@ function App() {
         <div className="splashImage">
         <img id="logo" src= {logo} alt="logo"></img>
         </div>
-       
-      </div>
-
-    <section id='splashscreen2'>
+      <section id='splashscreen2'>
       <p>SOLUCIONES PARA LABORATORIO Y</p> 
       <p>APLICACIONES CON IMPACTO GXP</p>
-
-
     </section>
+      </div>
+
+
 
 
       <section id= "productos" className="productos">
@@ -227,15 +231,15 @@ function App() {
         <div className="serviciosGrid">
           <div className="containerServicios" id="containerServicios1">
           {/* <img id='desarrolloSoftware'src={desarrolloSoftware} /> */}
-          <p>Desarrollamos software a medida para laboratorios según requerimientos específicos y ofrecemos servicios de consultoría para la mejora de procesos.</p> 
+          <p>Desarrollamos <b>software a medida</b> para laboratorios según <b>requerimientos específicos</b> y ofrecemos servicios de <b>consultoría</b> para la <b>mejora de procesos</b>.</p> 
           </div>
           <div className="containerServicios" id="containerServicios2">
           {/* <img id='agil'src={agil} /> */}
-          <p>Contamos con un mecanismo ágil y eficiente para el relevamientos de URS ya que conocemos y entendemos los lineamientos generales e impacto de los procesos industriales altamente regulados.</p> 
+          <p>Contamos con un <b>mecanismo ágil y eficiente para el relevamientos de URS</b> ya que conocemos y entendemos los <b>lineamientos generales e impacto de los procesos</b> industriales altamente regulados.</p> 
           </div>
           <div className="containerServicios" id="containerServicios3">
           {/* <img id='solucion'src={solucion} /> */}
-          <p>Nos motivan la resolución de cuestiones sencillas así como los grandes desafíos.</p>
+          <p>Nos motivan la <b>resolución de cuestiones</b> sencillas así como los <b>grandes desafíos</b>.</p>
           </div>
         </div>
         </article>
@@ -248,13 +252,15 @@ function App() {
         <h2>Nosotros</h2>
         </div>
           <div className="textoNosotros">
-            <p>Enlace Molecular es una empresa de desarrollo de soluciones para laboratorios y aplicaciones con impacto GxP que nace en el año 2014 con el objetivo de dar soluciones informáticas a la industria farmacéutica. Nuestros desarrollos siguen las normas de calidad de acuerdo a la guía ISPE-GAMP5.</p>
-            <p>Contamos con un equipo de profesionales con una amplia experiencia en desarrollo de software para laboratorios y en los aspectos productivos y procesos de calidad de la industria farmacéutica. Nos mantenemos actualizados para cumplir con las normativas regulatorias vigentes.</p>
-            <p>Creemos que la calidad en la atención a nuestros clientes es fundamental, por eso ofrecemos una atención personalizada y acompañamos a los laboratorios que confían en nosotros en la implementación de herramientas que agilizan y hacen más robustos sus procesos.</p>
-          </div>
-          {/* <div className="imagenNosotros">
-            <img src={imagenNosotros} alt="imagenNosotros"></img>
-          </div> */}
+          {seccionActual === 1 && <p><b>Enlace Molecular</b> es una empresa de desarrollo de <b>soluciones para laboratorios y aplicaciones con impacto GxP</b> que nace en el año 2014 con el objetivo de dar <b>oluciones informáticas a la industria farmacéutica</b>. Nuestros desarrollos siguen las normas de calidad de acuerdo a la <b>guía ISPE-GAMP5</b>.</p>}
+          {seccionActual === 3 && <p>Contamos con un <b>equipo de profesionales</b> con una amplia experiencia en desarrollo de <b>software para laboratorios</b> y en los <b>aspectos productivos y procesos de calidad de la industria farmacéutica</b>. Nos mantenemos actualizados para cumplir con las normativas regulatorias vigentes.</p>}
+          {seccionActual === 2 && <p>Creemos que la <b>calidad en la atención a nuestros clientes</b> es fundamental, por eso ofrecemos una <b>atención personalizada</b> y acompañamos a los laboratorios que confían en nosotros en la implementación de <b>herramientas que agilizan y hacen más robustos sus procesos</b>.</p>}
+          <div className='botonesNosotros'>
+        <button onClick={() => cambiarSeccion(1)}> {seccionActual === 1 ? <p>&#9899;</p>:<p>&#9898;</p>}</button>
+        <button onClick={() => cambiarSeccion(3)}>{seccionActual ===3? <p>&#9899;</p>:<p>&#9898;</p>}</button>
+        <button onClick={() => cambiarSeccion(2)}>{seccionActual === 2? <p>&#9899;</p>:<p>&#9898;</p>}</button>
+        </div>
+        </div>
         </div>
       </section>
 
@@ -279,16 +285,19 @@ function App() {
 
 <section id="contacto">
 		<article className="contacto">
+      <div className='puntitos'>
       <h2>Contacto</h2>
+      
 		<div className="contenido">		
 			<form className="material" onSubmit={enviarFormulario}>
-      <h3 className='mensajeEnviado'>{mensajeSatisf}</h3>
 				<input type="email" id="email" name="email" placeholder="E-mail" value={email} onChange={(e) => setEmail(e.target.value)} required/>
-				<input type="text" id="name" name="name" placeholder="Nombre" value={nombre} onChange={(e) => setNombre(e.target.value)} required/> 
+        <input type="text" id="name" name="name" placeholder="Nombre" value={nombre} onChange={(e) => setNombre(e.target.value)} required/> 
 				<input type="text" id="company" name="company" placeholder="Empresa" value={empresa} onChange={(e) => setEmpresa(e.target.value)} required/>
 				<textarea id="message" name="message" placeholder="Mensaje" value={mensaje} onChange={(e) => setMensaje(e.target.value)} required></textarea>
         <button type="submit">Enviar</button>
+        <h3 className='mensajeEnviado'>{mensajeSatisf}</h3>
       </form>
+      </div>
 	  	</div>
       </article>
 </section>
