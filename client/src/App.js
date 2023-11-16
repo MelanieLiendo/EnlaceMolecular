@@ -24,6 +24,8 @@ import emme2 from './images/Enlace Molecular - data integrity 1.jpg'
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import simmaEstabilidad from './images/Simma Estabilidad.jpg'
+import puntoGris from './images/puntoGris.png'
+import puntoLila from './images/puntoLila.png'
 
 
 
@@ -176,9 +178,9 @@ function App() {
               </div>
 
               <div className='botonesRecuadro'>
-        <button onClick={() => cambiarSeccionEmap(1)}> {seccionEmap === 1 ? <p>&#9899;</p>:<p>&#9898;</p>}</button>
-        <button onClick={() => cambiarSeccionEmap(2)}>{seccionEmap ===2? <p>&#9899;</p>:<p>&#9898;</p>}</button>
-        <button onClick={() => cambiarSeccionEmap(3)}>{seccionEmap === 3? <p>&#9899;</p>:<p>&#9898;</p>}</button>
+        <button onClick={() => cambiarSeccionEmap(1)}> {seccionEmap === 1 ? <p className='puntos'>&#9899;</p>:<p className='puntos'>&#9898;</p>}</button>
+        <button onClick={() => cambiarSeccionEmap(2)}>{seccionEmap ===2? <p className='puntos'>&#9899;</p>:<p className='puntos'>&#9898;</p>}</button>
+        <button onClick={() => cambiarSeccionEmap(3)}>{seccionEmap === 3? <p className='puntos'>&#9899;</p>:<p className='puntos'>&#9898;</p>}</button>
         </div>
               
           </div>
@@ -234,9 +236,9 @@ function App() {
             </div>  
 
             <div className='botonesRecuadro'>
-        <button onClick={() => cambiarSeccionEmme(1)}> {seccionEmme === 1 ? <p>&#9899;</p>:<p>&#9898;</p>}</button>
-        <button onClick={() => cambiarSeccionEmme(2)}>{seccionEmme ===2? <p>&#9899;</p>:<p>&#9898;</p>}</button>
-        <button onClick={() => cambiarSeccionEmme(3)}>{seccionEmme === 3? <p>&#9899;</p>:<p>&#9898;</p>}</button>
+        <button onClick={() => cambiarSeccionEmme(1)}> {seccionEmme === 1 ? <p className='puntos'>&#9899;</p>:<p className='puntos'>&#9898;</p>}</button>
+        <button onClick={() => cambiarSeccionEmme(2)}>{seccionEmme ===2? <p className='puntos'>&#9899;</p>:<p className='puntos'>&#9898;</p>}</button>
+        <button onClick={() => cambiarSeccionEmme(3)}>{seccionEmme === 3? <p className='puntos'>&#9899;</p>:<p className='puntos'>&#9898;</p>}</button>
         </div>
 
           </div>    
@@ -295,9 +297,9 @@ function App() {
 
               
             <div className='botonesRecuadro'>
-        <button onClick={() => cambiarSeccionEmqa(1)}> {seccionEmqa === 1 ? <p>&#9899;</p>:<p>&#9898;</p>}</button>
-        <button onClick={() => cambiarSeccionEmqa(2)}>{seccionEmqa ===2? <p>&#9899;</p>:<p>&#9898;</p>}</button>
-        <button onClick={() => cambiarSeccionEmqa(3)}>{seccionEmqa === 3? <p>&#9899;</p>:<p>&#9898;</p>}</button>
+        <button onClick={() => cambiarSeccionEmqa(1)}> {seccionEmqa === 1 ? <p className='puntos'>&#9899;</p>:<p className='puntos'>&#9898;</p>}</button>
+        <button onClick={() => cambiarSeccionEmqa(2)}>{seccionEmqa ===2? <p className='puntos'>&#9899;</p>:<p className='puntos'>&#9898;</p>}</button>
+        <button onClick={() => cambiarSeccionEmqa(3)}>{seccionEmqa === 3? <p className='puntos'>&#9899;</p>:<p className='puntos'>&#9898;</p>}</button>
         </div>
 
           </div>

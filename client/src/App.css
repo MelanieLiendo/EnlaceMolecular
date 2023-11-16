@@ -45,6 +45,10 @@ animation-iteration-count: infinite;
 animation-timing-function: ease-in-out;
 }
 
+.puntos{
+  font-size: x-small;
+}
+
 h2{
     color: #7F5A8B;
     text-transform: uppercase;
@@ -256,6 +260,7 @@ margin: 0px;
 .botonesRecuadro{
   display: flex;
   justify-content: center;
+  position: sticky;
 }
 
 .botonesRecuadro button{
