@@ -903,6 +903,8 @@ align-items: end;
 .puntitos{
   height: 40vh;
   background-image: url(./images/fondoContacto.jpg);
+  background-size: 100% 60vh;
+  background-repeat: no-repeat;
   background-position: top;
 }
 
