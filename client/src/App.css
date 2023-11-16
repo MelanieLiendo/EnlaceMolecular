@@ -667,12 +667,16 @@ align-items: end;
 .servicios{
   height: 100vh;
   text-align: center;
-  background-color: white;
+  background-image: url(./images/puntitosServicios.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0px 10px ;
 }
+
 
 .serviciosGrid{
   display: grid;
