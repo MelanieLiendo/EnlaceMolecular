@@ -107,8 +107,7 @@ function App() {
         <img id="logo" src= {logo} alt="logo"></img>
         </div>
       <section id='splashscreen2'>
-      <p>SOLUCIONES PARA LABORATORIO Y</p> 
-      <p>APLICACIONES CON IMPACTO GXP</p>
+      <p>SOLUCIONES PARA LABORATORIO Y APLICACIONES CON IMPACTO GXP</p>
     </section>
       </div>
 

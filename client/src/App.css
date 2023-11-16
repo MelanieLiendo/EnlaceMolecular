@@ -119,10 +119,10 @@ padding-top: 10px;
 }
 
 #logo{
-  width: 300px;
-  height: 90px;
+  width: 500px;
+  height: 150px;
   position: relative;
-  top: 110%;
+  top: 70%;
 }
 
 .splashImage {
@@ -248,7 +248,7 @@ a :visited {
 }
 
 #splashscreen2 p{
-color:#1D71B8;
+color:#0cb3d6;
 font-weight: 700;
 font-size: large;
 font-family: 'Roboto', sans-serif;
@@ -865,7 +865,7 @@ align-items: end;
 
 .textoNosotros p {
 
-  color: #878787;
+  color: #575756;
   /*margin-top: 10px;
   margin-bottom: 10px;*/
   margin: 20px;
