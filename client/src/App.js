@@ -93,8 +93,8 @@ function App() {
       <navbar id="navbar">
             <ul>
               <a href="#splashscreen"><li>INICIO</li></a>
-              <a href="#productos"><li>PRODUCTOS</li></a>
               <a href="#servicios"><li>SERVICIOS</li></a>
+              <a href="#productos"><li>PRODUCTOS</li></a>
               <a href="#nosotros"><li>NOSOTROS</li></a>
               <a href="#contacto"><li>CONTACTO</li></a>
             </ul>
@@ -110,7 +110,25 @@ function App() {
     </section>
       </div>
 
-
+      <section id= "servicios" className="servicios">
+        <article className='serviciosCuadro'>
+        <h2 className="textoServicios">Servicios</h2>
+        <div className="serviciosGrid">
+          <div className="containerServicios" id="containerServicios1">
+          <img id='desarrolloSoftware'src={desarrolloSoftware} />
+          <p>Desarrollamos <b>software a medida</b> para laboratorios según <b>requerimientos específicos</b> y ofrecemos servicios de <b>consultoría</b> para la <b>mejora de procesos</b>.</p> 
+          </div>
+          <div className="containerServicios" id="containerServicios2">
+          <img id='agil'src={agil} />
+          <p>Contamos con un <b>mecanismo ágil y eficiente para el relevamientos de URS</b> ya que conocemos y entendemos los <b>lineamientos generales e impacto de los procesos</b> industriales altamente regulados.</p> 
+          </div>
+          <div className="containerServicios" id="containerServicios3">
+          <img id='solucion'src={solucion} />
+          <p>Nos motivan la <b>resolución de cuestiones</b> sencillas así como los <b>grandes desafíos</b>.</p>
+          </div>
+        </div>
+        </article>
+      </section>
 
 
       <section id= "productos" className="productos">
@@ -324,27 +342,7 @@ function App() {
 
       </section>
 
-      <section id= "servicios" className="servicios">
-        <article className='serviciosCuadro'>
-        <h2 className="textoServicios">Servicios</h2>
-        <div className="serviciosGrid">
-          <div className="containerServicios" id="containerServicios1">
-          {/* <img id='desarrolloSoftware'src={desarrolloSoftware} /> */}
-          <p>Desarrollamos <b>software a medida</b> para laboratorios según <b>requerimientos específicos</b> y ofrecemos servicios de <b>consultoría</b> para la <b>mejora de procesos</b>.</p> 
-          </div>
-          <div className="containerServicios" id="containerServicios2">
-          {/* <img id='agil'src={agil} /> */}
-          <p>Contamos con un <b>mecanismo ágil y eficiente para el relevamientos de URS</b> ya que conocemos y entendemos los <b>lineamientos generales e impacto de los procesos</b> industriales altamente regulados.</p> 
-          </div>
-          <div className="containerServicios" id="containerServicios3">
-          {/* <img id='solucion'src={solucion} /> */}
-          <p>Nos motivan la <b>resolución de cuestiones</b> sencillas así como los <b>grandes desafíos</b>.</p>
-          </div>
-        </div>
-        </article>
-      </section>
-
-
+    
       <section id="nosotros" className="nosotros">
        <div className="cuadroNosotros">
         <div className="tituloNosotros">

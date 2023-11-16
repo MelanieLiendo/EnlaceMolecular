@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1&family=Instrument+Sans&family=Montserrat:wght@300&family=Open+Sans&family=Poiret+One&family=Raleway:wght@200&family=Roboto:ital,wght@0,300;0,400;1,300&family=Ubuntu:ital,wght@0,300;1,300;1,500&family=Urbanist:ital,wght@0,200;1,500&family=Zilla+Slab:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@700&family=Instrument+Sans&family=Montserrat:wght@300&family=Open+Sans&family=Poiret+One&family=Raleway:wght@200&family=Roboto:ital,wght@0,300;0,400;1,300&family=Ubuntu:ital,wght@0,300;1,300;1,500&family=Urbanist:ital,wght@0,200;1,500&family=Zilla+Slab:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@700&family=Instrument+Sans&family=Montserrat&family=Open+Sans&family=Poiret+One&family=Raleway:wght@200&family=Roboto:ital,wght@0,300;0,400;1,300&family=Ubuntu:ital,wght@0,300;1,300;1,500&family=Urbanist:ital,wght@0,200;1,500&family=Zilla+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 
 @keyframes fadeInLeft {
@@ -49,9 +50,9 @@ h2{
     text-transform: uppercase;
     margin-top: 0px;
     margin-bottom: 10px;
-    font-family: 'Gothic A1', sans-serif;
-    font-size: 2.5em;
-    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+    font-weight: 200;
     line-height: 1.2;
     text-align: center;
 }
@@ -72,7 +73,7 @@ h2{
     opacity: 0.9;
     width: 100%;
     position: fixed;
-    font-family: 'Gothic A1', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 #navbar a{
@@ -114,8 +115,10 @@ padding-top: 10px;
 }
 
 #logo{
-  width: 400px;
-  height: 120px;
+  width: 300px;
+  height: 90px;
+  position: relative;
+  top: 110%;
 }
 
 .splashImage {
@@ -133,7 +136,7 @@ padding-top: 10px;
   top: 400px;
   left: 100px; */
   color: rgb(82, 82, 82);
-  font-family: Archivo, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.8em;
   font-weight: 100;
   text-transform: uppercase;
@@ -244,7 +247,8 @@ a :visited {
 color:#1D71B8;
 font-weight: 700;
 font-size: large;
-font-family: 'Gothic A1', sans-serif;
+font-family: 'Roboto', sans-serif;
+margin: 0px;
 }
 
 /*PRODUCTOS*/
@@ -252,6 +256,9 @@ font-family: 'Gothic A1', sans-serif;
 .botonesRecuadro{
   display: flex;
   justify-content: center;
+}
+
+.botonesRecuadro button{
   border: none;
   background: none;
 }
@@ -290,7 +297,7 @@ align-items: end;
 }
 
 .recuadroEmap h3{
-  font-family: Archivo, sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #312783;
   font-size: 4em;
   letter-spacing: 10px;
@@ -311,11 +318,12 @@ align-items: end;
 }
 
 .tituloEmap p{
-  font-family: Archivo, sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #312783;
   font-size: 1.4em;
   align-items: baseline;
   margin-left: 30px;
+  margin-bottom: 0px;
 }
 
 .caracteristicasEmap{
@@ -400,7 +408,7 @@ justify-content: center;
 
 
 .recuadroEmme h3{
-  font-family: Archivo, sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #312783;
   font-size: 4em;
   letter-spacing: 10px;
@@ -421,11 +429,12 @@ justify-content: center;
 }
 
 .tituloEmme p{
-  font-family: Archivo, sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #312783;
   font-size: 1.4em;
   align-items: baseline;
   margin-right: 30px;
+  margin-bottom: 0px;
   justify-content: end;
   display: flex;
   text-align-last: right ;
@@ -497,7 +506,7 @@ align-items: end;
 }
 
 .tituloEmqa h3{
-  font-family: Archivo, sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #312783;
   font-size: 4em;
   letter-spacing: 10px;
@@ -517,11 +526,12 @@ align-items: end;
 }
 
 .tituloEmqa p{
-  font-family: Archivo, sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #312783;
   font-size: 1.4em;
   align-items: baseline;
   margin-left: 30px;
+  margin-bottom: 0px;
 }
 
 .caracteristicasEmqa{
@@ -583,7 +593,7 @@ align-items: end;
 }
 
 .tituloSimma h3{
-  font-family: Archivo, sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #312783;
   font-size: 4em;
   letter-spacing: 10px;
@@ -605,11 +615,12 @@ align-items: end;
 }
 
 .tituloSimma p{
-  font-family: Archivo, sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #312783;
   font-size: 1.4em;
   align-items: baseline;
   margin-right: 30px;
+  margin-bottom: 0px;
   justify-content: end;
   display: flex;
   text-align-last: right ;
@@ -677,11 +688,10 @@ align-items: end;
 }
 
 .servicios p {
-  color:rgb(86, 109, 221);
+  color:#312783;
   font-family: "Montserrat";
   font-size: 1em;
   padding: 0px 20px;
-  text-align: left;
 }
 
 .servicios img{
@@ -693,10 +703,13 @@ align-items: end;
 .containerServicios{
   border-radius: 40px;
   margin:10px 20px;
-  height: 300px;
+  height: 350px;
   width: 70%;
   display: flex;
   justify-content: right;
+  border: solid thin lightgray;
+  flex-direction: column;
+    align-items: center;
 }
 
 #containerServicios1{
@@ -704,6 +717,7 @@ align-items: end;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+  padding: 10px;
 }
 
 #containerServicios2{
@@ -711,6 +725,7 @@ align-items: end;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+  padding: 10px;
 }
 
 #containerServicios3{
@@ -718,6 +733,7 @@ align-items: end;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+  padding: 10px;
 }
 
 /* CLIENTES */
@@ -793,7 +809,7 @@ align-items: end;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(./images/Splashscreen.jpg) ;
+  background-image: url(./images/degradeNosotros.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -828,7 +844,7 @@ align-items: end;
 }
 
 .textoNosotros {
-  text-align: center;
+  text-align: right;
 }
 
 .textoNosotros h2 {
@@ -844,7 +860,7 @@ align-items: end;
 
 .textoNosotros p {
 
-  color: #073e3e;
+  color: #878787;
   /*margin-top: 10px;
   margin-bottom: 10px;*/
   margin: 20px;
@@ -852,6 +868,11 @@ align-items: end;
   font-size: medium;
   line-height: 1.7em;
   text-align: right
+}
+
+.tituloNosotros{
+  position: relative;
+  right: 20%;
 }
 
 
