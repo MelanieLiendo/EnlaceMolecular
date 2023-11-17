@@ -257,6 +257,27 @@ margin: 0px;
 
 /*PRODUCTOS*/
 
+.pedirDEMO{
+    background-image: url(./images/contactodegrade.jpg);
+    border: none;
+    border-radius: 20px;
+    color: #878787;
+    width: 120px;
+    height: 35px;
+    font-size: medium;
+    margin: 25px 10px 0px 10px;
+    font-family: "Montserrat";
+}
+
+.pedirDEMO a{
+  text-decoration: none;
+  color: #878787;
+}
+
+#logoSIMMA, #logoEMME, #logoEMQA, #logoEMAP{
+  width: 270px;
+}
+
 .botonesRecuadro{
   display: flex;
   justify-content: center;
@@ -298,7 +319,7 @@ display: flex;
 align-items: baseline;
 height: 150px;
 justify-content: center;
-align-items: end;
+align-items: center;
 }
 
 .recuadroEmap h3{
@@ -406,7 +427,7 @@ align-items: end;
 .seccion1Emme{
 display: flex;
 height: 150px;
-align-items: end;
+align-items: center;
 justify-content: center;
 
 }
@@ -507,7 +528,7 @@ display: flex;
 align-items: baseline;
 height: 150px;
 justify-content: center;
-align-items: end;
+align-items: center;
 }
 
 .tituloEmqa h3{
@@ -592,7 +613,7 @@ align-items: end;
 .seccion1Simma{
   display: flex;
   height: 150px;
-  align-items: end;
+  align-items: center;
   justify-content: center;
   
 }
@@ -652,6 +673,7 @@ align-items: end;
   border-radius: 2em;
   border: 25px solid;
   border-color: white;
+  height: 330px;
 }
 
 .fotoSimma {
@@ -711,10 +733,10 @@ align-items: end;
 .containerServicios{
   border-radius: 40px;
   margin:10px 20px;
-  height: 350px;
+  height: 300px;
   width: 70%;
   display: flex;
-  justify-content: right;
+  justify-content: center;
   border: solid thin lightgray;
   flex-direction: column;
     align-items: center;
@@ -724,7 +746,7 @@ align-items: end;
   background-image: url(./images/fondoServicios1.jpg) ;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: bottom;
   padding: 10px;
 }
 
@@ -772,7 +794,7 @@ align-items: end;
   animation: scroll 40s linear infinite;
 }
 
-#roemmers, #mabxience, #glenmark{
+#roemmers, #mabxience, #glenmark, #eleaphoenix, #nuevedejulio{
   width: 150px;
 }
 

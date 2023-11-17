@@ -17,7 +17,6 @@ import imagenNosotros from './images/Simma Materiales.jpg'
 import desarrolloSoftware from './images/desarrolloSoftware.png'
 import agil from './images/agil.png'
 import solucion from './images/solucion.png'
-import emap1 from './images/Emap 1.jpg'
 import emap2 from './images/Emap 2.jpg'
 import emme from './images/iStock-1130734389.jpg'
 import emme2 from './images/Enlace Molecular - data integrity 1.jpg'
@@ -26,6 +25,15 @@ import emailjs from 'emailjs-com';
 import simmaEstabilidad from './images/Simma Estabilidad.jpg'
 import puntoGris from './images/puntoGris.png'
 import puntoLila from './images/puntoLila.png'
+import logoSIMMA from './images/logoSIMMA.png'
+import logoEMME from './images/logoEMME.png'
+import logoEMAP from './images/logoEMAP.png'
+import logoEMQA from './images/logoEMQA.png'
+import eleaphoenix from './images/eleaphoenix.png'
+import massone from './images/massone.gif'
+import catalent from './images/catalent.webp'
+import celtyc from './images/celtyc.jpg'
+import nuevedejulio from './images/nuevedejulio.png'
 
 
 
@@ -107,7 +115,7 @@ function App() {
         <img id="logo" src= {logo} alt="logo"></img>
         </div>
       <section id='splashscreen2'>
-      <p>SOLUCIONES PARA LABORATORIO Y APLICACIONES CON IMPACTO GXP</p>
+      <p>SOFTWARES PARA ENTORNO GXP</p>
     </section>
       </div>
 
@@ -117,15 +125,16 @@ function App() {
         <div className="serviciosGrid">
           <div className="containerServicios" id="containerServicios1">
           <img id='desarrolloSoftware'src={desarrolloSoftware} />
-          <p>Desarrollamos <b>software a medida</b> para laboratorios según <b>requerimientos específicos</b> y ofrecemos servicios de <b>consultoría</b> para la <b>mejora de procesos</b>.</p> 
+          {/* <p>Desarrollamos <b>software a medida</b> para laboratorios según <b>requerimientos específicos</b> y ofrecemos servicios de <b>consultoría</b> para la <b>mejora de procesos</b>.</p>  */}
+          <p>Desarrollamos <b>software a medida</b> para laboratorios.</p>
           </div>
           <div className="containerServicios" id="containerServicios2">
           <img id='agil'src={agil} />
-          <p>Contamos con un <b>mecanismo ágil y eficiente para el relevamientos de URS</b> ya que conocemos y entendemos los <b>lineamientos generales e impacto de los procesos</b> industriales altamente regulados.</p> 
+          <p><b>Parametrización</b> inicial de nuestros productos.</p> 
           </div>
           <div className="containerServicios" id="containerServicios3">
           <img id='solucion'src={solucion} />
-          <p>Nos motivan la <b>resolución de cuestiones</b> sencillas así como los <b>grandes desafíos</b>.</p>
+          <p>Servicio de validación según normativa <b>ISPE-GAMP5</b>.</p>
           </div>
         </div>
         </article>
@@ -133,75 +142,53 @@ function App() {
 
 
       <section id= "productos" className="productos">
-        
-        <article className="emap">
-          <div className="recuadroEmap">
-            <h3>01.</h3>
-            <div className="tituloEmap">
-              <div className="seccion1Emap">
-                <h2>emAP</h2>
+
+      <article className="simma">
+          <div className="recuadroSimma">
+            <div className="tituloSimma">
+              <div className="seccion1Simma">
+               <h3>01.</h3>
+               {/* <h2 id="texto-animado">
+                  <span>s</span>
+                  <span>i</span>
+                  <span>m</span>
+                  <span>m</span>
+                  <span>a</span>
+                </h2> */}
+                <img id= "logoSIMMA" src={logoSIMMA} alt=""></img>
               </div>
-                <p>Módulo de gestión de abastecimiento y <br></br>producción de productos farmacéuticos <br></br>y médicos</p>
-            </div>
-            
-              <div className="caracteristicasEmap">
+              <p>Gestión Integral de Laboratorio (LIMS): <br></br> Materiales, Productos, Estabilidad, Ambiental, <br></br> Aguas, Validación de Limpieza.</p>
+           </div>
 
-                {seccionEmap === 1 && 
-                <ul>
-                <li>Administración de maestro de materiales y productos</li>
-                <li>Gestión de stock de materiales en almacenes</li>
-                <li>Emisión de rótulos de cuarentena</li>
-                <li>Definición de formulas y tamaños de lote</li>
-                <li>Emisión de ordenes de producción (OP) y de empaque (OE).</li>
-                </ul>
-                }
-
-                {seccionEmap === 2 &&
-                <ul>
-                <li>Emisión de ordenes de fraccionamiento de materias primas <br></br>y materiales de empaque.</li>
-                <li>Gestión de OP/OE: Registro de cantidades utilizadas, controles <br></br>de proceso, cálculos de rendimiento.</li>
-                <li>Notificaciones configurables para mensajes por correo electrónico.</li>
-                <li>Asignación de dictamen de control de calidad y liberación <br></br>de garantía de calidad.</li>
-                </ul>
-                }
-
-                {seccionEmap === 3 &&
-                <ul>
-                
-                <li>Múltiples reportes: trazabilidad de materiales y productos, <br></br>conciliación de stock.</li>
-                <li>Integración con Modulo de Calidad Simma® para generación <br></br>automática de protocolos de análisis de liberación, re-análisis <br></br>y extensión de vencimiento.</li>
-                <li>Adaptable a Lector de Código de barras/QR.</li>
-                </ul>
-                }
-
-              </div>
-
-              <div className='botonesRecuadro'>
-        <button onClick={() => cambiarSeccionEmap(1)}> {seccionEmap === 1 ? <p className='puntos'>&#9899;</p>:<p className='puntos'>&#9898;</p>}</button>
-        <button onClick={() => cambiarSeccionEmap(2)}>{seccionEmap ===2? <p className='puntos'>&#9899;</p>:<p className='puntos'>&#9898;</p>}</button>
-        <button onClick={() => cambiarSeccionEmap(3)}>{seccionEmap === 3? <p className='puntos'>&#9899;</p>:<p className='puntos'>&#9898;</p>}</button>
-        </div>
-              
-          </div>
-          <div className="fotoEmap">
-            <img id="emap2" src={emap2} alt=""></img>
-          </div>
           
-        </article>
+            <div className="caracteristicasSimma">
+              <ul>
+                <li>Ambiente: permite la configuración completa de los <br></br>procedimientos internos de monitoreo de aire, superficies,<br></br> personal, equipos y gases.</li>
+                <li>Productos: permite la configuración completa de las <br></br>especificación de análisis en proceso (IPC) y de productos <br></br>intermedios y finales.</li>
+                <li>Materiales: permite la configuración completa de las <br></br>especificaciones de análisis y re-análisis de insumos, materias primas<br></br> y material de empaque.</li>
+              </ul>
+            </div>
 
+          </div>
+          <div className="fotoSimma">
+            <img id= "simmaEstabilidad" src={simmaEstabilidad} alt=""></img>
+          </div> 
+          <button className='pedirDEMO'><a href="#contacto">Pedir DEMO</a></button> 
        
-
+        </article>
+        
         <article className="emme">
           <div className="recuadroEmme">
             <h3>02.</h3>
             <div className="tituloEmme">
               <div className="seccion1Emme">
-                <h2 id="texto-animado">
+                {/* <h2 id="texto-animado">
                   <span>e</span>
                   <span>m</span>
                   <span>m</span>
                   <span>e</span>
-                </h2>
+                </h2> */}
+                <img id= "logoEMME" src={logoEMME} alt=""></img>
               </div>
                 <p>Aplicación de Manejo de Equipos e <br></br>Instrumentos</p>
             </div>
@@ -242,8 +229,9 @@ function App() {
 
           </div>    
               <div className="fotoEmme">
-                <img id="emme2" src={emme2} alt=""></img>
+                <img id="emme" src={emme} alt=""></img>
               </div>
+              <button className='pedirDEMO'><a href="#contacto">Pedir DEMO</a></button> 
         </article>
 
         <article className="emqa">
@@ -251,12 +239,13 @@ function App() {
             <div className="tituloEmqa">
               <div className="seccion1Emqa">
                <h3>03.</h3>
-               <h2 id="texto-animado">
+               {/* <h2 id="texto-animado">
                   <span>e</span>
                   <span>m</span>
                   <span>q</span>
                   <span>a</span>
-                </h2>
+                </h2> */}
+                <img id= "logoEMQA" src={logoEMQA} alt=""></img>
               </div>
               <p>Aplicación para Gestion de Documentos, <br></br>administración de Capacitacion y procesos <br></br>de Garantia de Calidad</p>
            </div>
@@ -303,43 +292,69 @@ function App() {
 
           </div>
           <div className="fotoEmqa">
-            <img id="emme" src={emme} alt=""></img>
-            
+            <img id="emme2" src={emme2} alt=""></img>
+            <button className='pedirDEMO'><a href="#contacto">Pedir DEMO</a></button> 
           </div>   
        
         </article>
 
-        <article className="simma">
-          <div className="recuadroSimma">
-            <div className="tituloSimma">
-              <div className="seccion1Simma">
-               <h3>04.</h3>
-               <h2 id="texto-animado">
-                  <span>s</span>
-                  <span>i</span>
-                  <span>m</span>
-                  <span>m</span>
-                  <span>a</span>
-                </h2>
+        <article className="emap">
+          <div className="recuadroEmap">
+            <h3>04.</h3>
+            <div className="tituloEmap">
+              <div className="seccion1Emap">
+                {/* <h2>emAP</h2> */}
+                <img id= "logoEMAP" src={logoEMAP} alt=""></img>
               </div>
-              <p>Gestión Integral de Laboratorio (LIMS): <br></br> Materiales, Productos, Estabilidad, Ambiental, <br></br> Aguas, Validación de Limpieza.</p>
-           </div>
-
-          
-            <div className="caracteristicasSimma">
-              <ul>
-                <li>Ambiente: permite la configuración completa de los <br></br>procedimientos internos de monitoreo de aire, superficies,<br></br> personal, equipos y gases.</li>
-                <li>Productos: permite la configuración completa de las <br></br>especificación de análisis en proceso (IPC) y de productos <br></br>intermedios y finales.</li>
-                <li>Materiales: permite la configuración completa de las <br></br>especificaciones de análisis y re-análisis de insumos, materias primas<br></br> y material de empaque.</li>
-              </ul>
+                <p>Módulo de gestión de abastecimiento y <br></br>producción de productos farmacéuticos <br></br>y médicos</p>
             </div>
+            
+              <div className="caracteristicasEmap">
 
+                {seccionEmap === 1 && 
+                <ul>
+                <li>Administración de maestro de materiales y productos</li>
+                <li>Gestión de stock de materiales en almacenes</li>
+                <li>Emisión de rótulos de cuarentena</li>
+                <li>Definición de formulas y tamaños de lote</li>
+                <li>Emisión de ordenes de producción (OP) y de empaque (OE).</li>
+                </ul>
+                }
+
+                {seccionEmap === 2 &&
+                <ul>
+                <li>Emisión de ordenes de fraccionamiento de materias primas <br></br>y materiales de empaque.</li>
+                <li>Gestión de OP/OE: Registro de cantidades utilizadas, controles <br></br>de proceso, cálculos de rendimiento.</li>
+                <li>Notificaciones configurables para mensajes por correo electrónico.</li>
+                <li>Asignación de dictamen de control de calidad y liberación <br></br>de garantía de calidad.</li>
+                </ul>
+                }
+
+                {seccionEmap === 3 &&
+                <ul>
+                
+                <li>Múltiples reportes: trazabilidad de materiales y productos, <br></br>conciliación de stock.</li>
+                <li>Integración con Modulo de Calidad Simma® para generación <br></br>automática de protocolos de análisis de liberación, re-análisis <br></br>y extensión de vencimiento.</li>
+                <li>Adaptable a Lector de Código de barras/QR.</li>
+                </ul>
+                }
+
+              </div>
+
+              <div className='botonesRecuadro'>
+        <button onClick={() => cambiarSeccionEmap(1)}> {seccionEmap === 1 ? <p className='puntos'>&#9899;</p>:<p className='puntos'>&#9898;</p>}</button>
+        <button onClick={() => cambiarSeccionEmap(2)}>{seccionEmap ===2? <p className='puntos'>&#9899;</p>:<p className='puntos'>&#9898;</p>}</button>
+        <button onClick={() => cambiarSeccionEmap(3)}>{seccionEmap === 3? <p className='puntos'>&#9899;</p>:<p className='puntos'>&#9898;</p>}</button>
+        </div>
+              
           </div>
-          <div className="fotoSimma">
-            <img id= "simmaEstabilidad" src={simmaEstabilidad} alt=""></img>
-          </div>   
-       
+          <div className="fotoEmap">
+            <img id="emap2" src={emap2} alt=""></img>
+            <button className='pedirDEMO'><a href="#contacto">Pedir DEMO</a></button> 
+          </div>
+          
         </article>
+
 
       </section>
 
@@ -372,10 +387,14 @@ function App() {
           <div className='client'><img id='richet'src={cliente2} /></div>
           <div className='client'><img id='poen'src={cliente3} /></div>
           <div className='client'><img id='glenmark'src={glenmark} /></div>
-          <div className='client'><img id='inmunova'src={inmunova} /></div>
           <div className='client'><img id='richmond'src={richmond} /></div>
           <div className='client'><img id='roemmers'src={roemmers} /></div>
           <div className='client'><img id='sinergium'src={sinergium} /></div>
+          <div className='client'><img id='eleaphoenix'src={eleaphoenix} /></div>
+          <div className='client'><img id='massone'src={massone} /></div>
+          <div className='client'><img id='catalent'src={catalent} /></div>
+          <div className='client'><img id='celtyc'src={celtyc} /></div>
+          <div className='client'><img id='nuevedejulio'src={nuevedejulio} /></div>
           </div>
         </article>
       </section>
