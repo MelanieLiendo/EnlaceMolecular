@@ -396,21 +396,8 @@ align-items: center;
 
 
 
-/*emme*/
 
-/* PRENDER PARA LOS EFECTOS EN EMME TEXTO
-.emme :hover #texto-animado span {
-  display: inline-block;
-  opacity: 0;
-  transform: translateY(1em);
-  animation: aparecer 1s forwards;
-}
 
-.emme :hover #texto-animado span:nth-child(1) { animation-delay: 0.5s; }
-.emme :hover #texto-animado span:nth-child(2) { animation-delay: 1s; }
-.emme :hover #texto-animado span:nth-child(3) { animation-delay: 1.5s; }
-.emme :hover #texto-animado span:nth-child(4) { animation-delay: 2s; }
-*/
 @keyframes aparecer {
   to {
       opacity: 1;
@@ -418,12 +405,15 @@ align-items: center;
   }
 }
 
-.emme{
+
+/*emqa*/
+
+.emqa{
   height: 100vh;
   position: relative;
 }
 
-.recuadroEmme{
+.recuadroEmqa{
   background-image: url(./images/degrade1.jpg);
   background-position: center;
   height: 530px;
@@ -439,7 +429,7 @@ align-items: center;
 }
 
 
-.seccion1Emme{
+.seccion1Emqa{
 display: flex;
 height: 150px;
 align-items: center;
@@ -448,7 +438,7 @@ justify-content: center;
 }
 
 
-.recuadroEmme h3{
+.recuadroEmqa h3{
   font-family: "Roboto", sans-serif;
   color: #312783;
   font-size: 4em;
@@ -463,13 +453,13 @@ justify-content: center;
   padding-left: 20px;
 }
 
-.tituloEmme h2{
+.tituloEmqa h2{
   font-family: "Montserrat";
   font-size: 4em;
   
 }
 
-.tituloEmme p{
+.tituloEmqa p{
   font-family: "Roboto", sans-serif;
   color: #312783;
   font-size: 1.4em;
@@ -482,7 +472,7 @@ justify-content: center;
   
 }
 
-.caracteristicasEmme{
+.caracteristicasEmqa{
   color: #878787;
   font-family: "Montserrat";
   font-size: 0.8em;
@@ -491,21 +481,21 @@ justify-content: center;
   list-style-position: inside;
 }
 
-.caracteristicasEmme li{
+.caracteristicasEmqa li{
   margin-top: 20px;
   list-style-type: circle;
   text-align-last: right;
   margin-right: 20px;
 }
 
-.fotoEmme img{
+.fotoEmqa img{
   width: 500px;
   border-radius: 2em;
   border: 25px solid;
   border-color: white;
 }
 
-.fotoEmme{
+.fotoEmqa{
   position: absolute;
   left: 10vh;
   top: 20vh;
@@ -515,15 +505,15 @@ justify-content: center;
 
 
 
-/*emqa*/
+/*emme*/
 
 
-.emqa{
+.emme{
   height: 100vh;
   position: relative
 }
 
-.recuadroEmqa{
+.recuadroEmme{
   background-image: url(./images/degrade1.jpg);
   background-position: center;
   height: 530px;
@@ -538,7 +528,7 @@ justify-content: center;
   z-index: 1;
 }
 
-.seccion1Emqa{
+.seccion1Emme{
 display: flex;
 align-items: baseline;
 height: 150px;
@@ -546,7 +536,9 @@ justify-content: center;
 align-items: center;
 }
 
-.tituloEmqa h3{
+
+
+.recuadroEmme h3{
   font-family: "Roboto", sans-serif;
   color: #312783;
   font-size: 4em;
@@ -558,15 +550,17 @@ align-items: center;
   top: 0px;
   margin: 0px;
   border-bottom-right-radius: 20px;
+
+
 }
 
-.tituloEmqa h2{
+.tituloEmme h2{
   font-family: "Montserrat";
   font-size: 4em;
   
 }
 
-.tituloEmqa p{
+.tituloEmme p{
   font-family: "Roboto", sans-serif;
   color: #312783;
   font-size: 1.4em;
@@ -575,27 +569,27 @@ align-items: center;
   margin-bottom: 0px;
 }
 
-.caracteristicasEmqa{
+.caracteristicasEmme{
   color: #878787;
   margin-top: 20px;
   font-family: "Montserrat";
   font-size: 0.8em;
 }
 
-.caracteristicasEmqa li{
+.caracteristicasEmme li{
   margin-top: 20px;
   list-style-type: circle;
 }
 
 
-.fotoEmqa img{
+.fotoEmme img{
   width: 500px;
   border-radius: 2em;
   border: 25px solid;
   border-color: white;
 }
 
-.fotoEmqa{
+.fotoEmme{
   position: absolute;
   left: 650px;
   top: 100px;
