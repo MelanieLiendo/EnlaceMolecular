@@ -173,7 +173,7 @@ function App() {
           <div className="fotoSimma">
             <img id= "simmaEstabilidad" src={simmaEstabilidad} alt=""></img>
           </div> 
-          <button className='pedirDEMO'><a href="#contacto">Pedir DEMO</a></button> 
+          <button className='pedirDEMO' id="pedirDEMOIzquierda"><a href="#contacto">Pedir DEMO</a></button> 
        
         </article>
         
@@ -231,7 +231,7 @@ function App() {
               <div className="fotoEmme">
                 <img id="emme" src={emme} alt=""></img>
               </div>
-              <button className='pedirDEMO'><a href="#contacto">Pedir DEMO</a></button> 
+              <button className='pedirDEMO' id="pedirDEMODerecha"><a href="#contacto">Pedir DEMO</a></button> 
         </article>
 
         <article className="emqa">
@@ -293,7 +293,7 @@ function App() {
           </div>
           <div className="fotoEmqa">
             <img id="emme2" src={emme2} alt=""></img>
-            <button className='pedirDEMO'><a href="#contacto">Pedir DEMO</a></button> 
+            <button className='pedirDEMO' id="pedirDEMOIzquierda"><a href="#contacto">Pedir DEMO</a></button> 
           </div>   
        
         </article>
@@ -350,7 +350,7 @@ function App() {
           </div>
           <div className="fotoEmap">
             <img id="emap2" src={emap2} alt=""></img>
-            <button className='pedirDEMO'><a href="#contacto">Pedir DEMO</a></button> 
+            <button className='pedirDEMO' id="pedirDEMODerecha"><a href="#contacto">Pedir DEMO</a></button> 
           </div>
           
         </article>
