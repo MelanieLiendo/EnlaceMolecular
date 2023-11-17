@@ -9,7 +9,6 @@ import cliente1 from './images/cliente 1.png'
 import cliente2 from './images/cliente 2.jpg'
 import cliente3 from './images/cliente 3.png'
 import glenmark from './images/glenmark.jpg'
-import inmunova from './images/inmunova.png'
 import richmond from './images/richmond.png'
 import roemmers from './images/roemmers.png'
 import sinergium from './images/sinergium.png'
@@ -20,7 +19,8 @@ import solucion from './images/solucion.png'
 import emap2 from './images/Emap 2.jpg'
 import emme from './images/iStock-1130734389.jpg'
 import emme2 from './images/Enlace Molecular - data integrity 1.jpg'
-import React, { useState } from 'react';
+import React, { useState} from 'react';
+import { useEffect } from 'react';
 import emailjs from 'emailjs-com';
 import simmaEstabilidad from './images/Simma Estabilidad.jpg'
 import puntoGris from './images/puntoGris.png'
@@ -98,17 +98,39 @@ function App() {
       setMensaje('');
     };
 
+    // Navbar scroll
+
+    const [scrolling, setScrolling] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      setScrolling(true);
+    } else {
+      setScrolling(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
+
   return (
     <div className="App">
-      <navbar id="navbar">
-            <ul>
+      <navbar id= "navbar" className={`navbar ${scrolling ? 'scrolled' : ''}`}>
+      <ul>
               <a href="#splashscreen"><li>INICIO</li></a>
               <a href="#servicios"><li>SERVICIOS</li></a>
               <a href="#productos"><li>PRODUCTOS</li></a>
               <a href="#nosotros"><li>NOSOTROS</li></a>
               <a href="#contacto"><li>CONTACTO</li></a>
             </ul>
-        </navbar>
+    </navbar>
+    
       <div id= "splashscreen" className="splashscreen">
   
         <div className="splashImage">
@@ -171,9 +193,10 @@ function App() {
 
           </div>
           <div className="fotoSimma">
-            <img id= "simmaEstabilidad" src={simmaEstabilidad} alt=""></img>
+            <img id= "simmaEstabilidad" src={simmaEstabilidad} alt="foto de producto Simma"></img>
+            <button className='pedirDEMO'><a href="#contacto">Pedir DEMO</a></button> 
           </div> 
-          <button className='pedirDEMO' id="pedirDEMOIzquierda"><a href="#contacto">Pedir DEMO</a></button> 
+        
        
         </article>
         
@@ -230,9 +253,10 @@ function App() {
           </div>    
               <div className="fotoEmme">
                 <img id="emme" src={emme} alt=""></img>
+                <button className='pedirDEMO'><a href="#contacto">Pedir DEMO</a></button> 
               </div>
-              <button className='pedirDEMO' id="pedirDEMODerecha"><a href="#contacto">Pedir DEMO</a></button> 
         </article>
+        {/* id="pedirDEMOemme" */}
 
         <article className="emqa">
           <div className="recuadroEmqa">
@@ -293,8 +317,9 @@ function App() {
           </div>
           <div className="fotoEmqa">
             <img id="emme2" src={emme2} alt=""></img>
-            <button className='pedirDEMO' id="pedirDEMOIzquierda"><a href="#contacto">Pedir DEMO</a></button> 
-          </div>   
+            <button className='pedirDEMO'><a href="#contacto">Pedir DEMO</a></button> 
+          </div>  
+          
        
         </article>
 
@@ -350,7 +375,7 @@ function App() {
           </div>
           <div className="fotoEmap">
             <img id="emap2" src={emap2} alt=""></img>
-            <button className='pedirDEMO' id="pedirDEMODerecha"><a href="#contacto">Pedir DEMO</a></button> 
+            <button className='pedirDEMO'><a href="#contacto">Pedir DEMO</a></button> 
           </div>
           
         </article>
