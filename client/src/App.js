@@ -122,7 +122,7 @@ function App() {
   return (
     <div className="App">
       <navbar id= "navbar" className={`navbar ${scrolling ? 'scrolled' : ''}`}>
-      <ul>
+            <ul>
               <a href="#splashscreen"><li>INICIO</li></a>
               <a href="#servicios"><li>SERVICIOS</li></a>
               <a href="#productos"><li>PRODUCTOS</li></a>
@@ -164,7 +164,7 @@ function App() {
 
 
       <section id= "productos" className="productos">
-
+      <h2 className="textoServicios">Productos</h2>
       <article className="simma">
           <div className="recuadroSimma">
             <div className="tituloSimma">

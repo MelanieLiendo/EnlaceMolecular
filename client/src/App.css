@@ -1134,4 +1134,138 @@ textarea:focus::placeholder {
   margin-top: 600px;
 }
 
+/* RESPONSIVE */
 
+@media all and (max-width:1050px){
+
+  /* PRODUCTOS */
+
+#productos h3{
+  display: none;
+}
+
+#simmaEstabilidad, #emme, #emme2, #emap2{
+  display: none;
+}
+
+.recuadroSimma, .recuadroEmap, .recuadroEmqa, .recuadroEmme {
+  position: unset;
+  width: 100%;
+}
+
+.simma, .emme, .emqa{
+  margin-bottom: 70px;
+}
+
+
+}
+
+@media all and (max-width:800px){
+
+  /* NAVBAR */
+  #navbar{
+    display:none;
+}
+
+/* SERVICIOS */
+
+.serviciosGrid{
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.servicios{
+  margin-top: 400px;
+  margin-bottom: 400px;
+}
+
+/* PRODUCTOS */
+
+#productos h3{
+  display: none;
+}
+
+#simmaEstabilidad, #emme, #emme2, #emap2{
+  display: none;
+}
+
+.recuadroSimma, .recuadroEmap, .recuadroEmqa, .recuadroEmme {
+  position: unset;
+  width: 100%;
+}
+
+.simma, .emme, .emqa{
+  margin-bottom: 70px;
+}
+
+/* NOSOTROS */
+
+.cuadroNosotros {
+  display:block ;
+  height: fit-content;
+}
+
+.nosotros{
+  margin-top: 80px;
+  margin-bottom:70px;
+}
+
+.tituloNosotros{
+  position: unset;}
+
+
+
+}
+
+@media all and (max-width:460px){
+    /* NAVBAR */
+    #navbar{
+      display:none;
+  }
+  
+  /* SERVICIOS */
+  
+  .serviciosGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  .servicios{
+    margin-top: 400px;
+    margin-bottom: 400px;
+  }
+  
+  /* PRODUCTOS */
+  
+  #simmaEstabilidad, #emme, #emme2, #emap2{
+    display: none;
+  }
+  
+  .recuadroSimma, .recuadroEmap, .recuadroEmqa, .recuadroEmme {
+    position: unset;
+  }
+  .simma, .emme, .emqa{
+    margin-bottom: 70px;
+  }
+  
+  /* NOSOTROS */
+  
+  .cuadroNosotros {
+    display:block ;
+    height: fit-content;
+  }
+  
+  .nosotros{
+    margin-top: 80px;
+    margin-bottom:70px;
+  }
+  
+  .tituloNosotros{
+    position: unset;}
+  
+
+}
