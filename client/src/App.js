@@ -276,51 +276,50 @@ function App() {
 
           
             <div className="caracteristicasEmqa">
-            {seccionEmqa === 1 && 
+              {seccionEmqa === 1 && 
                 <ul>
-                <li>Administración de cualquier tipo de Documento del Sistema de Calidad.</li>
-                <li>Alta de Documentos con Anexos Asociados o Independientes</li>
-                <li> Gestión independiente de Documentos no GxP y Documentos GxP.</li>
-                <li>Control de emisión de Copias Controladas, No Controladas y <br></br>Anexos mediante permisos específicos.</li>
-                <li>Alta de Documentos con circuitos de Revisión, Aprobación y <br></br> puesta en vigencia. Trazabilidad de versiones intermedias.</li>
+                  <li>Administración de cualquier tipo de Documento del Sistema de Calidad.</li>
+                  <li>Alta de Documentos con Anexos Asociados o Independientes</li>
+                  <li> Gestión independiente de Documentos no GxP y Documentos GxP.</li>
+                  <li>Control de emisión de Copias Controladas, No Controladas y <br></br>Anexos mediante permisos específicos.</li>
+                  <li>Alta de Documentos con circuitos de Revisión, Aprobación y <br></br> puesta en vigencia. Trazabilidad de versiones intermedias.</li>
                 </ul>
-                }
+              }
 
-                {seccionEmqa === 2 &&
+              {seccionEmqa === 2 &&
                 <ul>
-                <li>Visualización de Documentos vigentes acorde a permisos, <br></br> Sector del usuario y Alcance de los documentos.</li>
-                <li>Permite mantener mecanismo de codificación de documentos <br></br>interno de cada Compañía e Implementar codificación automática.</li>
-                <li>Envio Automático de Notificaciones por correo electrónico. <br></br> (Documento para Revisar, Aprobar, Documentos Vigentes, <br></br>Vencidos, Obsoletos, etc)</li>
-                <li>Configuración de Perfiles de Puesto y Matriz de Capacitación</li>
+                  <li>Visualización de Documentos vigentes acorde a permisos, <br></br> Sector del usuario y Alcance de los documentos.</li>
+                  <li>Permite mantener mecanismo de codificación de documentos <br></br>interno de cada Compañía e Implementar codificación automática.</li>
+                  <li>Envio Automático de Notificaciones por correo electrónico. <br></br> (Documento para Revisar, Aprobar, Documentos Vigentes, <br></br>Vencidos, Obsoletos, etc)</li>
+                  <li>Configuración de Perfiles de Puesto y Matriz de Capacitación</li>
                 </ul>
-                }
+              }
 
-                {seccionEmqa === 3 &&
+              {seccionEmqa === 3 &&
                 <ul>
-                
-                <li>Extensión de Vigencia de Documentos</li>
-                <li>Integrable con Office 365/Teams y Google Docs</li>
-                <li>Múltiples Reportes de Gestión. Búsqueda de Palabras en Documentos.</li>
-                <li>Integrable con soluciones ERP y Control de Calidad para Liberación <br></br>de Producto para Venta.</li>
-                <li>Delegación de Tareas de Usuarios</li>
+                  <li>Extensión de Vigencia de Documentos</li>
+                  <li>Integrable con Office 365/Teams y Google Docs</li>
+                  <li>Múltiples Reportes de Gestión. Búsqueda de Palabras en Documentos.</li>
+                  <li>Integrable con soluciones ERP y Control de Calidad para Liberación <br></br>de Producto para Venta.</li>
+                  <li>Delegación de Tareas de Usuarios</li>
                 </ul>
-                }
-              </div>
+              }
+            </div>
 
-              
+                  
             <div className='botonesRecuadro'>
-        <button onClick={() => cambiarSeccionEmqa(1)}> {seccionEmqa === 1 ? <p className='puntos'>&#9899;</p>:<p className='puntos'>&#9898;</p>}</button>
-        <button onClick={() => cambiarSeccionEmqa(2)}>{seccionEmqa ===2? <p className='puntos'>&#9899;</p>:<p className='puntos'>&#9898;</p>}</button>
-        <button onClick={() => cambiarSeccionEmqa(3)}>{seccionEmqa === 3? <p className='puntos'>&#9899;</p>:<p className='puntos'>&#9898;</p>}</button>
-        </div>
+              <button onClick={() => cambiarSeccionEmqa(1)}> {seccionEmqa === 1 ? <p className='puntos'>&#9899;</p>:<p className='puntos'>&#9898;</p>}</button>
+              <button onClick={() => cambiarSeccionEmqa(2)}>{seccionEmqa ===2? <p className='puntos'>&#9899;</p>:<p className='puntos'>&#9898;</p>}</button>
+              <button onClick={() => cambiarSeccionEmqa(3)}>{seccionEmqa === 3? <p className='puntos'>&#9899;</p>:<p className='puntos'>&#9898;</p>}</button>
+            </div>
 
           </div>
+
           <div className="fotoEmqa">
             <img id="emme2" src={emme2} alt=""></img>
             <button className='pedirDEMO'><a href="#contacto">Pedir DEMO</a></button> 
           </div>  
           
-       
         </article>
 
         <article className="emap">

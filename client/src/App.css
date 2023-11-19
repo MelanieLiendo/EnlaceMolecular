@@ -387,6 +387,7 @@ align-items: center;
   margin-top: 20px;
   font-family: "Montserrat";
   font-size: 0.8em;
+  list-style-position: inside;
 }
 
 .caracteristicasEmap li{
@@ -594,6 +595,7 @@ align-items: center;
   margin-top: 20px;
   font-family: "Montserrat";
   font-size: 0.8em;
+  list-style-position: inside;
 }
 
 .caracteristicasEmme li{
@@ -1155,8 +1157,27 @@ textarea:focus::placeholder {
 
 .simma, .emme, .emqa{
   margin-bottom: 70px;
+  
+  display: flex;
+  flex-direction: column;
 }
 
+.tituloSimma p, .tituloEmap p, .tituloEmme p, .tituloEmqa p{
+  justify-content: center;
+  text-align-last: center;
+}
+
+.caracteristicasSimma, .caracteristicasEmme, .caracteristicasEmqa, .caracteristicasEmap{
+  justify-content: center;
+}
+
+.caracteristicasSimma li, .caracteristicasEmap li, .caracteristicasEmme li, .caracteristicasEmqa li {
+  text-align-last: center;
+}
+
+.fotoEmap, .fotoEmme, .fotoEmqa, .fotoSimma {
+  display: none;
+}
 
 }
 
@@ -1198,6 +1219,26 @@ textarea:focus::placeholder {
 
 .simma, .emme, .emqa{
   margin-bottom: 70px;
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.tituloSimma p, .tituloEmap p, .tituloEmme p, .tituloEmqa p{
+  justify-content: center;
+  text-align-last: center;
+}
+
+.caracteristicasSimma, .caracteristicasEmme, .caracteristicasEmqa, .caracteristicasEmap{
+  justify-content: center;
+}
+
+.caracteristicasSimma li, .caracteristicasEmap li, .caracteristicasEmme li, .caracteristicasEmqa li {
+  text-align-last: center;
+}
+
+.fotoEmap, .fotoEmme, .fotoEmqa, .fotoSimma {
+  display: none;
 }
 
 /* NOSOTROS */
@@ -1250,8 +1291,26 @@ textarea:focus::placeholder {
   }
   .simma, .emme, .emqa{
     margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tituloSimma p, .tituloEmap p, .tituloEmme p, .tituloEmqa p{
+    justify-content: center;
+    text-align-last: center;
   }
   
+  .caracteristicasSimma, .caracteristicasEmme, .caracteristicasEmqa, .caracteristicasEmap{
+    justify-content: center;
+  }
+  
+  .caracteristicasSimma li, .caracteristicasEmap li, .caracteristicasEmme li, .caracteristicasEmqa li {
+    text-align-last: center;
+  }
+
+  .fotoEmap, .fotoEmme, .fotoEmqa, .fotoSimma {
+    display: none;
+  }
   /* NOSOTROS */
   
   .cuadroNosotros {
@@ -1265,7 +1324,10 @@ textarea:focus::placeholder {
   }
   
   .tituloNosotros{
-    position: unset;}
+    position: unset;
+  }
+
+  
   
 
 }
