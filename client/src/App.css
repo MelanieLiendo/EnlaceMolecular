@@ -702,6 +702,8 @@ align-items: center;
   margin-right: 20px;
 }
 
+
+
 .fotoSimma img{
   width: 500px;
   border-radius: 2em;
@@ -780,26 +782,26 @@ align-items: center;
 }
 
 #containerServicios1{
-  background-image: url(./images/fondoServicios1.jpg) ;
+  background-image: url(./images/BloqueDeServicios.jpg) ;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: left;
   padding: 10px;
 }
 
 #containerServicios2{
-  background-image: url(./images/fondoServicios2.jpg) ;
+  background-image: url(./images/BloqueDeServicios.jpg) ;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: center;
   padding: 10px;
 }
 
 #containerServicios3{
-  background-image: url(./images/fondoServicios3.jpg) ;
+  background-image: url(./images/BloqueDeServicios.jpg) ;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: right;
   padding: 10px;
 }
 
@@ -1179,6 +1181,10 @@ textarea:focus::placeholder {
   display: none;
 }
 
+.textoNosotros p {
+  font-size: small;
+}
+
 }
 
 @media all and (max-width:800px){
@@ -1256,6 +1262,10 @@ textarea:focus::placeholder {
 .tituloNosotros{
   position: unset;}
 
+  .textoNosotros p {
+    font-size: small;
+  }
+
 
 
 }
@@ -1325,6 +1335,10 @@ textarea:focus::placeholder {
   
   .tituloNosotros{
     position: unset;
+  }
+
+  .textoNosotros p {
+    font-size: small;
   }
 
   

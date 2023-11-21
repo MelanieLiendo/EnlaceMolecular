@@ -45,6 +45,7 @@ function App() {
     const [mensaje, setMensaje] = useState('');
     const [mensajeSatisf, setMensajeSatisf ] = useState('');
     const [seccionActual, setSeccionActual] = useState(1);
+    const [seccionSimma, setSeccionSimma] = useState(1)
     const [seccionEmap, setSeccionEmap] = useState(1)
     const [seccionEmme, setSeccionEmme] = useState(1)
     const [seccionEmqa, setSeccionEmqa] = useState(1)
@@ -54,6 +55,9 @@ function App() {
       setSeccionActual(seccion);
     };
 
+    const cambiarSeccionSimma = (seccion) => {
+      setSeccionSimma(seccion);
+    }
 
     const cambiarSeccionEmap = (seccion) => {
       setSeccionEmap(seccion);
@@ -124,8 +128,8 @@ function App() {
       <navbar id= "navbar" className={`navbar ${scrolling ? 'scrolled' : ''}`}>
             <ul>
               <a href="#splashscreen"><li>INICIO</li></a>
-              <a href="#servicios"><li>SERVICIOS</li></a>
               <a href="#productos"><li>PRODUCTOS</li></a>
+              <a href="#servicios"><li>SERVICIOS</li></a>
               <a href="#nosotros"><li>NOSOTROS</li></a>
               <a href="#contacto"><li>CONTACTO</li></a>
             </ul>
@@ -137,31 +141,9 @@ function App() {
         <img id="logo" src= {logo} alt="logo"></img>
         </div>
       <section id='splashscreen2'>
-      <p>SOFTWARES PARA ENTORNO GXP</p>
+      <p>SOFTWARE para entorno GxP</p>
     </section>
       </div>
-
-      <section id= "servicios" className="servicios">
-        <article className='serviciosCuadro'>
-        <h2 className="textoServicios">Servicios</h2>
-        <div className="serviciosGrid">
-          <div className="containerServicios" id="containerServicios1">
-          <img id='desarrolloSoftware'src={desarrolloSoftware} />
-          {/* <p>Desarrollamos <b>software a medida</b> para laboratorios según <b>requerimientos específicos</b> y ofrecemos servicios de <b>consultoría</b> para la <b>mejora de procesos</b>.</p>  */}
-          <p>Desarrollamos <b>software a medida</b> para laboratorios.</p>
-          </div>
-          <div className="containerServicios" id="containerServicios2">
-          <img id='agil'src={agil} />
-          <p><b>Parametrización</b> inicial de nuestros productos.</p> 
-          </div>
-          <div className="containerServicios" id="containerServicios3">
-          <img id='solucion'src={solucion} />
-          <p>Servicio de validación según normativa <b>ISPE-GAMP5</b>.</p>
-          </div>
-        </div>
-        </article>
-      </section>
-
 
       <section id= "productos" className="productos">
       <h2 className="textoServicios">Productos</h2>
@@ -179,19 +161,46 @@ function App() {
                 </h2> */}
                 <img id= "logoSIMMA" src={logoSIMMA} alt=""></img>
               </div>
-              <p>Gestión Integral de Laboratorio (LIMS): <br></br> Materiales, Productos, Estabilidad, Ambiental, <br></br> Aguas, Validación de Limpieza.</p>
+              <p>Gestión Integral de Laboratorio (LIMS)</p>
            </div>
 
           
             <div className="caracteristicasSimma">
-              <ul>
-                <li>Ambiente: permite la configuración completa de los <br></br>procedimientos internos de monitoreo de aire, superficies,<br></br> personal, equipos y gases.</li>
-                <li>Productos: permite la configuración completa de las <br></br>especificación de análisis en proceso (IPC) y de productos <br></br>intermedios y finales.</li>
-                <li>Materiales: permite la configuración completa de las <br></br>especificaciones de análisis y re-análisis de insumos, materias primas<br></br> y material de empaque.</li>
-              </ul>
+            {seccionSimma === 1 && 
+                <ul>
+                <li>Plataforma integrada para todas las tareas de Control de Calidad,<br></br> de contratación por Módulos.</li>
+                <li><b>Materiales</b> (Materias primas e Insumos), <b>Productos</b> (en proceso,<br></br> semielaborados y finales), <b>Aguas </b>(generación,  loops de planta,<br></br> pretratamiento y red de consumo ), <b>Ambiente</b> (Monitoreo ambiental,<br></br> personal, gases), <b>Validación de Limpieza</b> (de equipos y áreas).<br></br>Próximamente: <b>Insumos Lab</b> (Gestión de Reactivos y soluciones)</li>
+                <li>Circuito de registro en distintos estados: A inspeccionar/ Pendientes/<br></br> A revisar/ Dictamen</li>
+                </ul>
+                }
+
+                {seccionSimma === 2 &&
+                <ul>
+                <li>Alertas visuales y notificaciones por mail para registros con resultados<br></br> fuera de límite/especificación, OOT,  incompletos, etc.</li>
+                <li>Completa trazabilidad de análisis mediante registro de equipos y<br></br> reactivos utilizados.</li>
+                <li>Integración con lectura de códigos QR y de barras.</li>
+                <li>Link a datos crudos en red y adjuntos (PDF, fotos).</li>
+                </ul>
+                }
+
+                {seccionSimma === 3 &&
+                <ul>
+                
+                <li>Gestión integrada de Cálculos asociados a análisis.</li>
+                <li>Emisión de certificados de análisis y reportes de gestión.</li>
+                <li>Integración con sistemas ERP para vinculacióncon maestro de materiales,<br></br> productos,especificaciones y dictamen para el movimiento de stocks.</li>
+                <li>Ofrecemos estudios de factibilidad e integración de la plataforma<br></br> a instrumentos de medición para carga de datos en tiempo real.</li>
+                </ul>
+                }
             </div>
+            <div className='botonesRecuadro'>
+        <button onClick={() => cambiarSeccionSimma(1)}> {seccionSimma === 1 ? <p className='puntos'>&#9899;</p>:<p className='puntos'>&#9898;</p>}</button>
+        <button onClick={() => cambiarSeccionSimma(2)}>{seccionSimma ===2? <p className='puntos'>&#9899;</p>:<p className='puntos'>&#9898;</p>}</button>
+        <button onClick={() => cambiarSeccionSimma(3)}>{seccionSimma === 3? <p className='puntos'>&#9899;</p>:<p className='puntos'>&#9898;</p>}</button>
+        </div>
 
           </div>
+
           <div className="fotoSimma">
             <img id= "simmaEstabilidad" src={simmaEstabilidad} alt="foto de producto Simma"></img>
             <button className='pedirDEMO'><a href="#contacto">Pedir DEMO</a></button> 
@@ -382,6 +391,27 @@ function App() {
 
       </section>
 
+      <section id= "servicios" className="servicios">
+        <article className='serviciosCuadro'>
+        <h2 className="textoServicios">Servicios</h2>
+        <div className="serviciosGrid">
+          <div className="containerServicios" id="containerServicios1">
+          <img id='desarrolloSoftware'src={desarrolloSoftware} />
+          {/* <p>Desarrollamos <b>software a medida</b> para laboratorios según <b>requerimientos específicos</b> y ofrecemos servicios de <b>consultoría</b> para la <b>mejora de procesos</b>.</p>  */}
+          <p>Desarrollo de nuevas funcionalidades bajo Requerimientos específicos de Usuario.</p>
+          </div>
+          <div className="containerServicios" id="containerServicios2">
+          <img id='agil'src={agil} />
+          <p>Parametrización inicial de las aplicaciones.</p> 
+          </div>
+          <div className="containerServicios" id="containerServicios3">
+          <img id='solucion'src={solucion} />
+          <p>Validación en entorno del cliente acorde a ISPE-GAMP 5.</p>
+          </div>
+        </div>
+        </article>
+      </section>
+
     
       <section id="nosotros" className="nosotros">
        <div className="cuadroNosotros">
@@ -389,9 +419,9 @@ function App() {
         <h2>Nosotros</h2>
         </div>
           <div className="textoNosotros">
-          {seccionActual === 1 && <p><b>Enlace Molecular</b> es una empresa de desarrollo de <b>soluciones para laboratorios y aplicaciones con impacto GxP</b> que nace en el año 2014 con el objetivo de dar <b>oluciones informáticas a la industria farmacéutica</b>. Nuestros desarrollos siguen las normas de calidad de acuerdo a la <b>guía ISPE-GAMP5</b>.</p>}
-          {seccionActual === 3 && <p>Contamos con un <b>equipo de profesionales</b> con una amplia experiencia en desarrollo de <b>software para laboratorios</b> y en los <b>aspectos productivos y procesos de calidad de la industria farmacéutica</b>. Nos mantenemos actualizados para cumplir con las normativas regulatorias vigentes.</p>}
-          {seccionActual === 2 && <p>Creemos que la <b>calidad en la atención a nuestros clientes</b> es fundamental, por eso ofrecemos una <b>atención personalizada</b> y acompañamos a los laboratorios que confían en nosotros en la implementación de <b>herramientas que agilizan y hacen más robustos sus procesos</b>.</p>}
+          {seccionActual === 1 && <p>Enlace Molecular es una empresa que desarrolla y comercializa aplicaciones de software  para compañías que ejecutan sus operaciones en ámbitos regulados (GxP). Nacemos en el año 2014 con el objetivo de dar soluciones informáticas a la industria farmacéutica. Nuestras aplicaciones cumplen lineamientos de CFR 21 parte 11 y el ciclo de validación está alineado a GAMP 5.</p>}
+          {seccionActual === 3 && <p>Contamos con un equipo de profesionales con una amplia experiencia en desarrollo de software para laboratorios y en los aspectos productivos y procesos de calidad de la industria farmacéutica. Nos mantenemos actualizados para cumplir con las normativas regulatorias vigentes.</p>}
+          {seccionActual === 2 && <p>Creemos que la calidad en la atención a nuestros clientes es fundamental, por eso ofrecemos una atención personalizada y acompañamos a los laboratorios que confían en nosotros en la implementación de herramientas que agilizan y hacen más robustos sus procesos.</p>}
           <div className='botonesNosotros'>
         <button onClick={() => cambiarSeccion(1)}> {seccionActual === 1 ? <p>&#9899;</p>:<p>&#9898;</p>}</button>
         <button onClick={() => cambiarSeccion(3)}>{seccionActual ===3? <p>&#9899;</p>:<p>&#9898;</p>}</button>
