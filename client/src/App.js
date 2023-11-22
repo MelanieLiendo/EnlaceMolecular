@@ -82,7 +82,7 @@ function App() {
       };
   
       // Reemplazar 'TU_USER_ID', 'TU_SERVICE_ID' y 'TU_TEMPLATE_ID' con tus propios valores
-      emailjs.send('service_jziq654', 'template_suiiudd', templateParams, 'fQ4KcnQ1vK6zakkJt')
+      emailjs.send('service_3trj91e', 'template_jifac0u', templateParams, 'L2DQdS2ybz24AXwCx')
         .then((response) => {
           console.log('Correo enviado:', response);
           setMensajeSatisf("Mensaje enviado");
