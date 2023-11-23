@@ -138,11 +138,11 @@ function App() {
       <div id= "splashscreen" className="splashscreen">
   
         <div className="splashImage">
-        <img id="logo" src= {logo} alt="logo"></img>
+          <img id="logo" src= {logo} alt="logo"></img>
         </div>
-      <section id='splashscreen2'>
-      <p>SOFTWARE para entorno GxP</p>
-    </section>
+        <section id='splashscreen2'>
+          <p>SOFTWARE para entorno GxP</p>
+        </section>
       </div>
 
       <section id= "productos" className="productos">
@@ -168,16 +168,16 @@ function App() {
             <div className="caracteristicasSimma">
             {seccionSimma === 1 && 
                 <ul>
-                <li>Plataforma integrada para todas las tareas de Control de Calidad,<br></br> de contratación por Módulos.</li>
-                <li><b>Materiales</b> (Materias primas e Insumos), <b>Productos</b> (en proceso,<br></br> semielaborados y finales), <b>Aguas </b>(generación,  loops de planta,<br></br> pretratamiento y red de consumo ), <b>Ambiente</b> (Monitoreo ambiental,<br></br> personal, gases), <b>Validación de Limpieza</b> (de equipos y áreas).<br></br>Próximamente: <b>Insumos Lab</b> (Gestión de Reactivos y soluciones)</li>
-                <li>Circuito de registro en distintos estados: A inspeccionar/ Pendientes/<br></br> A revisar/ Dictamen</li>
+                <li>Plataforma integrada para todas las tareas de Control de Calidad, de contratación por Módulos.</li>
+                <li><b>Materiales</b> (Materias primas e Insumos), <b>Productos</b> (en proceso, semielaborados y finales), <b>Aguas </b>(generación,  loops de planta, pretratamiento y red de consumo ), <b>Ambiente</b> (Monitoreo ambiental, personal, gases), <b>Validación de Limpieza</b> (de equipos y áreas). Próximamente: <b>Insumos Lab</b> (Gestión de Reactivos y soluciones)</li>
+                <li>Circuito de registro en distintos estados: A inspeccionar / Pendientes / A revisar / Dictamen</li>
                 </ul>
                 }
 
                 {seccionSimma === 2 &&
                 <ul>
-                <li>Alertas visuales y notificaciones por mail para registros con resultados<br></br> fuera de límite/especificación, OOT,  incompletos, etc.</li>
-                <li>Completa trazabilidad de análisis mediante registro de equipos y<br></br> reactivos utilizados.</li>
+                <li>Alertas visuales y notificaciones por mail para registros con resultados fuera de límite/especificación, OOT,  incompletos, etc.</li>
+                <li>Completa trazabilidad de análisis mediante registro de equipos y reactivos utilizados.</li>
                 <li>Integración con lectura de códigos QR y de barras.</li>
                 <li>Link a datos crudos en red y adjuntos (PDF, fotos).</li>
                 </ul>
@@ -188,8 +188,8 @@ function App() {
                 
                 <li>Gestión integrada de Cálculos asociados a análisis.</li>
                 <li>Emisión de certificados de análisis y reportes de gestión.</li>
-                <li>Integración con sistemas ERP para vinculacióncon maestro de materiales,<br></br> productos,especificaciones y dictamen para el movimiento de stocks.</li>
-                <li>Ofrecemos estudios de factibilidad e integración de la plataforma<br></br> a instrumentos de medición para carga de datos en tiempo real.</li>
+                <li>Integración con sistemas ERP para vinculacióncon maestro de materiales, productos,especificaciones y dictamen para el movimiento de stocks.</li>
+                <li>Ofrecemos estudios de factibilidad e integración de la plataforma a instrumentos de medición para carga de datos en tiempo real.</li>
                 </ul>
                 }
             </div>
@@ -222,24 +222,24 @@ function App() {
                 </h2> */}
                 <img id= "logoEMME" src={logoEMME} alt=""></img>
               </div>
-                <p>Aplicación de Manejo de Equipos e <br></br>Instrumentos</p>
+                <p>Aplicación de Manejo de Equipos e Instrumentos</p>
             </div>
   
             <div className="caracteristicasEmme">
             {seccionEmme === 1 && 
                 <ul>
                 <li>Configuración de Maestro de Equipos, Instrumentos y proveedores.</li>
-                <li>Configuración de Protocolos de Mantenimiento Preventivo <br></br> y Calificacion de Equipos.</li>
-                <li>Configuración de Protocolos de Calibracion de Instrumentos <br></br> con diversos tipos de tolerancia.</li>
+                <li>Configuración de Protocolos de Mantenimiento Preventivo y Calificacion de Equipos.</li>
+                <li>Configuración de Protocolos de Calibracion de Instrumentos con diversos tipos de tolerancia.</li>
                 <li>Seguimiento de actividades según frecuencia determinadas</li>
                 </ul>
                 }
 
                 {seccionEmme === 2 &&
                 <ul>
-                <li>Advertencias visuales de actividades vencidas/ por vencer. <br></br>Notificaciones automáticas por correo electrónico.</li>
+                <li>Advertencias visuales de actividades vencidas/ por vencer. Notificaciones automáticas por correo electrónico.</li>
                 <li>Programacion de Tareas internas y listados para proveedores externos.</li>
-                <li>Registro de Calibracion de Instrumentos con propiedades <br></br>asociadas (patrones, condiciones ambientales, etc) Registro de ajustes <br></br>necesarios</li>
+                <li>Registro de Calibracion de Instrumentos con propiedades asociadas (patrones, condiciones ambientales, etc) Registro de ajustes <br></br>necesarios</li>
                 </ul>
                 }
 
@@ -247,8 +247,8 @@ function App() {
                 <ul>
                 
                 <li>Reportes de evolución. Certificados de Calibracion</li>
-                <li>Disponible para uso en Tablets Integrable a lectores de códigos <br></br>QR/barras para identificación de equipos e instrumentos.</li>
-                <li>Logbook Digital de Equipo/Instrumento con registro de todas <br></br>las tareas y uso.</li>
+                <li>Disponible para uso en Tablets Integrable a lectores de códigos QR/barras para identificación de equipos e instrumentos.</li>
+                <li>Logbook Digital de Equipo/Instrumento con registro de todas las tareas y uso.</li>
                 </ul>
                 }
             </div>  
@@ -280,7 +280,7 @@ function App() {
                 </h2> */}
                 <img id= "logoEMQA" src={logoEMQA} alt=""></img>
               </div>
-              <p>Aplicación para Gestion de Documentos, <br></br>administración de Capacitacion y procesos <br></br>de Garantia de Calidad</p>
+              <p>Aplicación para Gestion de Documentos, administración de Capacitacion y procesos de Garantia de Calidad</p>
            </div>
 
           
@@ -290,16 +290,16 @@ function App() {
                   <li>Administración de cualquier tipo de Documento del Sistema de Calidad.</li>
                   <li>Alta de Documentos con Anexos Asociados o Independientes</li>
                   <li> Gestión independiente de Documentos no GxP y Documentos GxP.</li>
-                  <li>Control de emisión de Copias Controladas, No Controladas y <br></br>Anexos mediante permisos específicos.</li>
-                  <li>Alta de Documentos con circuitos de Revisión, Aprobación y <br></br> puesta en vigencia. Trazabilidad de versiones intermedias.</li>
+                  <li>Control de emisión de Copias Controladas, No Controladas y Anexos mediante permisos específicos.</li>
+                  <li>Alta de Documentos con circuitos de Revisión, Aprobación y  puesta en vigencia. Trazabilidad de versiones intermedias.</li>
                 </ul>
               }
 
               {seccionEmqa === 2 &&
                 <ul>
-                  <li>Visualización de Documentos vigentes acorde a permisos, <br></br> Sector del usuario y Alcance de los documentos.</li>
-                  <li>Permite mantener mecanismo de codificación de documentos <br></br>interno de cada Compañía e Implementar codificación automática.</li>
-                  <li>Envio Automático de Notificaciones por correo electrónico. <br></br> (Documento para Revisar, Aprobar, Documentos Vigentes, <br></br>Vencidos, Obsoletos, etc)</li>
+                  <li>Visualización de Documentos vigentes acorde a permisos, Sector del usuario y Alcance de los documentos.</li>
+                  <li>Permite mantener mecanismo de codificación de documentos interno de cada Compañía e Implementar codificación automática.</li>
+                  <li>Envio Automático de Notificaciones por correo electrónico. (Documento para Revisar, Aprobar, Documentos Vigentes, Vencidos, Obsoletos, etc)</li>
                   <li>Configuración de Perfiles de Puesto y Matriz de Capacitación</li>
                 </ul>
               }
@@ -309,7 +309,7 @@ function App() {
                   <li>Extensión de Vigencia de Documentos</li>
                   <li>Integrable con Office 365/Teams y Google Docs</li>
                   <li>Múltiples Reportes de Gestión. Búsqueda de Palabras en Documentos.</li>
-                  <li>Integrable con soluciones ERP y Control de Calidad para Liberación <br></br>de Producto para Venta.</li>
+                  <li>Integrable con soluciones ERP y Control de Calidad para Liberación de Producto para Venta.</li>
                   <li>Delegación de Tareas de Usuarios</li>
                 </ul>
               }
@@ -339,7 +339,7 @@ function App() {
                 {/* <h2>emAP</h2> */}
                 <img id= "logoEMAP" src={logoEMAP} alt=""></img>
               </div>
-                <p>Módulo de gestión de abastecimiento y <br></br>producción de productos farmacéuticos <br></br>y médicos</p>
+                <p>Módulo de gestión de abastecimiento y producción de productos farmacéuticos y médicos</p>
             </div>
             
               <div className="caracteristicasEmap">
@@ -356,18 +356,18 @@ function App() {
 
                 {seccionEmap === 2 &&
                 <ul>
-                <li>Emisión de ordenes de fraccionamiento de materias primas <br></br>y materiales de empaque.</li>
-                <li>Gestión de OP/OE: Registro de cantidades utilizadas, controles <br></br>de proceso, cálculos de rendimiento.</li>
+                <li>Emisión de ordenes de fraccionamiento de materias primas y materiales de empaque.</li>
+                <li>Gestión de OP/OE: Registro de cantidades utilizadas, controles de proceso, cálculos de rendimiento.</li>
                 <li>Notificaciones configurables para mensajes por correo electrónico.</li>
-                <li>Asignación de dictamen de control de calidad y liberación <br></br>de garantía de calidad.</li>
+                <li>Asignación de dictamen de control de calidad y liberación de garantía de calidad.</li>
                 </ul>
                 }
 
                 {seccionEmap === 3 &&
                 <ul>
                 
-                <li>Múltiples reportes: trazabilidad de materiales y productos, <br></br>conciliación de stock.</li>
-                <li>Integración con Modulo de Calidad Simma® para generación <br></br>automática de protocolos de análisis de liberación, re-análisis <br></br>y extensión de vencimiento.</li>
+                <li>Múltiples reportes: trazabilidad de materiales y productos, conciliación de stock.</li>
+                <li>Integración con Modulo de Calidad Simma® para generación automática de protocolos de análisis de liberación, re-análisis y extensión de vencimiento.</li>
                 <li>Adaptable a Lector de Código de barras/QR.</li>
                 </ul>
                 }

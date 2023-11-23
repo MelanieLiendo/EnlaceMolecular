@@ -339,7 +339,6 @@ margin: 0px;
   top: 5vh;
   left: 20vh;
   z-index: 1;
- 
 }
 
 
@@ -386,7 +385,6 @@ align-items: center;
   margin-top: 20px;
   font-family: "Montserrat";
   font-size: 0.8em;
-  list-style-position: inside;
 }
 
 .caracteristicasEmap li{
@@ -485,8 +483,7 @@ justify-content: center;
   margin-right: 30px;
   margin-bottom: 0px;
   justify-content: end;
-  display: flex;
-  text-align-last: right ;
+  text-align-last: center ;
   
 }
 
@@ -496,7 +493,6 @@ justify-content: center;
   font-size: 0.8em;
   display: flex;
   justify-content: end;
-  list-style-position: inside;
 }
 
 .caracteristicasEmqa li{
@@ -593,7 +589,6 @@ align-items: center;
   margin-top: 20px;
   font-family: "Montserrat";
   font-size: 0.8em;
-  list-style-position: inside;
 }
 
 .caracteristicasEmme li{
@@ -680,8 +675,7 @@ align-items: center;
   margin-right: 30px;
   margin-bottom: 0px;
   justify-content: end;
-  display: flex;
-  text-align-last: right ;
+  text-align-last: center ;
 }
 
 .caracteristicasSimma{
@@ -690,13 +684,13 @@ align-items: center;
   font-size: 0.8em;
   display: flex;
   justify-content: end;
-  list-style-position: inside;
 }
 
 .caracteristicasSimma li{
   margin-top: 20px;
   list-style-type: circle;
   margin-right: 20px;
+  padding-left: 50px;
 }
 
 
@@ -740,7 +734,7 @@ align-items: center;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   row-gap: 30px;
-  margin: 50px 40px;
+  margin: 50px 40px 0px 40px;
   justify-items: center;
 }
 
@@ -1202,11 +1196,18 @@ textarea:focus::placeholder {
 }
 
 .servicios{
-  margin-top: 400px;
-  margin-bottom: 400px;
+  margin-top: 350px;
+  margin-bottom: 350px;
 }
 
 /* PRODUCTOS */
+
+.textoServicios {
+  text-transform: uppercase;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  line-height: 1.2;
+}
 
 #productos h3{
   display: none;
@@ -1216,13 +1217,19 @@ textarea:focus::placeholder {
   display: none;
 }
 
-.recuadroSimma, .recuadroEmap, .recuadroEmqa, .recuadroEmme {
+.recuadroSimma, .recuadroEmqa, .recuadroEmme {
+  position: unset;
+  width: 100%;
+  height: 700px;
+}
+.recuadroEmap{
+  height: 600px;
   position: unset;
   width: 100%;
 }
 
 .simma, .emme, .emqa{
-  margin-bottom: 70px;
+  margin-bottom: 40px;
   
   display: flex;
   flex-direction: column;
@@ -1231,15 +1238,17 @@ textarea:focus::placeholder {
 .tituloSimma p, .tituloEmap p, .tituloEmme p, .tituloEmqa p{
   justify-content: center;
   text-align-last: center;
+  margin-right: 0px;
+  margin-left: 0px ;
 }
 
 .caracteristicasSimma, .caracteristicasEmme, .caracteristicasEmqa, .caracteristicasEmap{
   justify-content: center;
 }
-
-.caracteristicasSimma li, .caracteristicasEmap li, .caracteristicasEmme li, .caracteristicasEmqa li {
-  text-align-last: center;
+.caracteristicasSimma li{
+  padding-left: 0px;
 }
+
 
 .fotoEmap, .fotoEmme, .fotoEmqa, .fotoSimma {
   display: none;
@@ -1264,6 +1273,18 @@ textarea:focus::placeholder {
     font-size: small;
   }
 
+  /* contacto */
+
+.contenido {
+  margin: 25px;}
+
+  /* footer */
+
+  .footer {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
 
 
 }
@@ -1271,38 +1292,13 @@ textarea:focus::placeholder {
 @media all and (max-width:460px){
     /*NAVBAR*/
 
-#navbar{
-  opacity: 0.9;
-  width: 100%;
-  position: fixed;
-  font-family: 'Roboto', sans-serif;
-}
+    /* SPLASHSCREEN */
+    #logo {
+      width: auto;
+      height: 70px;
+    }
 
-.navbar.scrolled{
-z-index: 3;
-background-image: url(./images/navbar.jpg) ;
-background-repeat: no-repeat;
-background-size: cover;
-background-position:top;
-}
-
-#navbar a{
-text-decoration: none;
-}
-
-#navbar ul  {
-display: flex;
-justify-content: center;
-}
-
-#navbar ul  li{
-margin-right: 30px;
-list-style: none;
-color: #7F5A8B;
-font-size: 0.5em;
-font-weight: 5;
-}
- 
+  
   /* SERVICIOS */
   
   .serviciosGrid{
@@ -1313,8 +1309,8 @@ font-weight: 5;
   }
   
   .servicios{
-    margin-top: 400px;
-    margin-bottom: 400px;
+    margin-top: 350px;
+    margin-bottom: 350px;
   }
   
   /* PRODUCTOS */
@@ -1322,12 +1318,23 @@ font-weight: 5;
   #simmaEstabilidad, #emme, #emme2, #emap2{
     display: none;
   }
-  
-  .recuadroSimma, .recuadroEmap, .recuadroEmqa, .recuadroEmme {
-    position: unset;
+  .caracteristicasSimma li{
+    padding-left: 0px;
   }
+  
+  .recuadroSimma, .recuadroEmqa, .recuadroEmme {
+    position: unset;
+    width: 100%;
+    height: 700px;
+  }
+  .recuadroEmap{
+    height: 600px;
+    position: unset;
+    width: 100%;
+  }
+
   .simma, .emme, .emqa{
-    margin-bottom: 70px;
+    margin-bottom: 40px;
     display: flex;
     flex-direction: column;
   }
@@ -1335,15 +1342,17 @@ font-weight: 5;
   .tituloSimma p, .tituloEmap p, .tituloEmme p, .tituloEmqa p{
     justify-content: center;
     text-align-last: center;
+    margin-right: 0px;
+    margin-left: 0px ;
   }
   
   .caracteristicasSimma, .caracteristicasEmme, .caracteristicasEmqa, .caracteristicasEmap{
     justify-content: center;
   }
   
-  .caracteristicasSimma li, .caracteristicasEmap li, .caracteristicasEmme li, .caracteristicasEmqa li {
+  /* .caracteristicasSimma li, .caracteristicasEmap li, .caracteristicasEmme li, .caracteristicasEmqa li {
     text-align-last: center;
-  }
+  } */
 
   .fotoEmap, .fotoEmme, .fotoEmqa, .fotoSimma {
     display: none;
@@ -1368,6 +1377,24 @@ font-weight: 5;
     font-size: small;
   }
 
+  /* SERVICIOS */
+
+  .textoServicios {
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    line-height: 1.2;
+}
+
+/* contacto */
+
+.contenido {
+  margin: 25px;}
+
+  .footer {
+    margin-right: 10px;
+    margin-left: 10px;
+}
   
   
 
