@@ -90,7 +90,6 @@ h2{
 #navbar ul  {
 display: flex;
 justify-content: center;
-padding-top: 10px;
 }
 
 #navbar ul  li{
@@ -503,7 +502,6 @@ justify-content: center;
 .caracteristicasEmqa li{
   margin-top: 20px;
   list-style-type: circle;
-  text-align-last: right;
   margin-right: 20px;
 }
 
@@ -698,7 +696,6 @@ align-items: center;
 .caracteristicasSimma li{
   margin-top: 20px;
   list-style-type: circle;
-  text-align-last: right;
   margin-right: 20px;
 }
 
@@ -1089,6 +1086,7 @@ textarea:focus::placeholder {
 
 .material button:hover{
   color: white ;
+  cursor: pointer;
 }
 
 .mensajeEnviado{
@@ -1144,7 +1142,7 @@ textarea:focus::placeholder {
 
   /* PRODUCTOS */
 
-#productos h3{
+/* #productos h3{
   display: none;
 }
 
@@ -1183,7 +1181,7 @@ textarea:focus::placeholder {
 
 .textoNosotros p {
   font-size: small;
-}
+} */
 
 }
 
@@ -1271,11 +1269,40 @@ textarea:focus::placeholder {
 }
 
 @media all and (max-width:460px){
-    /* NAVBAR */
-    #navbar{
-      display:none;
-  }
-  
+    /*NAVBAR*/
+
+#navbar{
+  opacity: 0.9;
+  width: 100%;
+  position: fixed;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar.scrolled{
+z-index: 3;
+background-image: url(./images/navbar.jpg) ;
+background-repeat: no-repeat;
+background-size: cover;
+background-position:top;
+}
+
+#navbar a{
+text-decoration: none;
+}
+
+#navbar ul  {
+display: flex;
+justify-content: center;
+}
+
+#navbar ul  li{
+margin-right: 30px;
+list-style: none;
+color: #7F5A8B;
+font-size: 0.5em;
+font-weight: 5;
+}
+ 
   /* SERVICIOS */
   
   .serviciosGrid{

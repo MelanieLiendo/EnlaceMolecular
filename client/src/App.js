@@ -151,7 +151,7 @@ function App() {
           <div className="recuadroSimma">
             <div className="tituloSimma">
               <div className="seccion1Simma">
-               <h3>01.</h3>
+               {/* <h3>01.</h3> */}
                {/* <h2 id="texto-animado">
                   <span>s</span>
                   <span>i</span>
@@ -211,7 +211,7 @@ function App() {
         
         <article className="emme">
           <div className="recuadroEmme">
-            <h3>02.</h3>
+            {/* <h3>02.</h3> */}
             <div className="tituloEmme">
               <div className="seccion1Emme">
                 {/* <h2 id="texto-animado">
@@ -271,7 +271,7 @@ function App() {
           <div className="recuadroEmqa">
             <div className="tituloEmqa">
               <div className="seccion1Emqa">
-               <h3>03.</h3>
+               {/* <h3>03.</h3> */}
                {/* <h2 id="texto-animado">
                   <span>e</span>
                   <span>m</span>
@@ -333,7 +333,7 @@ function App() {
 
         <article className="emap">
           <div className="recuadroEmap">
-            <h3>04.</h3>
+            {/* <h3>04.</h3> */}
             <div className="tituloEmap">
               <div className="seccion1Emap">
                 {/* <h2>emAP</h2> */}
