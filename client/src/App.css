@@ -1211,10 +1211,11 @@ textarea:focus::placeholder {
   /*NAVBAR*/
   #navbar ul li {
     font-size: 2em;
+    margin-right: 60px;
 }
 
 #logo {
-  width: 700px;
+  width: 800px;
   height: auto;
   position: relative;
   top: 70%;
@@ -1232,44 +1233,160 @@ h2 {
 /*PRODUCTOS*/
 
 .textoServicios {
-  margin-top: 60px;
+  margin: 70px 0px;
+}
 
+.pedirDEMO{
+  width: 220px;
+  height: 45px;
+  font-size: 1.5em;
 }
 
 .caracteristicasSimma, .caracteristicasEmap, .caracteristicasEmme, .caracteristicasEmqa {
-  font-size: 1em;
+  font-size: 1.6em;
 }
 
   .simma, .emqa, .emme, .emap{
     position: relative;
-    height: 60vh;
+    height: 90vh;
   }
 
   .recuadroEmap, .recuadroEmme, .recuadroEmqa, .recuadroSimma{
-   width: 40%;
+   padding: 40px;
+   height: auto;
+  width: 1100px;
   }
 
 .tituloSimma p, .tituloEmme p, .tituloEmap p, .tituloEmqa p {
-  font-size: 1.8em;
+  font-size: 2.3em;
+  margin-right: 100px;
+    margin-left: 100px
+}
+
+#logoSIMMA, #logoEMME, #logoEMQA, #logoEMAP {
+  width: 350px;}
+
+
+.fotoSimma img, .fotoEmme img, .fotoEmqa img, .fotoEmap img {
+  width: 750px;
+  height: auto;
 }
 
 
-  /*SERVICIOS*/
-
-  .servicios p {
-    font-size: 1.3em;
+.recuadroSimma, .recuadroEmqa{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-20%, -50%);
 }
+
+.recuadroEmap, .recuadroEmme{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-80%, -50%);
+}
+
+.fotoSimma, .fotoEmqa{
+  transform: translate(-120%, -45%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+
+.fotoEmap, .fotoEmme{
+  transform: translate(20%, -45%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+   /*SERVICIOS*/
+
+   .servicios p {
+    font-size: 1.5em;
+}
+
+.containerServicios {
+  height: 500px;
+}
+
+.servicios img {
+  width: 120px;
+}
+
   /*NOSOTROS*/
 
   .textoNosotros p {
-    font-size: 1.5em;
+    font-size: 2em;
+  }
+
+  .nosotros {
+    margin: 200px 0px;
+
   }
 
   /*CLIENTES*/
 
   .containerClientes img{
-    width: 300px;
+    width: 350px;
   }
+
+  #poen, #richet{
+    width: 150px;
+  }
+   /*CONTACTO*/
+
+   .material {
+    height: 800px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+  .material input {
+    height: 140px;
+  }
+
+    .material input, .material textarea {
+      font-size: 30px;
+    }
+
+    .material button{
+      width: 250px;
+    height: 70px;
+    font-size: 2em;
+    }
+
+    .mensajeEnviado{
+      font-size: 30px;
+    }
+
+    .material input:focus, .material textarea:focus{
+      padding-top: 15px;
+    }
+  
+  
+    input:focus::placeholder {
+      font-size: 20px; 
+    }
+    
+    textarea:focus::placeholder {
+      font-size: 20px; 
+    } 
+
+  /* FOOTER */
+
+  .footerSocial {
+    margin-top: 1090px;}
+
+    #linkedinLogo {
+      width: 85px;}
+
+    .footer p {
+        font-size: 30px;}
 
 }
 
@@ -1280,6 +1397,7 @@ h2 {
   /*NAVBAR*/
   #navbar ul li {
     font-size: 3em;
+    margin-right: 60px;
 }
 
 #logo {
@@ -1301,12 +1419,17 @@ h2 {
 /*PRODUCTOS*/
 
 .textoServicios {
-  margin-top: 60px;
+  margin: 70px 0px;
+}
 
+.pedirDEMO{
+  width: 220px;
+  height: 45px;
+  font-size: 1.5em;
 }
 
 .caracteristicasSimma, .caracteristicasEmap, .caracteristicasEmme, .caracteristicasEmqa {
-  font-size: 1.2em;
+  font-size: 1.6em;
 }
 
   .simma, .emqa, .emme, .emap{
@@ -1319,19 +1442,76 @@ h2 {
   }
 
 .tituloSimma p, .tituloEmme p, .tituloEmap p, .tituloEmqa p {
-  font-size: 2em;
+  font-size: 3em;
+  margin-right: 100px;
+    margin-left: 100px
+}
+
+
+.fotoSimma img, .fotoEmme img, .fotoEmqa img, .fotoEmap img {
+  width: 750px;
+  height: auto;
+}
+
+
+.recuadroEmap, .recuadroEmme, .recuadroEmqa, .recuadroSimma {
+  height: 90%;
+  width: auto;
+}
+
+.recuadroSimma, .recuadroEmqa{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-25%, -50%);
+}
+
+.recuadroEmap, .recuadroEmme{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-80%, -50%);
+}
+
+.fotoSimma, .fotoEmqa{
+  transform: translate(-125%, -45%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+
+.fotoEmap, .fotoEmme{
+  transform: translate(25%, -45%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
 }
 
 
   /*SERVICIOS*/
 
   .servicios p {
-    font-size: 1.8em;
+    font-size: 2em;
 }
+
+.containerServicios {
+  height: 600px;
+}
+
+.servicios img {
+  width: 150px;
+}
+
   /*NOSOTROS*/
 
   .textoNosotros p {
     font-size: 2em;
+  }
+
+  .nosotros {
+    margin: 200px 0px;
+
   }
 
   /*CLIENTES*/
@@ -1345,8 +1525,221 @@ h2 {
   .material {
     height: 800px;
     width: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
 
   }
+
+  .material input {
+    height: 140px;
+  }
+
+    .material input, .material textarea {
+      font-size: 40px;
+    }
+
+    .material button{
+      width: 300px;
+    height: 80px;
+    font-size: 2.8em;
+    }
+
+    .mensajeEnviado{
+      font-size: 40px;
+    }
+
+    .material input:focus, .material textarea:focus{
+      padding-top: 20px;
+    }
+  
+  
+    input:focus::placeholder {
+      font-size: 30px; 
+    }
+    
+    textarea:focus::placeholder {
+      font-size: 30px; 
+    } 
+
+  /* FOOTER */
+
+  .footerSocial {
+    margin-top: 1090px;}
+
+    #linkedinLogo {
+      width: 100px;}
+
+      .footer p {
+        font-size: 40PX;}
+
+}
+
+@media all and (min-width:3000px){
+
+  
+  /*NAVBAR*/
+  #navbar ul li {
+    font-size: 4em;
+}
+
+#navbar ul li {
+  margin-right: 100px;
+}
+
+#logo {
+  width: 1500px;
+  height: auto;
+  position: relative;
+  top: 70%;
+}
+
+#splashscreen2 p {
+  font-size: 4.2em;
+  
+}
+
+h2 {
+  font-size: 8em;
+}
+
+/*PRODUCTOS*/
+
+.textoServicios {
+  margin: 70px 0px;
+}
+
+.caracteristicasSimma, .caracteristicasEmap, .caracteristicasEmme, .caracteristicasEmqa {
+  font-size: 2em;
+}
+
+  .simma, .emqa, .emme, .emap{
+    position: relative;
+    height: 40vh;
+  }
+
+  .recuadroEmap, .recuadroEmme, .recuadroEmqa, .recuadroSimma{
+   width: 40%;
+  }
+
+.tituloSimma p, .tituloEmme p, .tituloEmap p, .tituloEmqa p {
+  font-size: 3em;
+  margin-right: 100px;
+    margin-left: 100px
+}
+
+
+.fotoSimma img, .fotoEmme img, .fotoEmqa img, .fotoEmap img {
+  width: 750px;
+  height: auto;
+}
+
+
+.recuadroEmap, .recuadroEmme, .recuadroEmqa, .recuadroSimma {
+  height: 90%;
+}
+
+.recuadroSimma, .recuadroEmqa{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-35%, -50%);
+}
+
+.recuadroEmap, .recuadroEmme{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-80%, -50%);
+}
+
+.fotoSimma, .fotoEmqa{
+  transform: translate(-155%, -45%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.pedirDEMO {
+  width: 220px;
+  height: 45px;
+  font-size: 1.5em;}
+
+
+.fotoEmap, .fotoEmme{
+  transform: translate(25%, -45%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+
+  /*SERVICIOS*/
+
+  .servicios p {
+    font-size: 3em;
+}
+
+.containerServicios {
+  height: 700px;
+}
+
+.servicios img {
+  width: 200px;
+}
+
+  /*NOSOTROS*/
+
+  .textoNosotros p {
+    font-size: 3em;
+  }
+
+  .nosotros {
+    margin: 200px 0px;
+
+  }
+
+  /*CLIENTES*/
+
+  .containerClientes img{
+    width: 400px;
+  }
+
+  /*CONTACTO*/
+
+  .material {
+    height: 800px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .material input, .material textarea{
+    font-size: 50px;
+  }
+
+  .material input:focus, .material textarea:focus{
+    padding-top: 20px;
+  }
+
+
+  input:focus::placeholder {
+    font-size: 40px; 
+  }
+  
+  textarea:focus::placeholder {
+    font-size: 40px; 
+  } 
+
+  .mensajeEnviado{
+    font-size: 50px;
+  }
+  
+
+  /* FOOTER */
+
+  .footerSocial {
+    margin-top: 1090px;}
+
 
 
 }

@@ -291,7 +291,7 @@ function App() {
                   <li>Alta de Documentos con Anexos Asociados o Independientes</li>
                   <li> Gestión independiente de Documentos no GxP y Documentos GxP.</li>
                   <li>Control de emisión de Copias Controladas, No Controladas y Anexos mediante permisos específicos.</li>
-                  <li>Alta de Documentos con circuitos de Revisión, Aprobación y  puesta en vigencia. Trazabilidad de versiones intermedias.</li>
+                  <li>Extensión de Vigencia de Documentos</li>
                 </ul>
               }
 
@@ -306,7 +306,7 @@ function App() {
 
               {seccionEmqa === 3 &&
                 <ul>
-                  <li>Extensión de Vigencia de Documentos</li>
+                  <li>Alta de Documentos con circuitos de Revisión, Aprobación y  puesta en vigencia. Trazabilidad de versiones intermedias.</li>
                   <li>Integrable con Office 365/Teams y Google Docs</li>
                   <li>Múltiples Reportes de Gestión. Búsqueda de Palabras en Documentos.</li>
                   <li>Integrable con soluciones ERP y Control de Calidad para Liberación de Producto para Venta.</li>
