@@ -110,7 +110,7 @@ justify-content: center;
 .splashscreen {
   height: 100vh;
   flex-direction: column;
-  background-image: url(./images/Splashscreen.jpg) ;
+  background-image: url(./images/fondo\ banner\ inicio.png) ;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -1156,9 +1156,10 @@ textarea:focus::placeholder {
     left: 50%;
     transform: translate(-5%, -50%);
     width: auto;
-    height: auto;
+    height: 550px;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 
   .fotoSimma, .fotoEmqa{
@@ -1175,9 +1176,10 @@ textarea:focus::placeholder {
     left: 50%;
     transform: translate(-95%, -50%);
     width: auto;
-    height: auto;
+    height: 600px;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 
   .fotoEmap, .fotoEmme{
@@ -1206,7 +1208,7 @@ textarea:focus::placeholder {
 
   /*NAVBAR*/
   #navbar ul li {
-    font-size: 2em;
+    font-size: 1.7em;
     margin-right: 60px;
 }
 
@@ -1223,7 +1225,7 @@ textarea:focus::placeholder {
 }
 
 h2 {
-  font-size: 5em;
+  font-size: 4em;
 }
 
 /*PRODUCTOS*/
@@ -1239,7 +1241,7 @@ h2 {
 }
 
 .caracteristicasSimma, .caracteristicasEmap, .caracteristicasEmme, .caracteristicasEmqa {
-  font-size: 1.6em;
+  font-size: 1.3em;
 }
 
   .simma, .emqa, .emme, .emap{
@@ -1249,12 +1251,15 @@ h2 {
 
   .recuadroEmap, .recuadroEmme, .recuadroEmqa, .recuadroSimma{
    padding: 40px;
-   height: auto;
-  width: 1100px;
+    justify-content: center;
+    display: flex;
+    height: 700px;
+    padding: 40px;
+    width: 850px;
   }
 
 .tituloSimma p, .tituloEmme p, .tituloEmap p, .tituloEmqa p {
-  font-size: 2.3em;
+  font-size: 2em;
   margin-right: 100px;
     margin-left: 100px
 }
@@ -1264,7 +1269,7 @@ h2 {
 
 
 .fotoSimma img, .fotoEmme img, .fotoEmqa img, .fotoEmap img {
-  width: 750px;
+  width: 700px;
   height: auto;
 }
 
@@ -1273,18 +1278,18 @@ h2 {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-20%, -50%);
+  transform: translate(-13%, -50%);
 }
 
 .recuadroEmap, .recuadroEmme{
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-80%, -50%);
+  transform: translate(-85%, -50%);
 }
 
 .fotoSimma, .fotoEmqa{
-  transform: translate(-120%, -45%);
+  transform: translate(-108%, -45%);
   position: absolute;
   left: 50%;
   top: 50%;
@@ -1292,7 +1297,7 @@ h2 {
 
 
 .fotoEmap, .fotoEmme{
-  transform: translate(20%, -45%);
+  transform: translate(10%, -45%);
   position: absolute;
   left: 50%;
   top: 50%;
@@ -1326,7 +1331,7 @@ h2 {
   /*CLIENTES*/
 
   .containerClientes img{
-    width: 350px;
+    width: 330px;
   }
 
   #poen, #richet{
@@ -1430,12 +1435,9 @@ h2 {
 
   .simma, .emqa, .emme, .emap{
     position: relative;
-    height: 60vh;
+    height: 70vh;
   }
 
-  .recuadroEmap, .recuadroEmme, .recuadroEmqa, .recuadroSimma{
-   width: 40%;
-  }
 
 .tituloSimma p, .tituloEmme p, .tituloEmap p, .tituloEmqa p {
   font-size: 3em;
@@ -1451,8 +1453,10 @@ h2 {
 
 
 .recuadroEmap, .recuadroEmme, .recuadroEmqa, .recuadroSimma {
-  height: 90%;
+  height: 700px;
   width: auto;
+  display: flex;
+  justify-content: center;
 }
 
 .recuadroSimma, .recuadroEmqa{
@@ -1613,9 +1617,6 @@ h2 {
     height: 40vh;
   }
 
-  .recuadroEmap, .recuadroEmme, .recuadroEmqa, .recuadroSimma{
-   width: 40%;
-  }
 
 .tituloSimma p, .tituloEmme p, .tituloEmap p, .tituloEmqa p {
   font-size: 3em;
@@ -1631,7 +1632,8 @@ h2 {
 
 
 .recuadroEmap, .recuadroEmme, .recuadroEmqa, .recuadroSimma {
-  height: 90%;
+  height: 700px;
+  width: 1500px;
 }
 
 .recuadroSimma, .recuadroEmqa{
@@ -1767,6 +1769,10 @@ h2 {
 
 /* PRODUCTOS */
 
+.productos {
+  margin: 40px;
+}
+
 .textoServicios {
   text-transform: uppercase;
   margin-top: 40px;
@@ -1785,7 +1791,9 @@ h2 {
 .recuadroSimma, .recuadroEmqa, .recuadroEmme, .recuadroEmap {
   position: unset;
   width: 100%;
-  height: auto;
+  height: 600px;
+  justify-content: center;
+  display: flex;
 }
 
 
@@ -1889,6 +1897,10 @@ h2 {
   }
   
   /* PRODUCTOS */
+
+  .productos {
+    margin: 20px;
+  }
   
   #simmaEstabilidad, #emme, #emme2, #emap2{
     display: none;
@@ -1898,9 +1910,11 @@ h2 {
   }
   
   .recuadroSimma, .recuadroEmqa, .recuadroEmme, .recuadroEmap{
+    display: flex;
     position: unset;
     width: 100%;
-    height: auto;
+    height: 600px;
+    justify-content: center;
   }
  
 
