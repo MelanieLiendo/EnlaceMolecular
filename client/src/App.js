@@ -1,7 +1,5 @@
 import logo from './images/logo enlace.png';
-import google from './images/googlemas.png';
 import linkedin from './images/linkedin.png';
-import simmaProductos from './images/Simma Productos.jpg'
 import './App.css';
 import asofarma from './images/asofarma.png'
 import casasco from './images/casasco.png'
@@ -12,7 +10,6 @@ import glenmark from './images/glenmark.jpg'
 import richmond from './images/richmond.png'
 import roemmers from './images/roemmers.png'
 import sinergium from './images/sinergium.png'
-import imagenNosotros from './images/Simma Materiales.jpg'
 import desarrolloSoftware from './images/desarrolloSoftware.png'
 import agil from './images/agil.png'
 import solucion from './images/solucion.png'
@@ -23,17 +20,17 @@ import React, { useState} from 'react';
 import { useEffect } from 'react';
 import emailjs from 'emailjs-com';
 import simmaEstabilidad from './images/Simma Estabilidad.jpg'
-import puntoGris from './images/puntoGris.png'
-import puntoLila from './images/puntoLila.png'
 import logoSIMMA from './images/logoSIMMA.png'
 import logoEMME from './images/logoEMME.png'
 import logoEMAP from './images/logoEMAP.png'
 import logoEMQA from './images/logoEMQA.png'
 import eleaphoenix from './images/eleaphoenix.png'
 import massone from './images/massone.gif'
-import catalent from './images/catalent.webp'
+import catalent from './images/catalent.png'
 import celtyc from './images/celtyc.jpg'
 import nuevedejulio from './images/nuevedejulio.png'
+
+
 
 
 
@@ -123,6 +120,7 @@ function App() {
 
 
 
+
   return (
     <div className="App">
       <navbar id= "navbar" className={`navbar ${scrolling ? 'scrolled' : ''}`}>
@@ -141,7 +139,7 @@ function App() {
           <img id="logo" src= {logo} alt="logo"></img>
         </div>
         <section id='splashscreen2'>
-          <p>SOFTWARE para entorno GxP</p>
+          <p>SOFTWARE para entornos GxP</p>
         </section>
       </div>
 
@@ -435,6 +433,20 @@ function App() {
         <h2>Nuestros clientes</h2>
         <article id='clientes' >
           <div className='containerClientes'>
+          <div className='client'><img id='asofarma'src={asofarma} /></div>
+          <div className='client'><img id='casasco'src={casasco} /></div>
+          <div className='client'><img id='mabxience'src={cliente1} /></div>
+          <div className='client'><img id='richet'src={cliente2} /></div>
+          <div className='client'><img id='poen'src={cliente3} /></div>
+          <div className='client'><img id='glenmark'src={glenmark} /></div>
+          <div className='client'><img id='richmond'src={richmond} /></div>
+          <div className='client'><img id='roemmers'src={roemmers} /></div>
+          <div className='client'><img id='sinergium'src={sinergium} /></div>
+          <div className='client'><img id='eleaphoenix'src={eleaphoenix} /></div>
+          <div className='client'><img id='massone'src={massone} /></div>
+          <div className='client'><img id='catalent'src={catalent} /></div>
+          <div className='client'><img id='celtyc'src={celtyc} /></div>
+          <div className='client'><img id='nuevedejulio'src={nuevedejulio} /></div>
           <div className='client'><img id='asofarma'src={asofarma} /></div>
           <div className='client'><img id='casasco'src={casasco} /></div>
           <div className='client'><img id='mabxience'src={cliente1} /></div>

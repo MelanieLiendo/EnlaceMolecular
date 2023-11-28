@@ -804,7 +804,7 @@ align-items: center;
 
 .images-wrapper {
   display: flex;
-  transition: transform 1s ease-in-out;
+  animation: scroll 10s linear infinite;
 }
 .containerClientes img{
   width: 150px;
@@ -815,7 +815,7 @@ align-items: center;
 
 
 #clientes {
-  height: 70vh;
+  height: 50vh;
   width: auto;
   max-width: none;
   flex-direction: row;
@@ -846,7 +846,7 @@ align-items: center;
       transform: translateX(0%);
   }
   100% {
-      transform: translateX(-100%);
+      transform: translateX(-50%);
   }
 }
 
@@ -881,6 +881,7 @@ align-items: center;
   justify-content: center;
 }
 
+
 .cuadroNosotros button{
   border: none;
   background: transparent;
@@ -890,11 +891,6 @@ align-items: center;
   text-align: end;
 }
 
-.imagenNosotros img {
- width: 100%; 
- height: 500px;
- border-radius: 20px;
-}
 
 .textoNosotros {
   text-align: right;
@@ -1829,6 +1825,7 @@ h2 {
 .nosotros{
   margin-top: 80px;
   margin-bottom:70px;
+  height: 50vh;
 }
 
 .tituloNosotros{
@@ -1842,7 +1839,7 @@ h2 {
   /* CLIENTES*/
 
   #clientes{
-    height: 50vh;
+    height: 30vh;
   }
 
 
