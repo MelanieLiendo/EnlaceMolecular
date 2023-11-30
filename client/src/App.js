@@ -144,25 +144,16 @@ function App() {
       </div>
 
       <section id= "productos" className="productos">
-      <h2 className="textoServicios">Productos</h2>
+      <h2>Productos</h2>
+      <div className='gridProductos'>
       <article className="simma">
           <div className="recuadroSimma">
             <div className="tituloSimma">
-              <div className="seccion1Simma">
-               {/* <h3>01.</h3> */}
-               {/* <h2 id="texto-animado">
-                  <span>s</span>
-                  <span>i</span>
-                  <span>m</span>
-                  <span>m</span>
-                  <span>a</span>
-                </h2> */}
+              
                 <img id= "logoSIMMA" src={logoSIMMA} alt=""></img>
-              </div>
+              
               <p>Gestión Integral de Laboratorio (LIMS)</p>
            </div>
-
-          
             <div className="caracteristicasSimma">
             {seccionSimma === 1 && 
                 <ul>
@@ -195,7 +186,7 @@ function App() {
         <button onClick={() => cambiarSeccionSimma(1)}> {seccionSimma === 1 ? <p className='puntos'>&#9899;</p>:<p className='puntos'>&#9898;</p>}</button>
         <button onClick={() => cambiarSeccionSimma(2)}>{seccionSimma ===2? <p className='puntos'>&#9899;</p>:<p className='puntos'>&#9898;</p>}</button>
         <button onClick={() => cambiarSeccionSimma(3)}>{seccionSimma === 3? <p className='puntos'>&#9899;</p>:<p className='puntos'>&#9898;</p>}</button>
-        </div>
+            </div>
 
           </div>
 
@@ -203,23 +194,15 @@ function App() {
             <img id= "simmaEstabilidad" src={simmaEstabilidad} alt="foto de producto Simma"></img>
             <button className='pedirDEMO'><a href="#contacto">Pedir DEMO</a></button> 
           </div> 
-        
-       
-        </article>
+      </article>
         
         <article className="emme">
           <div className="recuadroEmme">
-            {/* <h3>02.</h3> */}
+           
             <div className="tituloEmme">
-              <div className="seccion1Emme">
-                {/* <h2 id="texto-animado">
-                  <span>e</span>
-                  <span>m</span>
-                  <span>m</span>
-                  <span>e</span>
-                </h2> */}
+              
                 <img id= "logoEMME" src={logoEMME} alt=""></img>
-              </div>
+              
                 <p>Aplicación de Manejo de Equipos e Instrumentos</p>
             </div>
   
@@ -263,21 +246,15 @@ function App() {
                 <button className='pedirDEMO'><a href="#contacto">Pedir DEMO</a></button> 
               </div>
         </article>
-        {/* id="pedirDEMOemme" */}
+      
 
         <article className="emqa">
           <div className="recuadroEmqa">
             <div className="tituloEmqa">
-              <div className="seccion1Emqa">
-               {/* <h3>03.</h3> */}
-               {/* <h2 id="texto-animado">
-                  <span>e</span>
-                  <span>m</span>
-                  <span>q</span>
-                  <span>a</span>
-                </h2> */}
+              
+               
                 <img id= "logoEMQA" src={logoEMQA} alt=""></img>
-              </div>
+              
               <p>Aplicación para Gestion de Documentos, administración de Capacitacion y procesos de Garantia de Calidad</p>
            </div>
 
@@ -331,12 +308,12 @@ function App() {
 
         <article className="emap">
           <div className="recuadroEmap">
-            {/* <h3>04.</h3> */}
+           
             <div className="tituloEmap">
-              <div className="seccion1Emap">
-                {/* <h2>emAP</h2> */}
+              
+                
                 <img id= "logoEMAP" src={logoEMAP} alt=""></img>
-              </div>
+          
                 <p>Módulo de gestión de abastecimiento y producción de productos farmacéuticos y médicos</p>
             </div>
             
@@ -385,7 +362,7 @@ function App() {
           </div>
           
         </article>
-
+        </div>
 
       </section>
 
