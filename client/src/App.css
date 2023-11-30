@@ -4,47 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 
-@keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-.fadeInLeft {
-  -webkit-animation-name: fadeInLeft;
-  animation-name: fadeInLeft;
-}
-
-@keyframes floating {
-  0% {
-      transform: translate(0, 0px);
-  }
-
-  50% {
-      transform: translate(0, 18px);
-  }
-
-  100% {
-      transform: translate(0, -0px);
-  }
-}
-
-.float {
-animation-name: floating;
-animation-duration: 4s;
-animation-delay: 1s;
-animation-iteration-count: infinite;
-animation-timing-function: ease-in-out;
-}
-
 .puntos{
   font-size: 1vw;
 }
@@ -53,7 +12,7 @@ h2{
     color: #7F5A8B;
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
-    font-size: 4vw;
+    font-size: 3vw;
     font-weight: 200;
     line-height: 1.2;
     text-align: center;
@@ -172,6 +131,7 @@ margin: 0px;
   margin-left: 5%;
   margin-right: 5%;
   row-gap: 5%;
+  margin-bottom: 25%;
 }
 
 .pedirDEMO{
@@ -179,10 +139,11 @@ margin: 0px;
     border: none;
     border-radius: 20px;
     color: #878787;
-    width: 50%;
-    height: auto;
+    width: 40%;
+    height: 50px;
     font-size: 1.6vw;
     font-family: "Montserrat";
+    margin-top: 8%;
 }
 
 #pedirDEMODerecha{
@@ -698,7 +659,7 @@ align-items: center;
 /* SERVICIOS */
 
 .servicios{
-  height: 100vh;
+  height: 80vh;
   text-align: center;
   /* background-image: url(./images/puntitosServicios.jpg) ;
   background-repeat: no-repeat;
@@ -707,6 +668,7 @@ align-items: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 
@@ -714,29 +676,26 @@ align-items: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  row-gap: 30px;
-  margin: 50px 40px 0px 40px;
+  margin: 3% 3% 0% 3%;
   justify-items: center;
+  height: 40%;
 }
 
 
 .textoServicios{
   text-transform: uppercase;
-  margin-top: 60px;
-  margin-bottom: 10px;
-
   line-height: 1.2;
 }
 
 .servicios p {
   color:#312783;
   font-family: "Montserrat";
-  font-size: 1em;
-  padding: 0px 20px;
+  font-size: 1.3vw;
+  padding: 0 6%;
 }
 
 .servicios img{
-  width: 100px;
+  width: 30%;
   opacity: 0.6;
 }
 
@@ -898,7 +857,8 @@ align-items: center;
   font-family: "Montserrat";
   font-size: medium;
   line-height: 1.7em;
-  text-align: right
+  text-align: right;
+  font-size: 1.5vw;
 }
 
 .tituloNosotros{
@@ -954,12 +914,12 @@ align-items: center;
   float: left;
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 70vh;
   text-align: center;
 }
 
 .contenido{
-  margin: 30px 25% 80px 25%;
+  margin: 3% 20% 3% 20%;
   position: relative;
 }
 
@@ -987,7 +947,7 @@ margin-bottom: 25px !important;
 }
 
 .material input, .material textarea {
-  font-size: 16px;
+  font-size: 1.3vw;
   width: 100%;
   border: 0;
   border-bottom: 1px solid #d3d3d3;
@@ -996,6 +956,8 @@ margin-bottom: 25px !important;
   float: left;
   position: relative;
   font-family: "Montserrat";
+  padding: 1px 2px;
+  
 }
 
 
@@ -1034,8 +996,8 @@ textarea:focus::placeholder {
 
 
 .material input {
-  height: 32px;
-  margin-bottom: 25px;
+  height: 5vw;
+  margin-bottom: 1%;
 }
 
 .material textarea {
@@ -1048,10 +1010,10 @@ textarea:focus::placeholder {
   border: none;
   border-radius: 20px;
   color: #878787;
-  width: 120px;
+  width: 20%;
   height: 35px;
-  font-size: medium;
-  margin: 25px 10px 0px 10px;
+  font-size: 1.3vw;
+  margin: 2% 1% 0% 1%;
   font-family: "Montserrat";
 }
 
@@ -1074,9 +1036,9 @@ textarea:focus::placeholder {
 
 #linkedinLogo {
   position: relative;
-  width: 40px;
+  width: 3%;
   opacity: 0.3;
-  padding: 10px;
+  padding: 1%;
   z-index: 300;
 }
 
@@ -1100,11 +1062,11 @@ textarea:focus::placeholder {
   color:#9a9a9a;
   font-weight:100 ;
   text-align: center;
+  font-size: 1.2vw;
 }
 
 .footerSocial{
   text-align: center;
-  margin-top: 600px;
 }
 
 @media all and (max-width:460px){
@@ -1160,6 +1122,14 @@ textarea:focus::placeholder {
 
   .fotoEmap, .fotoEmme, .fotoEmqa, .fotoSimma {
     display: none;
+  }
+
+  .simma, .emap, .emme, .emqa {
+    justify-content: center;
+  }
+
+  .recuadroEmap, .recuadroEmme, .recuadroEmqa, .recuadroSimma {
+    width: 70%;
   }
   
   /* NOSOTROS */

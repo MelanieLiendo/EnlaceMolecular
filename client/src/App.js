@@ -367,7 +367,6 @@ function App() {
       </section>
 
       <section id= "servicios" className="servicios">
-        <article className='serviciosCuadro'>
         <h2 className="textoServicios">Servicios</h2>
         <div className="serviciosGrid">
           <div className="containerServicios" id="containerServicios1">
@@ -384,7 +383,6 @@ function App() {
           <p>Validación en entorno del cliente acorde a ISPE-GAMP 5.</p>
           </div>
         </div>
-        </article>
       </section>
 
     
