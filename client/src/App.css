@@ -174,7 +174,7 @@ margin: 0px;
 
 
 #logoSIMMA, #logoEMQA, #logoEMAP{
-  width: 50%;
+  width: 45%;
   height: auto;
 }
 
@@ -197,6 +197,7 @@ margin: 0px;
 .simma, .emme, .emqa, .emap{
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .emme, .emap{
@@ -205,7 +206,7 @@ margin: 0px;
 
 .fotoSimma img, .fotoEmme img, .fotoEmqa img, .fotoEmap img{
   height: auto;
-  width: 90%;
+  width: 100%;
   border-radius: 2em;
   border: 25px solid;
   border-color: white;
@@ -220,10 +221,11 @@ margin: 0px;
   flex-direction: column;
   z-index: 1;
   width: 60%;
-  height: 90%;
+  height: 60vh;
   align-items: center;
   padding: 3% 1%;
   justify-content: center;
+  position: relative;
 }
 
 .fotoSimma , .fotoEmme , .fotoEmqa , .fotoEmap {
@@ -231,8 +233,25 @@ margin: 0px;
   flex-direction: column;
   width: 40%;
   align-items: center;
+  z-index: 2;
+  position: relative;
 }
 
+.fotoEmap, .fotoEmme {
+  left: 1.5%;
+}
+
+.fotoEmqa, .fotoSimma { 
+  left: -1.5%;
+}
+
+.recuadroEmap, .recuadroEmme {
+ left: -1.5%;
+}
+
+.recuadroEmqa, .recuadroSimma {
+  left: 1.5%;
+}
 
 .tituloSimma h2, .tituloEmme h2, .tituloEmqa h2, .tituloEmap h2{
   font-size: 4em;
@@ -242,14 +261,15 @@ margin: 0px;
 .tituloSimma p, .tituloEmme p, .tituloEmqa p, .tituloEmap p{
   font-family: "Roboto", sans-serif;
   color: #312783;
-  font-size: 2vw;
+  font-size: 1.8vw;
   text-align: center;
+  padding: 0 7%;
 }
 
 .caracteristicasSimma, .caracteristicasEmme, .caracteristicasEmqa, .caracteristicasEmap{
   color: #878787;
   font-family: "Montserrat";
-  font-size: 1.2vw;
+  font-size: 1.3vw;
   padding: 1% 10% 1% 13%;
 }
 
@@ -690,7 +710,7 @@ align-items: center;
 .servicios p {
   color:#312783;
   font-family: "Montserrat";
-  font-size: 1.3vw;
+  font-size: 1.5vw;
   padding: 0 6%;
 }
 
@@ -898,16 +918,18 @@ align-items: center;
 
 .contacto{
   text-align: center;
+  height: 100%;
   
 }
 
 .material{
   background-image: url(./images/contactodegrade.jpg);
   border-radius: 30px;
-  padding: 30px;
+  padding: 1% 5%;
 }
 
 #contacto{
+  height: 60vh;
   float: left;
   position: relative;
   width: 100%;
@@ -920,19 +942,7 @@ align-items: center;
   position: relative;
 }
 
-.contact-form {	position: relative;
-    border-bottom: solid 1px darkgrey;
-    text-align: left;
-    font-size: 14pt;
-    margin: 60px auto;
-    width: 500px;
-    color: #0cb3d6;
-    font-size: 12pt;
-}
 
-/* .material-input {
-margin-bottom: 25px !important; 
-} */
 
 .material input:focus, .material textarea:focus{
   outline: none;
@@ -978,14 +988,14 @@ textarea{
 }
 
 input:focus::placeholder {
-  font-size: 12px; 
+  font-size: 0.9vw; 
   top: 0; 
   transform: translateY(0); 
   color: #878787;; 
 }
 
 textarea:focus::placeholder {
-  font-size: 12px; 
+  font-size: 0.9vw; 
   top: 0; 
   transform: translateY(0); 
   color: #878787;
@@ -1066,7 +1076,188 @@ textarea:focus::placeholder {
   text-align: center;
 }
 
-@media all and (max-width:460px){
+
+
+
+
+
+
+
+
+
+/*RSPONSIVE
+
+
+
+
+*/
+
+@media only screen and (min-width: 2200px)  {
+  .material {
+    background-size: cover;
+  }
+
+
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  
+  /*SPLASHSCREEN*/
+
+  #logo {
+    width: 40%;
+  }
+
+  /*PRODUCTOS*/
+
+  .recuadroEmap, .recuadroEmme, .recuadroEmqa, .recuadroSimma {
+    height: 80vh;
+  }
+
+  .tituloEmap p, .tituloEmme p, .tituloEmqa p, .tituloSimma p {
+    padding: 0 10%;
+  }
+
+  /*CONTACTO*/
+
+  #contacto {
+    height: 80vh;
+    margin-bottom: 13vh;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+  /*SPLASHSCREEN*/
+
+  #logo {
+    width: 40%;
+  }
+
+  /*PRODUCTOS*/
+
+  .fotoSimma img, .fotoEmme img, .fotoEmqa img, .fotoEmap img {
+    width: 80%;
+  }
+
+  #logoSIMMA, #logoEMQA, #logoEMAP {
+    width: 35%;
+  }
+
+  .tituloSimma p, .tituloEmme p, .tituloEmqa p, .tituloEmap p {
+    font-size: 1.6vw;
+  }
+
+  .caracteristicasSimma, .caracteristicasEmme, .caracteristicasEmqa, .caracteristicasEmap {
+    font-size: 1.1vw;
+  }
+
+  .recuadroSimma, .recuadroEmme, .recuadroEmqa, .recuadroEmap {
+    height: 70vh;
+  }
+
+  .recuadroEmqa, .recuadroSimma {
+    left: 3%;
+  }
+
+  .recuadroEmap, .recuadroEmme {
+    left: -3%
+  }
+
+  .fotoEmqa, .fotoSimma {
+    left: -3%
+  }
+
+  .fotoEmap, .fotoEmme {
+    left: 3%
+  }
+
+  .pedirDEMO {
+    height: 40px;
+  }
+
+  /*CONTACTO*/
+
+  #contacto {
+    height: 80vh;
+    margin-bottom: 20vh;
+  }
+}
+
+@media only screen and (min-width: 511px) and (max-width: 991px) {
+
+  /*SPLASHSCREEN*/
+
+  #logo {
+    width: 40%;
+  }
+
+  /*PRODUCTOS*/
+
+  .fotoSimma img, .fotoEmme img, .fotoEmqa img, .fotoEmap img {
+    width: 80%;
+  }
+
+  #logoSIMMA, #logoEMQA, #logoEMAP {
+    width: 35%;
+  }
+
+  .tituloSimma p, .tituloEmme p, .tituloEmqa p, .tituloEmap p {
+    font-size: 1.6vw;
+  }
+
+  .caracteristicasSimma, .caracteristicasEmme, .caracteristicasEmqa, .caracteristicasEmap {
+    font-size: 1.1vw;
+  }
+
+  .recuadroSimma, .recuadroEmme, .recuadroEmqa, .recuadroEmap {
+    height: 30vh;
+  }
+
+  .recuadroEmqa, .recuadroSimma {
+    left: 3%;
+  }
+
+  .recuadroEmap, .recuadroEmme {
+    left: -3%
+  }
+
+  .fotoEmqa, .fotoSimma {
+    left: -3%
+  }
+
+  .fotoEmap, .fotoEmme {
+    left: 3%
+  }
+
+  .pedirDEMO {
+    height: 30px;
+  }
+
+  /*SERVICIOS*/
+
+  .servicios{
+    height: 50vh;
+  }
+  /*NOSOTROS*/
+
+  .nosotros{
+    height: 40vh;
+  }
+  /*CLIENTES*/
+
+  #clientes{
+    height: 30vh;
+  }
+  /*CONTACTO*/
+
+  #contacto {
+    height: 20vh;
+    margin-bottom: 20vh;
+  }
+}
+
+@media all and (max-width:510px){
   
   h2 {
     font-size: 2.5em;
@@ -1075,16 +1266,55 @@ textarea:focus::placeholder {
   }
     /*NAVBAR*/
 
-    #navbar {
-      display: none;
-    }
+  #navbar {
+    display: none;
+  }
 
-    /* SPLASHSCREEN */
-    #logo {
-      width: auto;
-      height: 70px;
-    }
+  /*SPLASHSCREEN*/
 
+  #splashscreen2 p {
+    color: #0cb3d6;
+    font-weight: 700;
+    font-size: 3vw;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+  }
+
+  /*PRODUCTOS*/
+
+  .recuadroSimma, .recuadroEmme, .recuadroEmqa, .recuadroEmap {
+    height: 40vh;
+    width: 80%;
+
+  }
+
+  .fotoEmap, .fotoEmme, .fotoEmqa, .fotoSimma {
+    display: none;
+  }
+
+  .simma, .emap, .emme, .emqa {
+    justify-content: center;
+  }
+
+  .recuadroEmqa, .recuadroSimma, .recuadroEmap, .recuadroEmme{
+    left: 0%;
+  }
+
+  .caracteristicasSimma, .caracteristicasEmme, .caracteristicasEmqa, .caracteristicasEmap {
+    font-size: 2.3vw;
+  }
+
+  .tituloSimma p, .tituloEmme p, .tituloEmqa p, .tituloEmap p {
+    font-size: 3vw;
+  }
+
+  #logoSIMMA, #logoEMQA, #logoEMAP {
+    width: 55%;
+  }
+
+  .gridProductos{
+    margin-bottom: 50%;
+  }
   
   /* SERVICIOS */
   
@@ -1113,22 +1343,14 @@ textarea:focus::placeholder {
     width: 90px;
     height: auto;
   }
-  
-  /* PRODUCTOS */
 
+  .textoServicios {
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    line-height: 1.2;
+}
 
-  .fotoEmap, .fotoEmme, .fotoEmqa, .fotoSimma {
-    display: none;
-  }
-
-  .simma, .emap, .emme, .emqa {
-    justify-content: center;
-  }
-
-  .recuadroEmap, .recuadroEmme, .recuadroEmqa, .recuadroSimma {
-    width: 70%;
-  }
-  
   /* NOSOTROS */
   
   .cuadroNosotros {
@@ -1149,14 +1371,7 @@ textarea:focus::placeholder {
     font-size: 0.7em;
   }
 
-  /* SERVICIOS */
 
-  .textoServicios {
-    text-transform: uppercase;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    line-height: 1.2;
-}
 
   /* CLIENTES*/
 
@@ -1164,7 +1379,7 @@ textarea:focus::placeholder {
     height: 30vh;
   }
 
-  /* contacto */
+  /* CONTACTO   */
 
   .contenido {
     margin: 25px;}
@@ -1173,5 +1388,213 @@ textarea:focus::placeholder {
       margin-right: 10px;
       margin-left: 10px;
   }
+
+  #contacto {
+    height: 50vh;
+    margin-bottom: 0;
+  }
+
+  .material input, .material textarea {
+    font-size: 3vw;
+   
+  }
+
+  input:focus::placeholder {
+    font-size: 2vw;  
+  }
+
+
+  textarea:focus::placeholder {
+    font-size: 2vw; 
+  } 
+
+  .material button{
+    font-size: 3vw;
+  }
+
+  .material {
+    padding: 3% 8%;
+  }
+
+
+  /*FOOTER*/
+
+  .footer p{
+    font-size: 2.3vw;
+  }
+
+
+  
+}
+
+
+
+@media all and (max-width: 400px){
+  
+  h2 {
+    font-size: 2.5em;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+    /*NAVBAR*/
+
+  #navbar {
+    display: none;
+  }
+
+  /*SPLASHSCREEN*/
+
+  #splashscreen2 p {
+    color: #0cb3d6;
+    font-weight: 700;
+    font-size: 3vw;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+  }
+
+  /*PRODUCTOS*/
+
+  .recuadroSimma, .recuadroEmme, .recuadroEmqa, .recuadroEmap {
+    height: 40vh;
+    width: 80%;
+
+  }
+
+  .fotoEmap, .fotoEmme, .fotoEmqa, .fotoSimma {
+    display: none;
+  }
+
+  .simma, .emap, .emme, .emqa {
+    justify-content: center;
+  }
+
+  .recuadroEmqa, .recuadroSimma, .recuadroEmap, .recuadroEmme{
+    left: 0%;
+  }
+
+  .caracteristicasSimma, .caracteristicasEmme, .caracteristicasEmqa, .caracteristicasEmap {
+    font-size: 2.3vw;
+  }
+
+  .tituloSimma p, .tituloEmme p, .tituloEmqa p, .tituloEmap p {
+    font-size: 3vw;
+  }
+
+  #logoSIMMA, #logoEMQA, #logoEMAP {
+    width: 55%;
+  }
+
+  .gridProductos{
+    margin-bottom: 50%;
+  }
+  
+  /* SERVICIOS */
+  
+  .serviciosGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  .servicios{
+      height: auto;
+      margin-top: 0px;
+      margin-bottom: 0px;
+  }
+
+  .containerServicios {
+    height: 250px;
+  }
+
+  .servicios p {
+    font-size: 0.8em;
+  }
+
+  .servicios img {
+    width: 90px;
+    height: auto;
+  }
+
+  .textoServicios {
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    line-height: 1.2;
+}
+
+  /* NOSOTROS */
+  
+  .cuadroNosotros {
+    display:block ;
+    height: fit-content;
+  }
+  
+  .nosotros{
+    margin-top: 80px;
+    margin-bottom:70px;
+  }
+  
+  .tituloNosotros{
+    position: unset;
+  }
+
+  .textoNosotros p {
+    font-size: 0.7em;
+  }
+
+
+
+  /* CLIENTES*/
+
+  #clientes{
+    height: 30vh;
+  }
+
+  /* CONTACTO   */
+
+  .contenido {
+    margin: 25px;}
+
+    .footer {
+      margin-right: 10px;
+      margin-left: 10px;
+  }
+
+  #contacto {
+    height: 50vh;
+    margin-bottom: 20%;
+  }
+
+  .material input, .material textarea {
+    font-size: 3vw;
+   
+  }
+
+  input:focus::placeholder {
+    font-size: 2vw;  
+  }
+
+
+  textarea:focus::placeholder {
+    font-size: 2vw; 
+  } 
+
+  .material button{
+    font-size: 3vw;
+  }
+
+  .material {
+    padding: 3% 8%;
+  }
+
+
+  /*FOOTER*/
+
+  .footer p{
+    font-size: 2.3vw;
+  }
+
+
   
 }
