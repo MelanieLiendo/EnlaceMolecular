@@ -395,10 +395,10 @@ function App() {
           {seccionActual === 1 && <p>Enlace Molecular es una empresa que desarrolla y comercializa aplicaciones de software  para compañías que ejecutan sus operaciones en ámbitos regulados (GxP). Nacemos en el año 2014 con el objetivo de dar soluciones informáticas a la industria farmacéutica. Nuestras aplicaciones cumplen lineamientos de CFR 21 parte 11 y el ciclo de validación está alineado a GAMP 5.</p>}
           {seccionActual === 3 && <p>Contamos con un equipo de profesionales con una amplia experiencia en desarrollo de software para laboratorios y en los aspectos productivos y procesos de calidad de la industria farmacéutica. Nos mantenemos actualizados para cumplir con las normativas regulatorias vigentes.</p>}
           {seccionActual === 2 && <p>Creemos que la calidad en la atención a nuestros clientes es fundamental, por eso ofrecemos una atención personalizada y acompañamos a los laboratorios que confían en nosotros en la implementación de herramientas que agilizan y hacen más robustos sus procesos.</p>}
-          <div className='botonesNosotros'>
-        <button onClick={() => cambiarSeccion(1)}> {seccionActual === 1 ? <p>&#9899;</p>:<p>&#9898;</p>}</button>
-        <button onClick={() => cambiarSeccion(3)}>{seccionActual ===3? <p>&#9899;</p>:<p>&#9898;</p>}</button>
-        <button onClick={() => cambiarSeccion(2)}>{seccionActual === 2? <p>&#9899;</p>:<p>&#9898;</p>}</button>
+          <div>
+        <button onClick={() => cambiarSeccion(1)}> {seccionActual === 1 ? <p className='botonesNosotros'>&#9899;</p>:<p className='botonesNosotros'>&#9898;</p>}</button>
+        <button onClick={() => cambiarSeccion(3)}>{seccionActual ===3? <p className='botonesNosotros'>&#9899;</p>:<p className='botonesNosotros'>&#9898;</p>}</button>
+        <button onClick={() => cambiarSeccion(2)}>{seccionActual === 2? <p className='botonesNosotros'>&#9899;</p>:<p className='botonesNosotros'>&#9898;</p>}</button>
         </div>
         </div>
         </div>
@@ -442,7 +442,7 @@ function App() {
 
 
 <section id="contacto">
-		<article className="contacto">
+		<article id="contacto" className="contacto">
       <div className='puntitos'>
       <h2>Contacto</h2>
       
