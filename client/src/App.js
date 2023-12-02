@@ -456,23 +456,23 @@ function App() {
         <h3 className='mensajeEnviado'>{mensajeSatisf}</h3>
       </form>
       </div>
-	  	</div>
-      </article>
-</section>
-
-
-     <section className='footer'>
+      <section className='footer'>
       <article className='footerSocial'>
         <a href="https://www.linkedin.com/company/enlacemolecular"><img id='linkedinLogo'src={linkedin} /></a>
       </article>
       <article className='footerText'>
         <div>
-          <p>Copyright © 2014 enlacemolecular. All Rights Reserved. Reproduction of any materials from the site is strictly forbidden without permission.</p>
-          <p>enlacemolecular brand products are sold exclusively through enlacemolecular.</p>
+          <p>Copyright © 2014 enlacemolecular. All Rights Reserved. Reproduction of any materials from the site is strictly forbidden without permission. <br></br> enlacemolecular brand products are sold exclusively through enlacemolecular.</p>
         </div>
       </article>
 
      </section>
+	  	</div>
+      </article>
+</section>
+
+
+     
 
 
 

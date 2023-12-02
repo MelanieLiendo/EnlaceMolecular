@@ -139,10 +139,11 @@ margin: 0px;
     border: none;
     border-radius: 20px;
     color: #878787;
-    width: 40%;
-    font-size: 1.6vw;
+    width: 35%;
+    font-size: 1.3vw;
     font-family: "Montserrat";
     margin-top: 8%;
+    padding: 2%;
 }
 
 #pedirDEMODerecha{
@@ -220,7 +221,7 @@ margin: 0px;
   flex-direction: column;
   z-index: 1;
   width: 60%;
-  height: 60vh;
+  height: 50vh;
   align-items: center;
   padding: 5% 1%;
   justify-content: center;
@@ -818,7 +819,7 @@ align-items: center;
 /*NOSOTROS*/
 
 .nosotros {
-  height: 70vh;
+  height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -826,7 +827,7 @@ align-items: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    margin: 50px 0px 70px 0px;
+    margin: 0px 0px 8% 0px;
 }
 
 
@@ -929,15 +930,14 @@ align-items: center;
   border-radius: 30px;
   padding: 1% 5%;
   height: 100%;
+  background-size: cover;
 }
 
 #contacto{
-  height: 60vh;
   float: left;
   position: relative;
   width: 100%;
   text-align: center;
-  margin-bottom: 5vh
 }
 
 .contenido{
@@ -1016,9 +1016,10 @@ textarea:focus::placeholder {
   border-radius: 20px;
   color: #878787;
   width: 20%;
-  font-size: 1.1vw;
+  font-size: 1.3vw;
   margin: 2% 1% 0% 1%;
   font-family: "Montserrat";
+  padding: 1%;
 }
 
 .material button:hover{
@@ -1040,7 +1041,7 @@ textarea:focus::placeholder {
 
 #linkedinLogo {
   position: relative;
-  width: 2%;
+  width: 3%;
   opacity: 0.3;
   padding: 1%;
   z-index: 300;
@@ -1066,7 +1067,8 @@ textarea:focus::placeholder {
   color:#9a9a9a;
   font-weight:100 ;
   text-align: center;
-  font-size: 0.8vw;
+  font-size: 1vw;
+  padding-bottom: 2%;
 }
 
 .footerSocial{
@@ -1087,20 +1089,20 @@ textarea:focus::placeholder {
 }
 
 @media only screen and (min-width: 3150px)  {
-  #contacto {
+  /* #contacto {
     margin-bottom: 6%;
-  }
+  } */
 
   #navbar ul  li{
     margin-right: 60px;}
   
 }
 
-@media screen and (min-width: 1650px) and (max-height: 1000px) {
+/* @media screen and (min-width: 1650px) and (max-height: 1000px) {
   #contacto {
     margin-bottom: 7%;
   }
-}
+} */
 
 
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
@@ -1143,6 +1145,7 @@ textarea:focus::placeholder {
 
   .tituloSimma p, .tituloEmme p, .tituloEmqa p, .tituloEmap p {
     font-size: 1.6vw;
+    padding: 0 8%;
   }
 
   .caracteristicasSimma, .caracteristicasEmme, .caracteristicasEmqa, .caracteristicasEmap {
@@ -1150,7 +1153,7 @@ textarea:focus::placeholder {
   }
 
   .recuadroSimma, .recuadroEmme, .recuadroEmqa, .recuadroEmap {
-    height: 70vh;
+    height: 50vh;
   }
 
   .recuadroEmqa, .recuadroSimma {
@@ -1174,40 +1177,45 @@ textarea:focus::placeholder {
   }
 }
 
-@media only screen and (min-width: 511px) and (max-width: 1300px) {
+/* @media only screen and (min-width: 511px) and (max-width: 1300px) {
 
-  /*CONTACTO*/
+
 
   #contacto {
     height: 60vh;
     margin-bottom: 40vh;
   }
 
-}
+} */
 
-@media screen and (min-width: 1200px) and (max-width: 1300px) and (min-height: 760px) and (max-height: 810px) {
+/* @media screen and (min-width: 1200px) and (max-width: 1300px) and (min-height: 760px) and (max-height: 810px) {
   #contacto {
     height: 60vh;
     margin-bottom: 10vh;
   }
-}
+} */
 
-@media only screen and (min-width: 511px) and (max-width: 1200px) {
-
-  /*CONTACTO*/
+/* @media only screen and (min-width: 511px) and (max-width: 1200px) {
 
   #contacto {
     height: 60vh;
     margin-bottom: 35vh;
   }
 
-}
+} */
+
+/* @media screen and (min-width: 991px) and (max-width: 1300px) and (min-height: 950px) and (max-height: 1000px) {
+  #contacto {
+    height: 50vh;
+    margin-bottom: 5vh;
+  }
+} */
 
 /* IPAD PRO */
 @media screen and (min-width: 1000px) and (max-width: 1025px) and (min-height: 1200px) and (max-height: 1400px) {
 
   .nosotros {
-    height: 40vh;}
+    height: 30vh;}
 
     .containerServicios {
       height: 90%;
@@ -1215,24 +1223,27 @@ textarea:focus::placeholder {
 
   .servicios {
     height: 40vh;
-    justify-content: flex-end;
 
 }
 
 .recuadroSimma, .recuadroEmme, .recuadroEmqa, .recuadroEmap {
-  height: 40vh;
+  height: 25vh;
 }
 
-  #contacto {
+  /* #contacto {
     height: 40vh;
     margin-bottom: 5vh;
-  }
+  } */
 
 }
 
 
 
 @media only screen and (min-width: 511px) and (max-width: 991px) {
+
+  h2{
+    font-size: 3.5vw;
+  }
 
   /*SPLASHSCREEN*/
 
@@ -1244,22 +1255,30 @@ textarea:focus::placeholder {
 
   .fotoSimma img, .fotoEmme img, .fotoEmqa img, .fotoEmap img {
     width: 80%;
+    border: 15px solid;
+    border-color: white;
   }
 
   #logoSIMMA, #logoEMQA, #logoEMAP {
     width: 35%;
   }
 
+  #logoEMME{
+    width: 40%;
+  }
+
   .tituloSimma p, .tituloEmme p, .tituloEmqa p, .tituloEmap p {
     font-size: 1.6vw;
+    padding:0 8%;
   }
 
   .caracteristicasSimma, .caracteristicasEmme, .caracteristicasEmqa, .caracteristicasEmap {
     font-size: 1.1vw;
+    padding: 1% 10% 1% 15%
   }
 
   .recuadroSimma, .recuadroEmme, .recuadroEmqa, .recuadroEmap {
-    height: 30vh;
+    height: 25vh;
   }
 
   .recuadroEmqa, .recuadroSimma {
@@ -1287,10 +1306,15 @@ textarea:focus::placeholder {
   .servicios{
     height: 50vh;
   }
+
+  .containerServicios {
+  
+    height: 70%;}
+
   /*NOSOTROS*/
 
   .nosotros{
-    height: 50vh;
+    height: 30vh;
   }
   /*CLIENTES*/
 
@@ -1299,26 +1323,43 @@ textarea:focus::placeholder {
   }
   /*CONTACTO*/
 
-  #contacto {
+  /* #contacto {
     height: 60vh;
     margin-bottom: 20vh;
-  }
+  } */
 }
 
-@media only screen and (min-width: 700px) and (max-width: 991px) {
+/* @media only screen and (min-width: 700px) and (max-width: 991px) {
   #contacto{
     margin-bottom: 0%;
     height: 50vh;
   }
 
+} */
+
+/* @media screen and (width: 990px) and (min-height: 550px) and (max-height: 855px) {
+  #contacto{
+    margin-bottom: 10%;
+    height: 60vh;
+  }
+
+} */
+
+/* @media screen and (width: 990px) and (max-height: 550px) {
+  #contacto{
+    margin-bottom: 20%;
+    height: 60vh;
+  }
+
 }
+
 @media only screen and (min-width: 511px) and (max-width: 750px){
   #contacto {
     height: 40vh;
     margin-bottom: 5vh;
   }
 
-}
+} */
 
 @media all and (max-width:510px){
   
@@ -1376,7 +1417,7 @@ textarea:focus::placeholder {
   }
 
   .gridProductos{
-    margin-bottom: 50%;
+    margin-bottom: 40%;
   }
   
   /* SERVICIOS */
@@ -1452,10 +1493,10 @@ textarea:focus::placeholder {
       margin-left: 10px;
   }
 
-  #contacto {
+  /* #contacto {
     height: 50vh;
     margin-bottom: 0;
-  }
+  } */
 
   .material input, .material textarea {
     font-size: 3vw;
@@ -1485,6 +1526,10 @@ textarea:focus::placeholder {
   .footer p{
     font-size: 2.3vw;
   }
+
+  #linkedinLogo {
+    
+    width: 7%;}
 
 
   
@@ -1548,7 +1593,7 @@ textarea:focus::placeholder {
   }
 
   .gridProductos{
-    margin-bottom: 50%;
+    margin-bottom: 30%;
   }
   
   /* SERVICIOS */
@@ -1567,7 +1612,7 @@ textarea:focus::placeholder {
   }
 
   .containerServicios {
-    height: 250px;
+    height: 180px;
   }
 
   .servicios p {
@@ -1623,11 +1668,11 @@ textarea:focus::placeholder {
       margin-right: 10px;
       margin-left: 10px;
   }
-
+/* 
   #contacto {
     height: 50vh;
     margin-bottom: 20%;
-  }
+  } */
 
   .material input, .material textarea {
     font-size: 3vw;
@@ -1657,17 +1702,28 @@ textarea:focus::placeholder {
   .footer p{
     font-size: 2.3vw;
   }
+
+  #linkedinLogo {
+    width: 6%;}
   
 }
 
-@media all and (max-width: 391px){
+@media all and (max-width: 350px){
   
-  #contacto {
-    height: 50vh;
-    margin-bottom: 10%;
-  }
+h2{
+  font-size: 1.9em;
+}
 
+.textoNosotros p {
+  font-size: 0.6em;
+}
 
+.servicios p {
+  font-size: 0.6em;}
+
+  .servicios img {
+    width: 70px;
+}
   
 }
 
