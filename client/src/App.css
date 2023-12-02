@@ -1123,6 +1123,10 @@ textarea:focus::placeholder {
     padding: 0 10%;
   }
 
+  .fotoSimma img {
+    height: 260px;
+  }
+
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
