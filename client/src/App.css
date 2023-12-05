@@ -291,389 +291,6 @@ margin: 0px;
 
 
 
-/*emap*/
-
-/* .emap{
-  height: 100vh;
-  position: relative;
-  background-color: white;
-}
-
-.recuadroEmap{
-  background-image: url(./images/degradeProducto.jpg);
-  background-position: center;
-  height: 530px;
-  width: 600px;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  position: absolute;
-  top: 5vh;
-  left: 20vh;
-  z-index: 1;
-}
-
-
-.seccion1Emap{
-display: flex;
-align-items: baseline;
-height: 150px;
-justify-content: center;
-align-items: center;
-}
-
-.recuadroEmap h3{
-  font-family: "Roboto", sans-serif;
-  color: #312783;
-  font-size: 4em;
-  letter-spacing: 10px;
-  font-weight: 800;
-  background-color: white;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  margin: 0px;
-  border-bottom-right-radius: 20px;
-
-
-}
-
-.tituloEmap h2{
-  font-size: 4em;
-  font-family: "Montserrat";
-}
-
-.tituloEmap p{
-  font-family: "Roboto", sans-serif;
-  color: #312783;
-  font-size: 1.4em;
-  align-items: baseline;
-  margin-left: 30px;
-  margin-bottom: 0px;
-}
-
-.caracteristicasEmap{
-  color: #878787;
-  margin-top: 20px;
-  font-family: "Montserrat";
-  font-size: 0.8em;
-}
-
-.caracteristicasEmap li{
-  margin-top: 20px;
-  list-style-type: circle;
-}
-
-.fotoEmap img{
-  width: 500px;
-  border-radius: 2em;
-  border: 25px solid;
-  border-color: white;
-}
-
-.fotoEmap{
-  position: absolute;
-  left: 650px;
-  top: 100px;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-
-} */
-
-
-
-/*emqa*/
-
-/* .emqa{
-  height: 100vh;
-  position: relative;
-}
-
-.recuadroEmqa{
-  background-image: url(./images/degrade1.jpg);
-  background-position: center;
-  height: 530px;
-  width: 600px;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 5vh;
-  left: 90vh;
-  z-index: 1;
- 
-}
-
-
-.seccion1Emqa{
-display: flex;
-height: 150px;
-align-items: center;
-justify-content: center;
-
-}
-
-
-.recuadroEmqa h3{
-  font-family: "Roboto", sans-serif;
-  color: #312783;
-  font-size: 4em;
-  letter-spacing: 10px;
-  font-weight: 800;
-  background-color: white;
-  border-bottom-left-radius: 20px;
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  margin: 0px;
-  padding-left: 20px;
-}
-
-.tituloEmqa h2{
-  font-family: "Montserrat";
-  font-size: 4em;
-  
-}
-
-.tituloEmqa p{
-  font-family: "Roboto", sans-serif;
-  color: #312783;
-  font-size: 1.4em;
-  align-items: baseline;
-  margin-right: 30px;
-  margin-bottom: 0px;
-  justify-content: end;
-  text-align-last: center ;
-  
-}
-
-.caracteristicasEmqa{
-  color: #878787;
-  font-family: "Montserrat";
-  font-size: 0.8em;
-  display: flex;
-  justify-content: end;
-}
-
-.caracteristicasEmqa li{
-  margin-top: 20px;
-  list-style-type: circle;
-  margin-right: 20px;
-}
-
-.fotoEmqa img{
-  width: 500px;
-  border-radius: 2em;
-  border: 25px solid;
-  border-color: white;
-}
-
-.fotoEmqa{
-  position: absolute;
-  left: 10vh;
-  top: 20vh;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
-
-
-
-/*emme*/
-
-
-/* .emme{
-  height: 100vh;
-  position: relative
-}
-
-.recuadroEmme{
-  background-image: url(./images/degrade1.jpg);
-  background-position: center;
-  height: 530px;
-  width: 600px;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  position: absolute;
-  top: 5vh;
-  left: 20vh;
-  z-index: 1;
-}
-
-.seccion1Emme{
-display: flex;
-align-items: baseline;
-height: 150px;
-justify-content: center;
-align-items: center;
-}
-
-
-
-.recuadroEmme h3{
-  font-family: "Roboto", sans-serif;
-  color: #312783;
-  font-size: 4em;
-  letter-spacing: 10px;
-  font-weight: 800;
-  background-color: white;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  margin: 0px;
-  border-bottom-right-radius: 20px;
-
-
-}
-
-.tituloEmme h2{
-  font-family: "Montserrat";
-  font-size: 4em;
-  
-}
-
-.tituloEmme p{
-  font-family: "Roboto", sans-serif;
-  color: #312783;
-  font-size: 1.4em;
-  align-items: baseline;
-  margin-left: 30px;
-  margin-bottom: 0px;
-}
-
-.caracteristicasEmme{
-  color: #878787;
-  margin-top: 20px;
-  font-family: "Montserrat";
-  font-size: 0.8em;
-}
-
-.caracteristicasEmme li{
-  margin-top: 20px;
-  list-style-type: circle;
-}
-
-
-.fotoEmme img{
-  width: 500px;
-  border-radius: 2em;
-  border: 25px solid;
-  border-color: white;
-}
-
-.fotoEmme{
-  position: absolute;
-  left: 650px;
-  top: 100px;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
-
-/*SIMMA*/
-
-
-
-/* .simma{
-  height: 100vh;
-  position: relative
-}
-
-.recuadroSimma{
-  background-image: url(./images/degrade1.jpg);
-  background-position: center;
-  height: 530px;
-  width: 600px;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 5vh;
-  left: 90vh;
-  z-index: 1;
-}
-
-.seccion1Simma{
-  display: flex;
-  height: 150px;
-  align-items: center;
-  justify-content: center;
-  
-}
-
-.tituloSimma h3{
-  font-family: "Roboto", sans-serif;
-  color: #312783;
-  font-size: 4em;
-  letter-spacing: 10px;
-  font-weight: 800;
-  background-color: white;
-  border-bottom-left-radius: 20px;
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  margin: 0px;
-  padding-left: 20px;
-
-}
-
-.tituloSimma h2{
-  font-family: "Montserrat";
-  font-size: 4em;
-  
-}
-
-.tituloSimma p{
-  font-family: "Roboto", sans-serif;
-  color: #312783;
-  font-size: 1.4em;
-  align-items: baseline;
-  margin-right: 30px;
-  margin-bottom: 0px;
-  justify-content: end;
-  text-align-last: center ;
-}
-
-.caracteristicasSimma{
-  color: #878787;
-  font-family: "Montserrat";
-  font-size: 0.8em;
-  display: flex;
-  justify-content: end;
-}
-
-.caracteristicasSimma li{
-  margin-top: 20px;
-  list-style-type: circle;
-  margin-right: 20px;
-}
-
-
-
-.fotoSimma img{
-  width: 500px;
-  border-radius: 2em;
-  border: 25px solid;
-  border-color: white;
-  height: 330px;
-}
-
-.fotoSimma {
-  position: absolute;
-  left: 10vh;
-  top: 20vh;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-} */
 
 
 /* SERVICIOS */
@@ -1079,12 +696,26 @@ textarea:focus::placeholder {
 
 /*RSPONSIVE*/
 
+
+@media only screen and (min-width: 1800px)  {
+
+  .fotoEmap, .fotoEmme, .fotoEmqa, .fotoSimma  {
+    width: 40%;
+  }
+
+
+}
+
+
+
 @media only screen and (min-width: 2200px)  {
   .material {
     background-size: cover;
   }
   #navbar ul  li{
     margin-right: 50px;}
+
+
     
 }
 
@@ -1095,6 +726,8 @@ textarea:focus::placeholder {
 
   #navbar ul  li{
     margin-right: 60px;}
+
+    
   
 }
 
