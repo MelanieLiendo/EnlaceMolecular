@@ -266,7 +266,15 @@ margin: 0px;
   padding: 0 7%;
 }
 
-.caracteristicasSimma, .caracteristicasEmme, .caracteristicasEmqa, .caracteristicasEmap{
+
+.caracteristicasEmqa, .caracteristicasSimma {
+  color: #878787;
+  font-family: "Montserrat";
+  font-size: 1vw;
+  padding: 1% 10% 1% 13%;
+}
+
+.caracteristicasEmme, .caracteristicasEmap {
   color: #878787;
   font-family: "Montserrat";
   font-size: 1vw;
@@ -700,7 +708,7 @@ textarea:focus::placeholder {
 @media only screen and (min-width: 1800px)  {
 
   .fotoEmap, .fotoEmme, .fotoEmqa, .fotoSimma  {
-    width: 40%;
+    width: 45%;
   }
 
 
@@ -756,9 +764,6 @@ textarea:focus::placeholder {
     padding: 0 10%;
   }
 
-  .fotoSimma img {
-    height: 260px;
-  }
 
 }
 
@@ -997,6 +1002,30 @@ textarea:focus::placeholder {
   }
 
 } */
+
+@media all and (min-width:511px){
+
+  .caracteristicasSimma, .caracteristicasEmqa {
+  padding: 1% 14% 1% 8%;
+  }
+
+  .caracteristicasEmap, .caracteristicasEmme {
+    padding: 1% 7% 1% 18%;
+    }
+
+  .tituloEmap, .tituloEmme {
+    padding: 1% 3.5% 1% 7.5%;
+  }
+
+  .tituloSimma, .tituloEmqa {
+    padding: 1% 9% 1% 1.5%;
+  }
+
+  .tituloEmme p {
+    padding: 0;
+  }
+
+}
 
 @media all and (max-width:510px){
   
