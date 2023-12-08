@@ -134,10 +134,9 @@ function App() {
     </navbar>
     
       <div id= "splashscreen" className="splashscreen">
-  
-        <div className="splashImage">
+       {/* <div className="splashImage">*/}
           <img id="logo" src= {logo} alt="logo"></img>
-        </div>
+        {/* </div>*/}
         <section id='splashscreen2'>
           <p>SOFTWARE para entornos GxP</p>
         </section>

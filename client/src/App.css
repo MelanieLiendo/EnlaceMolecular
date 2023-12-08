@@ -68,56 +68,44 @@ padding-left: 0;
 .splashscreen {
   height: 100vh;
   flex-direction: column;
-  background-image: url(./images/fondo\ banner\ inicio.png) ;
+  background-image: url(./images/inicio.png) ;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: top;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 #logo{
-  width: 70%;
+  width: 50%;
   height: auto;
-  position: relative;
-  top: 70%;
+  /* position: relative;
+  top: 70%; */
 }
 
-.splashImage {
+/* .splashImage {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-}
-
-
-/* .initialText{
-  color: rgb(82, 82, 82);
-  font-family: "Roboto", sans-serif;
-  font-size: 1.8em;
-  font-weight: 100;
-  text-transform: uppercase;
-  line-height: 60px;
 } */
+
+
 
 
 /* SPLASHSCREEN 2 */
 
 #splashscreen2{
   height: 50vh;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding-left: 12%;
 }
 
 #splashscreen2 p{
-color:#0cb3d6;
-font-weight: 700;
+color:#adadad;
+font-weight: 400;
 font-size: 1.3vw;
 font-family: 'Roboto', sans-serif;
 margin: 0px;
@@ -1043,11 +1031,7 @@ textarea:focus::placeholder {
   /*SPLASHSCREEN*/
 
   #splashscreen2 p {
-    color: #0cb3d6;
-    font-weight: 700;
-    font-size: 3vw;
-    font-family: 'Roboto', sans-serif;
-    margin: 0px;
+    font-size: 2vw;
   }
 
   /*PRODUCTOS*/
@@ -1219,11 +1203,7 @@ textarea:focus::placeholder {
   /*SPLASHSCREEN*/
 
   #splashscreen2 p {
-    color: #0cb3d6;
-    font-weight: 700;
-    font-size: 3vw;
-    font-family: 'Roboto', sans-serif;
-    margin: 0px;
+    font-size: 2vw;
   }
 
   /*PRODUCTOS*/
