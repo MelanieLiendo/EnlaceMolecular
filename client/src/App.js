@@ -1,4 +1,4 @@
-import logo from './images/logo enlace.png';
+import logo from './images/Software para entornos GxP.png';
 import linkedin from './images/linkedin.png';
 import './App.css';
 import asofarma from './images/asofarma.png'
@@ -134,12 +134,7 @@ function App() {
     </navbar>
     
       <div id= "splashscreen" className="splashscreen">
-       {/* <div className="splashImage">*/}
           <img id="logo" src= {logo} alt="logo"></img>
-        {/* </div>*/}
-        <section id='splashscreen2'>
-          <p>SOFTWARE para entornos GxP</p>
-        </section>
       </div>
 
       <section id= "productos" className="productos">
